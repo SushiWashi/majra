@@ -1,29 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="reset.css">
+	<!--META-->
+	 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	 <title><?php echo $_SERVER['SERVER_NAME'];?></title>
+	 
+	 <!--LINKS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
 </head>
 <body>
-<div class="nav">
-	<div class="top">
-		<div class="container">
-			<img class="logo" src="majra-orange.svg">
-			<ul>
-				<li><a href="/">home</a></li>
-				<li><a href="places.php">explore places</a></li>
-				<li><a href="opportunities.php">find opportunities</a></li>
-				<li><a href="resources.php">learning resources</a></li>
-				<li><a href="faq.php">faq</a></li>
-			</ul>
+
+<div id="wrapper">
+<div id="content">
+<!--wrapper & content is used to fix footer to bottom of page -->
+
+	<div class="nav">
+		<div class="top">
+			<div class="grid-container">
+				<a href="/majra"><img class="logo" src="img/majra-orange.svg"></a>
+				
+				<select class="hideSelect" onchange="location = this.value;">
+					<option value="workplaces.php">explore places</option>
+					<option value="opportunities.php">find opportunities</option>
+					<option value="resources.php">learning resources</option>
+					<option value="faq.php">faq</option>
+				</select>
+				
+				<ul>
+					<li><a href="workplaces.php">explore places</a></li>
+					<li><a href="opportunities.php">find opportunities</a></li>
+					<li><a href="resources.php">learning resources</a></li>
+					<li><a href="faq.php">faq</a></li>
+				</ul>
+					
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="grid-container mobile-grid-100">
+				<ul>
+					<li class="mobile-grid-50"><a href="">for employers</a></li>
+					<li class="mobile-grid-50"><a href="">join / login</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<div class="bottom">
-		<div class="container">
-			<ul>
-				<li><a href="">for employers</a></li>
-				<li><a href="">join / login</a></li>
-			</ul>
-		</div>
-	</div>
-</div>

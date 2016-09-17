@@ -1,0 +1,342 @@
+/***************
+	DESIGN ELEMENTS 
+***************/
+:root {
+--orange:	#F37021; 
+--darkGrey: #323232; 
+--white: #fff;
+}
+
+html, body {
+	background:#fff;
+	font-family:'Azo Sans','helvetica' !important;
+	font-size: 100% !important;
+	color:var(--darkGrey);
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+h1 {font-size:2em !important;}
+h2 {font-size:1.5em !important;}
+h3 {font-size:1.3em !important;}
+h4 {font-size:1em !important;}
+
+a:link, a:visited {
+	color:rgba(255,255,255,0.7);
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	color:rgba(255,255,255,1);
+	text-decoration:none;
+}
+
+.dark :link, .dark:visited {
+		color:rgba(0,0,0,0.7);
+		text-decoration:none;
+}
+
+.dark :hover, .dark:active {
+		color:rgba(0,0,0,1);
+		text-decoration:none;
+}
+
+.followButton {
+	background:var(--orange);
+	padding:5px 8px;
+	color:white !important;
+	border-radius:5px;
+}
+
+
+/***************
+	HEADER 
+***************/
+
+.nav {
+	width:100%;
+	background:var(--darkGrey);
+	height:110px;
+	font-size:11px;
+    text-transform: uppercase;
+}
+
+.logo {
+	height:70px;
+	width:auto;
+	float:left;
+	margin-top:8px;
+}
+
+.top {
+	height:80px;
+}
+
+.bottom {
+	background:var(--orange);
+	height:30px;
+}
+
+.nav ul {
+	float:right;
+}
+
+.nav ul li {
+	float:left !important;
+	margin:10px;
+}
+
+.top ul {
+	margin-top:25px;
+}
+
+.top, .bottom {
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+.hideSelect {
+	visibility:hidden;
+}
+
+/***************
+	HOMEPAGE 
+***************/
+
+.opener {
+	width:100%;
+	position:relative;
+	min-height:470px;
+	max-height:auto;
+	background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.opener h1, .opener h2 {
+	text-align: center;
+	color:#fff;
+}
+
+.opener h1 {
+	padding-top:15%;
+}
+
+.opener h2 {
+	padding:10px 0;
+}
+
+.opener ul {
+	bottom:10px;
+}
+
+.opener ul li{
+	float:left;
+    text-transform: uppercase;
+	margin:1% 0;
+    font-size:11px;
+	text-decoration: none;
+	text-align:center;
+	font-weight:medium;
+	border:1px solid #fff;
+	padding:10px;
+	border-radius: 5px;
+}
+
+.opener ul li:link, .opener ul li:visited {
+	color:white !important;
+	background:transparent !important;
+
+}
+
+.opener ul li:hover, .opener ul li:active {
+	color:white !important;
+	background:var(--orange) !important;
+	border:none;
+}
+
+.listing h1 {
+	color:var(--orange);
+	padding:1.5em 0;
+	text-transform:uppercase;
+	font-size:1.25em !important;
+	font-weight:700;
+}
+
+.row {
+	float:left;
+	min-height:120px;
+	max-height:auto;
+	margin-bottom:10%;
+}
+
+.row h3 {
+	padding-bottom:3%;
+	line-height:1.2;
+}
+
+.row p {
+	font-size:12px;
+	line-height:1.5;
+}
+
+	.row .freshImg {
+			height:121px;
+			float:left;
+			background:url('http://skitterphoto.com/wp-content/uploads/2015/03/Willemswerf-office-building-free-license-cc0-980x649.jpg');
+			background-size:cover;
+			background-position:center;
+			margin-right:3%;
+	}
+
+.blog {
+	width:100%;
+	height:auto;
+	background:var(--darkGrey);
+	color:#fff;
+	padding:2em 0;
+}
+
+.blog h1 {
+	padding:1em 0;
+	font-size:1.25em !important;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+.workplacesList {
+	width:70%;
+	margin:0 auto;
+	text-align:center;
+	padding:1em 0;
+	text-transform:uppercase;
+	line-height:1.5;
+
+}
+
+.newWorkplaces {
+	padding:1em 0;
+}
+
+	.newWorkplaces li {
+		float:left;
+		margin-bottom:1em;
+	}
+
+	.newWorkplaces img {
+		width:100%;
+		height:auto;
+	}
+
+.blogPost {
+	float:left;
+	display:inline-block;
+	position: relative;
+	min-height:300px;
+	max-height:auto;
+}
+
+.blogPost:first-child, .blogPost:last-child {
+	margin:0 !important;
+}
+
+	.blogPost h3 {
+		line-height: 1.5;
+	}
+
+	.blogPost .blogImg {
+		height:185px;
+		background:url('http://skitterphoto.com/wp-content/uploads/2015/03/Willemswerf-office-building-free-license-cc0-980x649.jpg');
+		background-size:cover;
+		background-position:center;
+	}
+
+.blogPostBottom {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+
+.blogPostBottom li {
+	float:left;
+}
+
+
+
+/***************
+	FOOTER 
+***************/
+
+/*KEEPS FOOTER BOTTOM OF PAGE*/
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	padding-bottom:288px; /* Height of the footer element */
+}
+
+
+footer {
+	background-color:var(--orange);
+	width:100%;
+	height:auto;
+	padding:30px 0 !important;
+	clear:both;
+	font-size:12px !important;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+footer h4 {
+	color:#fff;
+	text-transform: uppercase;
+	line-height: 3;
+}
+
+footer ul li {
+	float:left;
+	line-height: 2;
+	clear:both;
+	text-transform: capitalize;
+}
+
+
+#social li {
+	clear:none !important;
+	margin-right:5%;
+}
+
+/***************
+	SMALLER THAN 768px 
+***************/
+
+@media only screen and (max-width: 768px) {
+	.hideSelect {
+		visibility:visible;
+		margin-top:20px;
+		float:right;
+		background:transparent;
+		color:white;
+		padding:10px;
+		border:1px solid rgba(255,255,255,0.3);
+		outline:0;
+	}
+	
+	.hideSelect option {
+		background:#323232;
+		color:#fff;
+		outline:0;
+		border:1px solid rgba(255,255,255,0.3);
+	}
+	.top ul {
+		visibility:hidden;
+	}
+}
