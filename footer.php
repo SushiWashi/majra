@@ -1,7 +1,7 @@
 </div><!--CONTENT END-->
 <footer>
 	<div class="grid-container">
-		<div class="grid-25 mobile-grid-50">
+		<div class="grid-25">
 			<h4>about majra</h4>
 			<ul>
 				<li><a href="about.php">about us</a></li>
@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-25 mobile-grid-50">
+		<div class="grid-25">
 			<h4>explore more</h4>
 			<ul>
 				<li><a href="about.php">full time jobs</a></li>
@@ -21,7 +21,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-25 mobile-grid-50">
+		<div class="grid-25">
 			<h4>be part of it</h4>
 			<ul>
 				<li><a href="about.php">for employers</a></li>
@@ -29,7 +29,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-25 mobile-grid-50">
+		<div class="grid-25">
 			<h4>stay up to date</h4>
 			<ul id = "social">
 				<li><a href="www.facebook.com" target="_blank"><img src="" alt="fb"></a></li>

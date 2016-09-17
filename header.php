@@ -23,12 +23,14 @@
 			<div class="grid-container">
 				<a href="/majra"><img class="logo" src="img/majra-orange.svg"></a>
 				
+				<!--
 				<select class="hideSelect" onchange="location = this.value;">
 					<option value="workplaces.php">explore places</option>
 					<option value="opportunities.php">find opportunities</option>
 					<option value="resources.php">learning resources</option>
 					<option value="faq.php">faq</option>
 				</select>
+				-->
 				
 				<ul>
 					<li><a href="workplaces.php">explore places</a></li>
@@ -40,10 +42,10 @@
 			</div>
 		</div>
 		<div class="bottom">
-			<div class="grid-container mobile-grid-100">
+			<div class="grid-container">
 				<ul>
-					<li class="mobile-grid-50"><a href="">for employers</a></li>
-					<li class="mobile-grid-50"><a href="">join / login</a></li>
+					<li><a href="">for employers</a></li>
+					<li><a href="">join / login</a></li>
 				</ul>
 			</div>
 		</div>
