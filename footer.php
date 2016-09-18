@@ -32,9 +32,9 @@
 		<div class="grid-25">
 			<h4>stay up to date</h4>
 			<ul id = "social">
-				<li><a href="www.facebook.com" target="_blank"><img src="" alt="fb"></a></li>
-				<li><a href="www.twitter.com" target="_blank"><img src="" alt="twt"></a></li>
-				<li><a href="www.instagram.com" target="_blank"><img src="" alt="ig"></a></li>
+				<li><a href="http://www.facebook.com" target="_blank"><img src="img/fb.svg" alt="fb"></a></li>
+				<li><a href="http://www.twitter.com" target="_blank"><img src="img/Twitter.svg" alt="twt"></a></li>
+				<li><a href="http://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="ig"></a></li>
 			</ul>
 		</div>
 

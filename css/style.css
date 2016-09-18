@@ -7,6 +7,10 @@
 --white: #fff;
 }
 
+.grid-container {
+	position:relative !important;
+}
+
 html, body {
 	background:#fff;
 	font-family:'Azo Sans','helvetica' !important;
@@ -43,6 +47,7 @@ a:hover, a:active {
 }
 
 .followButton {
+	display:block;
 	background:var(--orange);
 	padding:5px 8px;
 	color:white !important;
@@ -105,6 +110,13 @@ a:hover, a:active {
 	HOMEPAGE 
 ***************/
 
+.darkBackground {
+	width:100%;
+	position:absolute;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+}
+
 .opener {
 	width:100%;
 	position:relative;
@@ -130,13 +142,14 @@ a:hover, a:active {
 }
 
 .opener ul {
-	bottom:10px;
+	bottom:-100%;
+	position:absolute;
 }
 
 .opener ul li{
 	float:left;
     text-transform: uppercase;
-	margin:1% 0;
+	margin:1% 2.5%;
     font-size:11px;
 	text-decoration: none;
 	text-align:center;
@@ -233,22 +246,19 @@ a:hover, a:active {
 
 .blogPost {
 	float:left;
-	display:inline-block;
 	position: relative;
-	min-height:300px;
-	max-height:auto;
-}
-
-.blogPost:first-child, .blogPost:last-child {
-	margin:0 !important;
+	height:300px;
+	margin-bottom:20px;
 }
 
 	.blogPost h3 {
 		line-height: 1.5;
+		padding-top:10px;
 	}
 
 	.blogPost .blogImg {
 		height:185px;
+		width:100%;
 		background:url('http://skitterphoto.com/wp-content/uploads/2015/03/Willemswerf-office-building-free-license-cc0-980x649.jpg');
 		background-size:cover;
 		background-position:center;
@@ -256,14 +266,21 @@ a:hover, a:active {
 
 .blogPostBottom {
 	position:absolute;
-	bottom:0px;
-	left:0px;
+  left: 0; 
+  right: 0; 
+  bottom:0;
+  margin-left: auto; 
+  margin-right: auto; 
+	width:95%;
 }
 
-.blogPostBottom li {
+.blogPostBottom li:first-child {
 	float:left;
 }
 
+.blogPostBottom li:last-child {
+	float:right;
+}
 
 
 /***************
