@@ -5,7 +5,7 @@
 	 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	 <title><?php echo $_SERVER['SERVER_NAME'];?></title>
+	 <title>Majra</title>
 	 
 	 <!--LINKS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 </head>
 <body>
-
 <div id="wrapper">
 <div id="content">
 <!--wrapper & content is used to fix footer to bottom of page -->
@@ -22,15 +21,6 @@
 		<div class="top">
 			<div class="grid-container">
 				<a href="/majra"><img class="logo" src="img/majra-orange.svg"></a>
-				
-				<!--
-				<select class="hideSelect" onchange="location = this.value;">
-					<option value="workplaces.php">explore places</option>
-					<option value="opportunities.php">find opportunities</option>
-					<option value="resources.php">learning resources</option>
-					<option value="faq.php">faq</option>
-				</select>
-				-->
 				
 				<ul>
 					<li><a href="workplaces.php">explore places</a></li>

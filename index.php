@@ -54,17 +54,19 @@
 		<h1 class="grid-100">learners resources</h1>
 
 		<?php for($x=0; $x <=5; $x++) {?>
-		<div class="blogPost grid-33">
-			
-			<div class="blogImg"></div>
-			
-			<h3><a href="#">The title here can take up to 2 lines, isn't that cool?</a></h3>
+		<div class="grid-33">
+			<div class="blogPost">
+				
+				<div class="blogImg"></div>
+				
+				<h3><a href="#">The title here can take up to 2 lines, isn't that cool?</a></h3>
 
-			<ul class="blogPostBottom">
-				<li><a class="followButton" href="#">follow</a></li>
-				<li><a href="profile.php">Nazar Abubaker</a></li>
-			</ul>
+				<ul class="blogPostBottom">
+					<li><a class="followButton" href="#">follow</a></li>
+					<li><a href="profile.php">Nazar Abubaker</a></li>
+				</ul>
 
+			</div>
 		</div>
 		<?php } ?>
 
