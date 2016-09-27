@@ -24,6 +24,8 @@
 			<div class="freshImg grid-50"></div>
 			<h3><a class="dark" href="">MECHANICAL ENGINEERING</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<a style="position:absolute; bottom:0;" class="followButton" href="workplace.php">EXPLORE OPPORTUNITIES</a>
+
 		</div>
 		<?php } ?>
 	</div>
@@ -35,6 +37,7 @@
 			<div class="freshImg grid-50"></div>
 			<h3><a class="dark" href="">MECHANICAL ENGINEERING</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<a style="position:absolute; bottom:0;" class="followButton" href="workplace.php">EXPLORE WORKPLACE</a>
 		</div>
 		<?php } ?>
 	</div>

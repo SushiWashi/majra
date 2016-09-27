@@ -1,21 +1,5 @@
 <!DOCTYPE html>
-<?php 
-function folder() {
-	$self = $_SERVER['PHP_SELF'];
-	
-	switch($self) {
-		case '/majra/about/index.php':
-		case '/majra/settings/index.php':
-			echo "../";
-			break;
-		default:
-			echo "";
-	}		
-	
-}
-
-?>
-
+<?php include 'function.php'; ?>
 <html>
 <head>
 	<!--META-->
