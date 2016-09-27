@@ -2,6 +2,15 @@
 <?php include 'function.php'; ?>
 <html>
 <head>
+	<!--Favicons-->
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.svg">
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.png" sizes="32x32">
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-57.png" sizes="57x57">
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-76.png" sizes="76x76">
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-96.png" sizes="96x96">
+	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-120.png" sizes="120x120">
+
+
 	<!--META-->
 	 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
