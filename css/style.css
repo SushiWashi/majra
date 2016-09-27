@@ -54,7 +54,7 @@ input[type='submit'] {
  CARD DESIGNS 
 ***************/
 
-.bigCard, .card, .companyCard{
+.bigCard, .card {
 	position:relative;
 	width:100%;
 	float:left;
@@ -63,22 +63,6 @@ input[type='submit'] {
 	box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
 	box-sizing: border-box !important;
 	margin:5% 0;
-}
-
-.companyCard .companyHeader {
-
-}
-
-.card .logo {
-	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
-	width:60px;
-	height:60px;
-	position: absolute;
-	background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
-	background-size:cover;
-	background-position: center;
-	top:-8px;
-	left:10px;
 }
 
 
@@ -109,15 +93,15 @@ input[type='submit'] {
 }
 	
 	.card .logo {
-	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
-	width:60px;
-	height:60px;
-	position: absolute;
-	background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
-	background-size:cover;
-	background-position: center;
-	top:-8px;
-	left:10px;
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+		width:60px;
+		height:60px;
+		position: absolute;
+		background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
+		background-size:cover;
+		background-position: center;
+		top:-16px;
+		left:10px;
 	}
 
 	.card h1, .card h3 {
