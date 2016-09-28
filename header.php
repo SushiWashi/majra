@@ -10,17 +10,17 @@
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-96.png" sizes="96x96">
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-120.png" sizes="120x120">
 
-
 	<!--META-->
-	 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-	 <title>Majra</title>
-	 	 
-	 <!--LINKS-->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/grid.css">
+    
+    <title>Majra</title> 	 
+
 </head>
 <body>
 <div id="wrapper">
@@ -40,7 +40,13 @@
 				<li><a href="">def</a></li>
 			</ul>
 			<?php }else{ ?>
-				<li><a href="">Notifications</a></li>
+				<li class="dropdown">
+                    <a href="#" class="dropbtn">Notifications</a>
+                    <div class="dropdown-content">
+                        <a href="#">This is a test</a>
+                        <a href="#">So is this</a>
+                    </div>
+                </li>
 				<li><a href="">Nazar</a></li>
 			<?php } ?>
 			</ul>
