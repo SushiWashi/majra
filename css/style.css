@@ -13,7 +13,7 @@
 html, body {
 	background:#fff;
 	font-family:'Azo Sans','helvetica' !important;
-	font-size: 100% !important;
+	font-size: 14px !important;
 	color:var(--darkGrey);
 	margin:0;
 	padding:0;
@@ -31,9 +31,10 @@ input[type='checkbox'] {
 
 input, select{
 	outline:0;
-	border:1px solid var(--lightGray);
+	border:1px solid #BFBFBF;
 	padding:1em;
 	margin:1em 0;
+    background:var(--white);
 }
 
 input[type='submit'] {
@@ -42,6 +43,12 @@ input[type='submit'] {
 	border:0;
 	padding:1em;
 	border-radius:5px;
+}
+
+select {
+    display:inline-block;
+    height:3.2em;
+    border-radius: 0 !important;
 }
 
 .bold {
@@ -54,7 +61,7 @@ input[type='submit'] {
  CARD DESIGNS 
 ***************/
 
-.bigCard, .card {
+.bigCard, .card, .post {
 	position:relative;
 	width:100%;
 	float:left;
@@ -62,7 +69,7 @@ input[type='submit'] {
 	border: 1px solid #BFBFBF;
 	box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
 	box-sizing: border-box !important;
-	margin:5% 0;
+	margin:1em 0;
 }
 
 
@@ -87,6 +94,14 @@ input[type='submit'] {
 	padding:2%;
 }
 
+.bigCard .blogImage {
+    width:100%;
+    height:400px;
+    background-image:url('http://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
 /* Card */
 .card {
 	height:305px;
@@ -104,9 +119,11 @@ input[type='submit'] {
 		left:10px;
 	}
 
-	.card h1, .card h3 {
-		padding:3%;
-	}
+.card p {
+    color:var(--lightGray);
+    font-size:1em;
+    line-height: 1.4;
+}
 
 	.card h1 {
 		font-size:1.2em !important;
@@ -142,6 +159,7 @@ input[type='submit'] {
 		background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');
 		background-size:cover;
 		background-position: center;
+        margin-bottom:1em;
 	}
 
 	.card a:link, .card a:visited {
@@ -653,4 +671,75 @@ SEARCH
 
 .search select {
 	height:30px;
+}
+
+/********
+BLOG POST
+*******/
+.post p {
+    color:var(--lightGray);
+    padding:1em;
+    line-height: 1.5;
+}
+
+.post .author h2 {
+    padding:0.5em 0 0.5em 0 !important;
+}
+
+.post .author {
+    background-color:#FCFCFC;
+    border-top:1px solid #808080;
+    padding:1em;
+}
+
+.post .social {
+    display:inline-block;
+    width:100%;
+    height:auto;
+}
+
+.post .social img {
+    height:30px;
+    width:auto;
+}
+
+.post .social li {
+    float:left;
+    margin:1em 1em 1em 0;
+}
+
+.post .author p {
+    padding:1em 0;
+}
+
+.post .author .authorImg {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-size:cover;
+    background-position: center;
+}
+
+/****************
+LEARNING RESOURCES
+****************/
+.sort {
+    width:100%;
+    height:auto;
+    background:var(--white);
+    border-bottom: 1px solid #BFBFBF;
+    margin-bottom:1em;
+}
+
+.sort select {
+    width:50%;
+    margin-right:1em;
+}
+
+.sort input[type='input'] {
+    float:right;
+}
+
+.supportCard {
+    height:420px !important;
 }
