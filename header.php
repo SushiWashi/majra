@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-<?php include 'function.php'; ?>
+<?php 
+function folder() {
+	$self = $_SERVER['PHP_SELF'];
+	
+	switch($self) {
+		case '/majra/about/index.php':
+		case '/majra/settings/index.php':
+			echo "../";
+			break;
+		default:
+			echo "";
+	}		
+	
+}
+?>
 <html>
 <head>
 	<!--Favicons-->
