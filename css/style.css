@@ -250,42 +250,67 @@ a:hover, a:active {
 .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;
-    padding: 1em 2em;
     text-decoration: none;
+    padding-bottom:1em;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: var(--orange);
-}
-
-dropdown li {
+.dropdown li {
     display: inline-block;
 }
-
 
 .dropdown-content {
     display: none;
     position: absolute;
+    right:20px;
     z-index: 999;
+    padding:1em 0;
     background-color: var(--white);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width:80px;
+    max-width: 300px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
+    text-transform: none;
+    min-height:20px;
+    max-height:300px;
+    overflow: auto;
+
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: var(--darkGray);
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: var(--lightGray)
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.dropdown .noticePost {
+    display: block;
+    margin-bottom:3em;
+}
+
+.dropdown .noticePost p {
+line-height:1.5;
+margin-bottom:1em;
+}
+
+.dropdown .userPic {
+    width:40px;
+    height:40px;
+    background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
+    background-size:cover;
+    background-position: center;
+}
+
+
+
 /***************
 	HOMEPAGE 
 ***************/

@@ -43,11 +43,35 @@
 				<li class="dropdown">
                     <a href="#" class="dropbtn">Notifications</a>
                     <div class="dropdown-content">
-                        <a href="#">This is a test</a>
-                        <a href="#">So is this</a>
+                        <div class="grid-100">
+                        <?php for($x=0; $x <= 5; $x++){?>
+                            <div class="noticePost">
+                                
+                                <div class="grid-20">
+                                    <div class="userPic"></div>
+                                </div>
+                                
+                                <div class="grid-80">
+                                    <p>Limefish has posted a new job, Graphics Designer</p>
+                                    <span>10 seconds ago</span>
+                                </div>
+                                                            <br><br>
+                                                            <br><br>
+
+                            </div> 
+                            
+                        <?php } ?>
+                     
+                        </div>
                     </div>
                 </li>
-				<li><a href="">Nazar</a></li>
+				<li class="dropdown">
+                    <a href="#" class="dropbtn">Nazar</a>
+                    <div class="dropdown-content">
+                        <a href="#">Your Profile</a>
+                        <a href="/majra/settings/">Settings</a>
+                    </div>
+                </li>
 			<?php } ?>
 			</ul>
 
