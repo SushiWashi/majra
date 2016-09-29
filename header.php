@@ -124,7 +124,6 @@ function folder() {
 				<li><a href="workplaces.php">explore places</a></li>
 				<li><a href="opportunities.php">find opportunities</a></li>
 				<li><a href="resources.php">learning resources</a></li>
-				<li><a href="#">for employers</a></li>
 			</ul>
 			
 			
