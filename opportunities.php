@@ -60,21 +60,36 @@
 			<div class="card">
 				<div class="cardImage">
 					<?php 
-
-					$type = 's';
-
+    
+                    $type = "startup";
+                    $workingHours = "internship";
+	
 					switch($type) {
 						case "startup": 
-							echo "<span style='background:white'>startup</span>";
+							echo "<span class='type' style='background:var(--green)'>startup</span>";
 							break;
 						case "sme":
-							echo "<span style='background:var(--blue)'>sme</span>";
+							echo "<span class='type' style='background:var(--blue)'>sme</span>";
 							break;
 						default:
-							echo "<span style='background:var(--darkGrey)'>enterprise</span>";
+							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
 					}
+    
+                    switch($workingHours) {
+						case "fixed": 
+							echo "<span class='workingHours' style='background:var(--green)'>full-time</span>";
+							break;
+						case "internship":
+							echo "<span class='workingHours' style='background:var(--blue)'>internship</span>";
+							break;
+						default:
+							echo "<span class='workingHours' style='background:var(--darkGrey)'>part-time</span>";
+                    }
 
 					?>
+                    
+
+                    
 				</div>
                 <div class="grid-100">
                     <h3><a href="companyProfile.php">Limefish</a></h3>

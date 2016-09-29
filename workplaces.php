@@ -61,7 +61,7 @@
             </div>
             <div class="grid-100">
                     <h3>CREATIVE AGENCY</h3>
-                    <h1>Limefish</a></h1>
+                    <h1><a href="companyProfile.php">Limefish</a></h1>
                     <h3>Saar, Kingdom of Bahrain</h3>
                     <br>
                     <a href="" class="followButton">follow +</a>
