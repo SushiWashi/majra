@@ -1,7 +1,59 @@
 <?php include 'header.php'; ?>
+<div class="filter">
+	<div class="darkBackground">
+		<div class="grid-container">
+			<h1 class="grid-35">TEXT GOES HERE</h1>
+		</div>
+	</div>
+
+	<div class="search">
+		<div class="grid-container">
+			<form method="POST" action="">
+				<div class="grid-20">
+					<select name="type">
+						<option value="all">All Types</option>
+						<option value="a">Type A</option>
+						<option value="b">Type B</option>
+						<option value="c">Type C</option>
+					</select>
+				</div>
+				
+				<div class="grid-20">
+					<select name="location">
+						<option value="all">All locations</option>
+						<option value="a">locations A</option>
+						<option value="b">locations B</option>
+						<option value="c">locations C</option>
+					</select>
+				</div>
+				
+				<div class="grid-20">
+					<select name="industry">
+						<option value="all">All Industries</option>
+						<option value="a">Industries A</option>
+						<option value="b">Industries B</option>
+						<option value="c">Industries C</option>
+					</select>
+				
+				</div>
+
+				<div class="grid-10">
+					<input type="submit" value="GO">
+				</div>
+
+				<div class="grid-20">
+					<input type="text" placeholder="Search..">
+				</div>
+			
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
 
 <div class="grid-container">
-
 	<?php for($x = 0; $x <= 8; $x++) {?>
 
 		<div class="grid-33">
@@ -24,9 +76,11 @@
 
 					?>
 				</div>
-				<h3><a href="companyProfile.php">Limefish</a></h3>
-				<h1>This will be 2 lines long..just because I can</h1>
-				<h3 class="location">Saar, Kingdom of Bahrain</h3>
+                <div class="grid-100">
+                    <h3><a href="companyProfile.php">Limefish</a></h3>
+                    <h1>This will be 2 lines long..just because I can</h1>
+                    <h3>Saar, Kingdom of Bahrain</h3>
+                </div>
 			</div>
 		</div>
 

@@ -55,16 +55,18 @@
 	<?php for($x=0; $x <= 5; $x++) {?>
 	<div class="grid-33">
 		<div class='card'>
-		<div class='cardImage'>
-			<?php echo sizeOfBusiness(); ?>
-			<div class="logo"></div>
-		</div>
-				<h3>CREATIVE AGENCY</h3>
-				<h1>Limefish</a></h1>
-				<h3>Saar, Kingdom of Bahrain</h3>
-
-				<a href="" class="followButton">follow +</a>
-			</div>
+            <div class='cardImage'>
+                <?php echo sizeOfBusiness(); ?>
+                <div class="logo"></div>
+            </div>
+            <div class="grid-100">
+                    <h3>CREATIVE AGENCY</h3>
+                    <h1>Limefish</a></h1>
+                    <h3>Saar, Kingdom of Bahrain</h3>
+                    <br>
+                    <a href="" class="followButton">follow +</a>
+            </div>
+        </div>
 	</div>
 	<?php } ?>
 </div>

@@ -2,7 +2,7 @@
 	DESIGN ELEMENTS 
 ***************/
 :root {
---orange:	#F37021; 
+--orange:#F37021; 
 --darkGrey: #323232; 
 --white: #fff;
 --lightGray: #808080;
@@ -128,6 +128,7 @@ select {
 	.card h1 {
 		font-size:1.2em !important;
 		line-height: 1.5;
+        margin:0.7em 0;
 	}
 
 	.card h3 {
@@ -245,6 +246,72 @@ a:hover, a:active {
 .user {
 	border-left: 1px solid var(--lightGray);
 }
+/*Sign in / Log in Pop Up*/
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.overlay {
+  position: fixed;
+  z-index:999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(243,112,33,0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 620px;
+  position: relative;
+}
+
+.popup input {
+    width:80%;
+    margin:0.5em 0;
+}
+
+.popup input[type="submit"] {
+    width:auto;
+    float:right;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: var(--orange);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+    text-transform: none;
+}
+
 
 /*Drop Downs*/
 .dropbtn {
@@ -806,5 +873,19 @@ LEARNING RESOURCES
 }
 
 .supportCard {
-    height:420px !important;
+    height:auto !important;
+}
+
+.supportCard p {
+    margin-bottom:1em;
+}
+
+.supportCard .tag {
+    float:right;
+}
+
+.supportCard .tag li {
+    float:left;
+    margin-right:1em;
+    font-size:0.8em;
 }

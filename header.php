@@ -33,11 +33,42 @@
 				
 
 			<ul class="user">
-			<?php $logged_in = true;
+			<?php $logged_in = false;
 			
 			if(!$logged_in){?>
-				<li><a href="">Join / Log In</a></li>
-				<li><a href="">def</a></li>
+				<li>
+	               <a class="button" href="#popup1">Join / Log in</a>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <div style="clear:both; width:100%; height:20px;">
+                            <a class="close" href="#">&times;</a>
+                                </div>
+                            <div class="content">
+                                <div class="grid-50" style="border-right:1px solid var(--lightGrey)">
+                                    <form method="POST" action="">
+                                        <label>CREATE A NEW ACCOUNT</label><br>
+                                        <input type="text" placeholder="First Name"><br>
+                                        <input type="text" placeholder="Last Name"><br>
+                                        <input type="email" placeholder="Email"><br>
+                                        <input type="password" placeholder="Password"><br>
+                                        <p>By signing up, you agree to our <a href="">terms & conditions</a></p>
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                                
+                                <div class="grid-50">
+                                    <form method="POST" action="">
+                                        <label>LOG IN</label><br>
+                                        <input type="email" placeholder="Email"><br>
+                                        <input type="password" placeholder="Password"><br>
+                                        <a href="#">forgot password?</a>
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 			</ul>
 			<?php }else{ ?>
 				<li class="dropdown">
@@ -55,9 +86,8 @@
                                     <p>Limefish has posted a new job, Graphics Designer</p>
                                     <span>10 seconds ago</span>
                                 </div>
-                                                            <br><br>
-                                                            <br><br>
-
+                                <br><br>
+                                <br><br>
                             </div> 
                             
                         <?php } ?>

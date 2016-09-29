@@ -33,13 +33,15 @@
                     </div>
 
                     <div class="grid-50">
-                        <h3><a href="companyProfile.php">Comedy, Inspiration</a></h3>
+                        <ul class="tag">
+                            <li>Comedy</li>
+                            <li>Inspiration</li>
+                        </ul>
                     </div>
 
                     <div class="grid-100">
-                    <h1>This will be 2 lines long..just because I can</h1>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla mauris at eros auctor, eu porttitor massa dapibus. In semper in augue in varius. Ut vel semper sem. Pellentesque eleifend ligula ac lacus eleifend, quis suscipit dui euismod. Curabitur condimentum porttitor purus rhoncus posuere. Nullam molestie diam et ex malesuada, quis lacinia ex porttitor. Ut ut interdum nunc. Sed et ullamcorper lacus. Pellentesque sollicitudin sapien vel sapien rhoncus, vitae pretium est varius. Cras nulla justo, euismod et rutrum nec, rutrum a turpis.</p>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mollis felis.</h1>
+                    <p> In pharetra maximus iaculis. Donec.</p>
                     </div>
                 </div>
 			</div>

@@ -14,7 +14,7 @@ function folder() {
 }
 
 function sizeOfBusiness() {
-	$type = 'startup';
+	$type = 'k';
 
 	switch($type) {
 		case "startup": 
