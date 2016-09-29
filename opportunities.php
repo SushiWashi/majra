@@ -2,7 +2,7 @@
 <div class="filter">
 	<div class="darkBackground">
 		<div class="grid-container">
-			<h1 class="grid-35">TEXT GOES HERE</h1>
+			<h1 class="grid-35">Jobs, internships, projects, everything you need to build an awesome career is right here</h1>
 		</div>
 	</div>
 

@@ -630,6 +630,7 @@ footer ul li {
 	font-size:1.2em !important;
 	margin-top:5%;
 	color:var(--white);
+    line-height: 2;
 }
 
 .filter span {
