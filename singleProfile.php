@@ -103,6 +103,10 @@
 		</div>
 	</div>
 
+	<div class="grid-100">
+		<a href="#" class="contactButton">REQUEST FOR MY INFORMATION</a>	
 	</div>
+
+</div>
 	
 <?php include 'footer.php'; ?>

@@ -1042,3 +1042,18 @@ SINGLE USER
 	font-size:1.2em !important;
 	color:var(--darkGray);
 }
+
+.contactButton:link, .contactButton:visited {
+	background:var(--orange);
+	color:var(--white);
+	text-align:center;
+	text-transform:uppercase;
+	padding:2em;
+	margin:1em 0 !important;
+	font-size:1.5em;
+	display:block;
+}
+
+.contactButton:hover, .contactButton:active {
+	background:var(--darkGray);
+}
