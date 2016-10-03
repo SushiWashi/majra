@@ -1043,7 +1043,8 @@ SINGLE USER
 	color:var(--darkGray);
 }
 
-.contactButton:link, .contactButton:visited {
+.contactButton:link, 
+.contactButton:visited {
 	background:var(--orange);
 	color:var(--white);
 	text-align:center;
@@ -1054,6 +1055,43 @@ SINGLE USER
 	display:block;
 }
 
-.contactButton:hover, .contactButton:active {
+.contactButton:hover, 
+.contactButton:active {
 	background:var(--darkGray);
+}
+
+/****************
+Opportunity Single
+****************/
+.crumb {
+	width:100%;
+	height:auto;
+	background:var(--white);
+	border: 1px solid #BFBFBF;
+	box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
+	box-sizing: border-box !important;
+}
+
+.crumb a:link,
+.crumb a:visited {
+	color:var(--lightGray)
+}
+
+.crumb a:hover,
+.crumb a:active {
+	color:var(--darkGray);
+		text-decoration:underline;
+
+}
+
+.crumb p {
+	padding:1.5em 0;
+}
+
+button {
+	color:white;
+	background:var(--orange);
+	border:0;
+	padding:1em;
+	outline:0;
 }
