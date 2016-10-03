@@ -1,17 +1,40 @@
 <?php include 'header.php' ?>
 
-<div class="companyHeader">
-	<div class="grid-container">
+<div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
+	<div class="darkBackground">
+		<div class="grid-container">
+			<div class="grid-80">
+				<h1>limefish </h1>
+					<?php 
+    
+                    $type = "startup";
+	
+					switch($type) {
+						case "startup": 
+							echo "<span class='type' style='background:var(--green)'>startup</span>";
+							break;
+						case "sme":
+							echo "<span class='type' style='background:var(--blue)'>sme</span>";
+							break;
+						default:
+							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
+					}
 
-		<h1>limefish</h1>
-
-		<ul>
-			<li>Creative Agency</li>
-			<li>Budaiya, Bahrain</li>
-		</ul>
-
+					?>   
+				
+            <ul>
+					<li>Creative Agency</li>
+					<li>Budaiya, Bahrain</li>
+				</ul>
+			</div>
+			
+			<div class="grid-20">
+				<div class="displayPicture" style="background-image:url('https://scontent.xx.fbcdn.net/v/t1.0-9/12234957_195242300847867_9193053891343381776_n.png?oh=b7506a67050bd9037b4b1387cb1f94b0&oe=58785757')"></div>
+			</div>
+		</div>
 	</div>
 </div>
+
 
 <div class="tab">
 	<div class="grid-container">
@@ -21,17 +44,21 @@
 			<li><a href="#place">Place</a></li>  		
 			<li><a href="#work">Work</a></li>  		
 			<li><a href="#perks">Perks</a></li>                      
-			<li><a href="#development">Development</a></li>    
-			<li><a href="#opportunities">Opportunities (99+)</li> 
-			<li>FOLLOW</li>   
+			<li><a href="#development">Development</a></li>
+			<li><a href="#opportunities">Opportunities (99+)</a></li>
+			<li><button class="followButton">FOLLOW</button></li>   
 		</ul>
 	</div>
 </div>
 
 <div class="grid-container">
 	<div class="bigCard">
-		<div class="bigVideo"><iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe></div>
-		<h3>A creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</h3>
+		<div class="bigVideo">
+			<iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="grid-100">
+			<h3>A creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</h3>
+		</div>
 	</div>
 </div>
 
@@ -122,7 +149,7 @@
 <div class="grid-container">
 	<div class="bigCard">
 		<h1>
-            <a name="perks">The Development</a> 
+            <a name="development">The Development</a> 
         </h1>
 		
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -227,5 +254,5 @@
 
 </div>
     </div>
-
+	
 <?php include 'footer.php' ?>
