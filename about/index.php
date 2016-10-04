@@ -6,7 +6,7 @@
 		<div class="grid-25">
 			<div class="aboutSideBar">
 			
-				<h3>about us</h3>
+				<h3 style="text-align:left">about us</h3>
 				
 				<ul>
 					<li><a href="?page=company">company</a></li>
@@ -15,7 +15,7 @@
 					<li><a href="?page=contact">contact us</a></li>
 				</ul>
 				
-				<h3>legal</h3>
+				<h3 style="text-align:left">legal</h3>
 				
 				<ul>
 					<a href="?page=terms"><li>terms of use</li></a>

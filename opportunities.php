@@ -72,7 +72,7 @@
 							echo "<span class='type' style='background:var(--blue)'>sme</span>";
 							break;
 						default:
-							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
+							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
 					}
     
                     switch($workingHours) {
@@ -83,7 +83,7 @@
 							echo "<span class='workingHours' style='background:var(--blue)'>internship</span>";
 							break;
 						default:
-							echo "<span class='workingHours' style='background:var(--darkGrey)'>part-time</span>";
+							echo "<span class='workingHours' style='background:var(--darkGray)'>part-time</span>";
                     }
 
 					?>
@@ -93,7 +93,7 @@
 				</div>
                 <div class="grid-100">
                     <h3><a href="companyProfile.php">Limefish</a></h3>
-                    <h1>This will be 2 lines long..just because I can</h1>
+                    <h1><a class="dark" href="opportunities-single.php">This will be 2 lines long..just because I can</a></h1>
                     <h3>Saar, Kingdom of Bahrain</h3>
                 </div>
 			</div>

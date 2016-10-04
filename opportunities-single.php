@@ -37,7 +37,7 @@
 		<hr>
 		<ul class="moreOpportunities">
 			<?php for($x=1;$x < 10; $x++) {
-				echo "<li><a href='#'>Technical Creative Director - Engine Group $x</a></li>";
+				echo "<li><a href='opportunities-single.php'>Technical Creative Director - Engine Group $x</a></li>";
 			} ?>
 	</div>
 

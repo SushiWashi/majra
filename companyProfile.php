@@ -17,7 +17,7 @@
 							echo "<span class='type' style='background:var(--blue)'>sme</span>";
 							break;
 						default:
-							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
+							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
 					}
 
 					?>   
@@ -70,7 +70,7 @@
             <span>Total of people in team: 8</span>
         </h1>
 		
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
 		<?php for($x = 0; $x < 3; $x++){?>
 		<div class="grid-33">
@@ -92,7 +92,7 @@
             <a name="place">The Place</a> 
         </h1>
 		
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div class="grid-100">
             <ul class="gridImages">
                 <?php for($x=0; $x < 5; $x++){?>
@@ -112,7 +112,7 @@
             <a name="work">The Work</a> 
         </h1>
 		
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div class="grid-100">
             <ul class="gridImages">
                 <?php for($x=0; $x < 5; $x++){?>
@@ -132,7 +132,7 @@
             <a name="perks">The Perks</a> 
         </h1>
 		
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div class="grid-100">
             <ul class="gridImages">
                 <?php for($x=0; $x < 5; $x++){?>
@@ -152,7 +152,7 @@
             <a name="development">The Development</a> 
         </h1>
 		
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div class="grid-100">
             <ul class="gridImages">
                 <?php for($x=0; $x < 5; $x++){?>
@@ -170,7 +170,7 @@
     <div class="grid-container">    
     <div class="intro">
     <h1><a name="opportunities">Opportunities</a></h1>
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+    <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 </div>
         <form method="POST" action="">
 				<div class="grid-30">
@@ -225,7 +225,7 @@
 							echo "<span class='type' style='background:var(--blue)'>sme</span>";
 							break;
 						default:
-							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
+							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
 					}
     
                     switch($workingHours) {
@@ -236,7 +236,7 @@
 							echo "<span class='workingHours' style='background:var(--blue)'>internship</span>";
 							break;
 						default:
-							echo "<span class='workingHours' style='background:var(--darkGrey)'>part-time</span>";
+							echo "<span class='workingHours' style='background:var(--darkGray)'>part-time</span>";
                     }
 
 					?>

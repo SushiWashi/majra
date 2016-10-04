@@ -68,7 +68,7 @@
 							echo "<span class='type' style='background:var(--blue)'>sme</span>";
 							break;
 						default:
-							echo "<span class='type' style='background:var(--darkGrey)'>enterprise</span>";
+							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
 					}
 
 					?>                

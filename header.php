@@ -47,7 +47,7 @@ function folder() {
 				
 
 			<ul class="user">
-			<?php $logged_in = false;
+			<?php $logged_in = true;
 			
 			if(!$logged_in){?>
 				<li>
@@ -97,7 +97,7 @@ function folder() {
                                 </div>
                                 
                                 <div class="grid-80">
-                                    <p>Limefish has posted a new job, Graphics Designer</p>
+                                    <p><a href="<?php folder(); ?>companyProfile.php">Limefish</a> has posted a new job, <a href="<?php folder(); ?>opportunities-single.php">Graphics Designer</a></p>
                                     <span>10 seconds ago</span>
                                 </div>
                                 <br><br>
@@ -112,8 +112,10 @@ function folder() {
 				<li class="dropdown">
                     <a href="#" class="dropbtn">Nazar</a>
                     <div class="dropdown-content">
-                        <a href="#">Your Profile</a>
-                        <a href="/majra/settings/">Settings</a>
+						<ul>
+							<li><a href="#">Your Profile</a></li>
+							<li><a href="/majra/settings/">Settings</a></li>
+						</ul>
                     </div>
                 </li>
 			<?php } ?>

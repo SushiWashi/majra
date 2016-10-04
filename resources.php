@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="grid-100">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mollis felis.</h1>
+                    <h1><a class="dark" href="blogPost.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mollis felis.</a></h1>
                     <p> In pharetra maximus iaculis. Donec.</p>
                     </div>
                 </div>

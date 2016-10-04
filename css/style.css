@@ -10,6 +10,23 @@
 --green: #159E7C;
 }
 
+/*Scrollbar*/
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+	background-color:var(--darkGray);
+}
+ 
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+  background-color: var(--lightGray);
+}
+/******/
+
 html, body {
 	background:#fff;
 	font-family:'Azo Sans','helvetica' !important;
@@ -49,17 +66,6 @@ select {
     display:inline-block;
     height:3.2em;
     border-radius: 0 !important;
-}
-
-a:link,
-a:visited {
-	color:var(--lightGray) !important;
-}
-
-a:hover, 
-a:active {
-	color:var(--darkGray)  !important;
-	text-decoration:underline  !important;	
 }
 
 .bold {
@@ -103,7 +109,10 @@ a:active {
 	letter-spacing: 0px;
 	line-height: 1.5;
 	padding:1em 0;
-    text-align: center;
+}
+
+.bigCard .centre {
+	   text-align: center;
 }
 
 .bigCard .blogImage {
@@ -131,7 +140,7 @@ a:active {
 		background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
 		background-size:cover;
 		background-position: center;
-		top:-16px;
+		top:-1em;
 		left:10px;
 	}
 
@@ -362,51 +371,57 @@ a:hover, a:active {
     padding-bottom:1em;
 }
 
-.dropdown li {
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
     right:20px;
     z-index: 999;
-    padding:1em 0;
     background-color: var(--white);
-    min-width:80px;
+    min-width:0px;
     max-width: 300px;
     border: 1px solid #BFBFBF;
     box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
     text-transform: none;
-    min-height:20px;
+    min-height:70px;
     max-height:300px;
     overflow: auto;
-
 }
 
-.dropdown-content a {
-    color: var(--darkGray);
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.dropdown-content ul {
+	margin:0;
+	padding:0;
 }
 
-.dropdown-content a:hover {
-    background-color: var(--lightGray)
+.dropdown-content ul li {
+	float:left;
+	clear:both;
+	margin:0;
+	padding:1em;
 }
+
+.dropdown-content a:link,
+.dropdown-content a:visited {
+	color:var(--lightGray) !important;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:active {
+	color:var(--darkGray) !important;
+}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown .noticePost {
-    display: block;
-    margin-bottom:3em;
+    display: inline-block;
+    margin:1.5em 0;
 }
 
 .dropdown .noticePost p {
-line-height:1.5;
-margin-bottom:1em;
+	line-height:1.5;
+	margin-bottom:1em;
 }
 
 .dropdown .userPic {
@@ -433,8 +448,7 @@ margin-bottom:1em;
 .opener {
 	width:100%;
 	position:relative;
-	min-height:470px;
-	max-height:auto;
+	height:470px;
 	background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -447,42 +461,32 @@ margin-bottom:1em;
 }
 
 .opener h1 {
-	padding-top:15%;
+	padding-top:5em;
 }
 
 .opener h2 {
-	padding:10px 0;
+	padding:1em 0;
 }
 
-.opener ul {
-	bottom:-100%;
+.opener .grid-100 {
+	display:inline-block;
+	bottom:-16em;
 	position:absolute;
 }
 
-.opener ul li{
-	float:left;
-    text-transform: uppercase;
-	margin:1% 2.5%;
-    font-size:11px;
-	text-decoration: none;
+.opener .grid-25 a {
+	border:1px solid var(--white);
+	display:block;
 	text-align:center;
-	font-weight:medium;
-	border:1px solid #fff;
-	padding:10px;
-	border-radius: 5px;
+	padding:1em;
+	border-radius:5px;
+	text-transform:uppercase;
 }
 
-.opener ul li:link, .opener ul li:visited {
-	color:white !important;
-	background:transparent !important;
-
+.opener .grid-25 a:hover {
+	background:var(--orange);
 }
 
-.opener ul li:hover, .opener ul li:active {
-	color:white !important;
-	background:var(--orange) !important;
-	border:none;
-}
 
 .listing h1 {
 	color:var(--orange);
@@ -859,10 +863,6 @@ footer a:visited {
 	padding:10px 0;
 }
 
-.content {
-	padding:20px;
-}
-
 .content p {
 	line-height:1.5;
 	margin-bottom:1.5em;
@@ -955,7 +955,7 @@ BLOG POST
 
 .post .author {
     background-color:#FCFCFC;
-    border-top:1px solid #808080;
+    border-top:1px solid #BFBFBF;
     padding:1em;
 }
 

@@ -1,17 +1,28 @@
 <?php include('header.php');?>
 <div class="opener">
-<div class="darkBackground">
-	<div class="grid-container">
-		<h1>Everything you need to build the perfect career is here</h1>
-		<h2>Explore the best workplaces out there, and apply for their jobs and opportunities</h2>
+	<div class="darkBackground">
+		<div class="grid-container">
+			<h1>Everything you need to build the perfect career is here</h1>
+			<h2>Explore the best workplaces out there, and apply for their jobs and opportunities</h2>
 
-		<ul class="grid-100">
-			<a href="workplaces.php"><li class="grid-20">explore workplaces</li></a>
-			<a href="opportunities.php"><li class="grid-20">find a job</li></a>
-			<a href="#"><li class="grid-20">hire someone</li></a>
-			<a href="resources.php"><li class="grid-20">get advice</li></a>
-		</ul>
-	</div>
+			<div class="grid-100">
+				<div class="grid-25">
+					<a href="workplaces.php">explore workplaces</a>
+				</div>
+				
+				<div class="grid-25">
+					<a href="opportunities.php">find a job</a>
+				</div>
+				
+				<div class="grid-25">
+					<a href="#">hire someone</a>
+				</div>
+				
+				<div class="grid-25">
+					<a href="resources.php">get advice</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -22,10 +33,9 @@
 		<?php for ($x = 0; $x < 3; $x++) { ?>
 		<div class="row grid-100">
 			<div class="freshImg grid-50"></div>
-			<h3><a class="dark" href="">MECHANICAL ENGINEERING</a></h3>
+			<h3><a class="dark" href="opportunities-single.php">MECHANICAL ENGINEERING</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<a style="position:absolute; bottom:0;" class="followButton" href="opportunities.php">EXPLORE OPPORTUNITIES</a>
-
 		</div>
 		<?php } ?>
 	</div>
@@ -35,7 +45,7 @@
 		<?php for ($x = 0; $x < 3; $x++) { ?>
 		<div class="row grid-100">
 			<div class="freshImg grid-50"></div>
-			<h3><a class="dark" href="">MECHANICAL ENGINEERING</a></h3>
+			<h3><a class="dark" href="companyProfile.php">Limefish</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<a style="position:absolute; bottom:0;" class="followButton" href="workplaces.php">EXPLORE WORKPLACE</a>
 		</div>

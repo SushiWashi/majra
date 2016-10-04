@@ -6,7 +6,7 @@
 		<div class="grid-25">
 			<div class="aboutSideBar">
 			
-				<h3>Nazar Abubaker</h3>
+				<h3 style="text-align:left">Nazar Abubaker</h3>
 				
 				<ul>
 					<li><a href="?page=general">general</a></li>

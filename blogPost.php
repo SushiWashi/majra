@@ -49,16 +49,19 @@
             </div>
         </div>
     </div>
-
-<h1>More Learning Support</h1>
+	
+<div class="grid-100">
+	<h1 style="margin:1em 0;">More Learning Support</h1>
+</div>
 
 <?php for($x=0; $x <=3; $x++) {?>
-<div class="grid-25">
+	<div class="grid-25">
 			<div class="card">
 				<div class="cardImage"></div>
-				<h3><a href="companyProfile.php">Limefish</a></h3>
-				<h1>This will be 2 lines long..just because I can</h1>
-				<h3 class="location">Saar, Kingdom of Bahrain</h3>
+					<div class="grid-100">
+						<h3><a href="companyProfile.php">Limefish</a></h3>
+						<h1><a href="blogPost.php">This will be 2 lines long..just because I can</a></h1>
+					</div>
 			</div>
 		</div>
 <?php } ?>
