@@ -1,0 +1,57 @@
+<NotepadPlus>
+    <Project name="Majra">
+        <Folder name="about">
+            <File name="about\careers.php" />
+            <File name="about\company.php" />
+            <File name="about\contact.php" />
+            <File name="about\faq.php" />
+            <File name="about\index.php" />
+            <File name="about\terms.php" />
+        </Folder>
+        <Folder name="css">
+            <File name="css\grid.css" />
+            <File name="css\reset.css" />
+            <File name="css\style.css" />
+        </Folder>
+        <Folder name="img">
+            <Folder name="favicon">
+                <File name="img\favicon\favicon-120.png" />
+                <File name="img\favicon\favicon-57.png" />
+                <File name="img\favicon\favicon-76.png" />
+                <File name="img\favicon\favicon-96.png" />
+                <File name="img\favicon\favicon-svg.svg" />
+                <File name="img\favicon\favicon.png" />
+            </Folder>
+            <Folder name="social">
+                <File name="img\social\Facebook.svg" />
+                <File name="img\social\Instagram.svg" />
+                <File name="img\social\Snapchat.svg" />
+                <File name="img\social\Twitter.svg" />
+                <File name="img\social\Youtube.svg" />
+            </Folder>
+            <File name="img\fb.svg" />
+            <File name="img\instagram.svg" />
+            <File name="img\majra-orange.svg" />
+            <File name="img\Twitter.svg" />
+        </Folder>
+        <Folder name="settings">
+            <File name="settings\general.php" />
+            <File name="settings\index.php" />
+            <File name="settings\notifications.php" />
+            <File name="settings\security.php" />
+        </Folder>
+        <File name=".htaccess" />
+        <File name="404.php" />
+        <File name="blogPost.php" />
+        <File name="companyProfile.php" />
+        <File name="footer.php" />
+        <File name="header.php" />
+        <File name="index.php" />
+        <File name="majra" />
+        <File name="opportunities-single.php" />
+        <File name="opportunities.php" />
+        <File name="resources.php" />
+        <File name="singleProfile.php" />
+        <File name="workplaces.php" />
+    </Project>
+</NotepadPlus>
