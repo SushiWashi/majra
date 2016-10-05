@@ -685,6 +685,27 @@ footer a:visited {
 	companyProfile 
 ***************/
 
+/*HOVER CARD*/
+.hovercard {
+    clear: both;
+    float: none;
+    width: 200px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10%;
+	left:0;
+    border: 2px solid #999;
+    display: none;
+	z-index:999;
+}
+
+/**************/
+
+
+
+
 .companyHeader {
 	width:100%;
 	height:262px;
@@ -784,6 +805,7 @@ footer a:visited {
 }
 
 .bigCard .gridImages li {
+	position:relative;
 	float:left;
     height:121px;
     width:219px;

@@ -120,9 +120,14 @@
 		
 		<div class="grid-25">
 		<ul class="gridImages">
-			<li></li>
-			<li></li>
-			<li></li>
+	<?php for($x=0; $x <3; $x++) {?>
+			<li> 
+				<div class="hovercard">
+				<h3>This is some title</h3>
+				<p>This is some description. This is some description. This is some description. This is some description. This is some description. <a href="">This is some link.</a></p>
+				</div>    
+			</li>
+		<?php } ?>
 		</ul>
 		</div>
 	</div>
@@ -136,9 +141,14 @@
         		
 		<div class="grid-25">
 		<ul class="gridImages">
-			<li></li>
-			<li></li>
-			<li></li>
+		<?php for($x=0; $x <3; $x++) {?>
+			<li> 
+				<div class="hovercard">
+				<h3>This is some title</h3>
+				<p>This is some description. This is some description. This is some description. This is some description. This is some description. <a href="">This is some link.</a></p>
+				</div>    
+			</li>
+		<?php } ?>
 		</ul>
 		</div>
 		
@@ -265,5 +275,19 @@
 
 </div>
     </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+	$('.hovercard').hover(function() {
+    $(this).stop(true, false).show();
+}, function() {
+    $('.hovercard').hide();
+});
+$('.gridImages li').hover(function() {
+    $(this).find('.hovercard').delay(50).fadeIn(); // show() doesn't seem to work with delay
+}, function() {
+    $(this).find('.hovercard').delay(50).fadeOut('fast');
+});</script>
+	
 	
 <?php include 'footer.php' ?>
