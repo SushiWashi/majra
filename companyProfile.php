@@ -53,17 +53,20 @@
 
 <div class="grid-container">
 	<div class="bigCard">
-		<div class="bigVideo">
-			<iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<div class="grid-100">
+		<h1>
+            <a name="overview">Meet Limefish</a><br> 
+        </h1>
+		<div class="grid-30">
 			<h3>A creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</h3>
+		</div>
+		<div class="grid-70">
+			<iframe style="margin-bottom:1em" width="650" height="366" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>
 
 <!-- People -->
-<div class="grid-container">
+<div class="grid-container thePeople">
 	<div class="bigCard">
 		<h1>
             <a name="people">The People</a><br> 
@@ -73,97 +76,95 @@
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
 		<?php for($x = 0; $x < 3; $x++){?>
-		<div class="grid-33">
-            <div class="singlePerson">
-                <div class="titlePerson">
-                    <h1>Marshall Mathers</h1>
-                    <h2>CEO</h2>
-                </div>
-            </div>
-        </div>
+		<div style="margin:3em 0; height:auto; width:100%;">
+			<div class="grid-25">
+				<div class="singlePerson"></div>
+			</div>
+			
+			<div class="grid-75">
+				<h1 style="text-align:left">Marshall Mathers</h1>			               
+				<h2  style="text-align:left">CEO</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta ex at elit dignissim venenatis. Vestibulum nibh arcu, fermentum et sagittis eget, mattis vitae elit. Aliquam non aliquam tortor, eu imperdiet nisl. Curabitur sollicitudin in magna in commodo. Vestibulum sed lacus quis sem feugiat bibendum sit amet at erat. Nulla vitae leo a orci placerat laoreet sed at libero. Phasellus consectetur sem ac velit auctor tincidunt. Sed rhoncus nisi in diam malesuada bibendum. Donec aliquet dignissim facilisis. Nam quis dui mi. Cras eget pretium velit. Aliquam hendrerit justo id tellus porttitor fermentum. Aliquam erat volutpat. Quisque pharetra augue ut tellus sollicitudin laoreet.</p>
+			</div>
+		</div>
+		<div style="clear:both"></div>
 		<?php } ?>
 	</div>
 </div>
 
+
 <!-- The Place -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1>
-            <a name="place">The Place</a> 
-        </h1>
-		
+		<h1><a name="place">The Place</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="grid-100">
-            <ul class="gridImages">
-                <?php for($x=0; $x < 5; $x++){?>
-                <div class="grid-33">
-                <li></li>
-                </div>
-                <?php } ?>
-            </ul>
-        </div>
+
+				 <?php for($x=0;$x < 3; $x++){?>
+		 <div class="grid-33">
+			 <div class="image">
+			 </div>
+		 </div>	
+		 <?php } ?>
+		
 	</div>
 </div>
 
 <!-- The Work -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1>
-            <a name="work">The Work</a> 
-        </h1>
-		
+		<h1><a name="work">The Work</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="grid-100">
-            <ul class="gridImages">
-                <?php for($x=0; $x < 5; $x++){?>
-                <div class="grid-33">
-                <li></li>
-                </div>
-                <?php } ?>
-            </ul>
+        <div class="grid-75">
+					<iframe width="698" height="393" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
         </div>
+		
+		<div class="grid-25">
+		<ul class="gridImages">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		</div>
 	</div>
 </div>
 
 <!-- The Perks -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1>
-            <a name="perks">The Perks</a> 
-        </h1>
-		
+		<h1><a name="perks">The Perks</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="grid-100">
-            <ul class="gridImages">
-                <?php for($x=0; $x < 5; $x++){?>
-                <div class="grid-33">
-                <li>
-					<iframe width="300" height="300" src="https://www.youtube.com/embed/0m2TH2zj_bc" frameborder="0" allowfullscreen></iframe>
-				</li>
-                </div>
-                <?php } ?>
-            </ul>
+        		
+		<div class="grid-25">
+		<ul class="gridImages">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		</div>
+		
+		<div class="grid-75">
+			<iframe width="698" height="393" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
         </div>
+		
 	</div>
 </div>
 
 <!-- The Development -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1>
-            <a name="development">The Development</a> 
-        </h1>
+		<h1><a name="development">The Development</a></h1>
+		 <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+
+		 <iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
+		 
+		 <?php for($x=0;$x < 3; $x++){?>
+		 <div class="grid-33">
+			 <div class="image">
+			 </div>
+		 </div>	
+		 <?php } ?>
 		
-        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="grid-100">
-            <ul class="gridImages">
-                <?php for($x=0; $x < 5; $x++){?>
-                <div class="grid-33">
-                <li></li>
-                </div>
-                <?php } ?>
-            </ul>
-        </div>
+   
 	</div>
 </div>
 
@@ -209,8 +210,13 @@
 			
 			</form>
 
-        <?php for($x = 0; $x < 6; $x++) {?>
-
+		<?php 
+		
+		$a = true;
+		
+		if($a = true) { 
+			
+        for($x = 0; $x < 6; $x++) { ?>
 		<div class="grid-33">
 			<div class="card">
 				<div class="cardImage">
@@ -240,7 +246,6 @@
 						default:
 							echo "<span class='workingHours' style='background:var(--darkGray)'>part-time</span>";
                     }
-
 					?>
                     
 				</div>
@@ -251,8 +256,12 @@
                 </div>
 			</div>
 		</div>
+		
+		<?php } // END OF FOR LOOP
 
-	<?php } ?>
+		 } else { ?>
+		<p style="color:var(--lightGray); display:inline-block; text-align:center; margin:3em auto; width:100%">No new opportunities. Try again soon!</p>
+		<?php } //END OF IF FUNCTION?>
 
 </div>
     </div>
