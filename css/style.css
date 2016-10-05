@@ -798,7 +798,7 @@ footer a:visited {
     height:300px;
     width:300px;
     margin-bottom:1em;
-    background-image:url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
+	background-color:var(--lightGray);
     background-size:cover;
     background-position: center;
 }
