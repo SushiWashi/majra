@@ -99,12 +99,19 @@
 		<h1><a name="place">The Place</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
-				 <?php for($x=0;$x < 3; $x++){?>
-		 <div class="grid-33">
-			 <div class="image">
-			 </div>
-		 </div>	
-		 <?php } ?>
+
+		<ul class="images">
+	<?php for($x=0; $x <3; $x++) {?>
+		<div class="grid-33">
+			<li> 
+				<div class="hovercard">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros sem, scelerisque eu malesuada quis, posuere vel ipsum. Aliquam eu mollis leo. </p>
+				</div>    
+			</li>
+				</div>
+		<?php } ?>
+		</ul>
+
 		
 	</div>
 </div>
@@ -123,8 +130,7 @@
 	<?php for($x=0; $x <3; $x++) {?>
 			<li> 
 				<div class="hovercard">
-				<h3>This is some title</h3>
-				<p>This is some description. This is some description. This is some description. This is some description. This is some description. <a href="">This is some link.</a></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros sem, scelerisque eu malesuada quis, posuere vel ipsum. Aliquam eu mollis leo. </p>
 				</div>    
 			</li>
 		<?php } ?>
@@ -144,8 +150,7 @@
 		<?php for($x=0; $x <3; $x++) {?>
 			<li> 
 				<div class="hovercard">
-				<h3>This is some title</h3>
-				<p>This is some description. This is some description. This is some description. This is some description. This is some description. <a href="">This is some link.</a></p>
+				<p>This is some description. This is some description. This is some description. This is some description. This is some description.</p>
 				</div>    
 			</li>
 		<?php } ?>
@@ -277,17 +282,4 @@
     </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script>
-	$('.hovercard').hover(function() {
-    $(this).stop(true, false).show();
-}, function() {
-    $('.hovercard').hide();
-});
-$('.gridImages li').hover(function() {
-    $(this).find('.hovercard').delay(50).fadeIn(); // show() doesn't seem to work with delay
-}, function() {
-    $(this).find('.hovercard').delay(50).fadeOut('fast');
-});</script>
-	
-	
 <?php include 'footer.php' ?>
