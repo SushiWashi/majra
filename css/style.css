@@ -102,7 +102,7 @@ select {
 	margin:1em 0;
 }
 
-.bigCard .mainHeader {
+.mainHeader {
 	font-size:2em !important;
 	font-weight:bold;
 	padding:1em 0;
