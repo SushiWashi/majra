@@ -4,7 +4,7 @@
 	<div class="darkBackground">
 		<div class="grid-container">
 			<div class="grid-80">
-				<h1>limefish </h1>
+				<h1 class="mainHeader">limefish </h1>
 					<?php 
     
                     $type = "startup";
@@ -53,7 +53,7 @@
 
 <div class="grid-container">
 	<div class="bigCard">
-		<h1>
+		<h1 class="mainHeader">
             <a name="overview">Meet Limefish</a><br> 
         </h1>
 		<div class="grid-30">
@@ -68,7 +68,7 @@
 <!-- People -->
 <div class="grid-container thePeople">
 	<div class="bigCard">
-		<h1>
+		<h1 class="mainHeader">
             <a name="people">The People</a><br> 
             <span>Total of people in team: 8</span>
         </h1>
@@ -96,7 +96,7 @@
 <!-- The Place -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1><a name="place">The Place</a></h1>
+		<h1 class="mainHeader"><a name="place">The Place</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
 
@@ -119,7 +119,7 @@
 <!-- The Work -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1><a name="work">The Work</a></h1>
+		<h1 class="mainHeader"><a name="work">The Work</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <div class="grid-75">
 					<iframe width="698" height="393" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
@@ -142,7 +142,7 @@
 <!-- The Perks -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1><a name="perks">The Perks</a></h1>
+		<h1 class="mainHeader"><a name="perks">The Perks</a></h1>
         <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         		
 		<div class="grid-25">
@@ -167,7 +167,7 @@
 <!-- The Development -->
 <div class="grid-container">
 	<div class="bigCard">
-		<h1><a name="development">The Development</a></h1>
+		<h1 class="mainHeader"><a name="development">The Development</a></h1>
 		 <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
 		 <iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
@@ -187,7 +187,7 @@
 <div class="opportunities">
     <div class="grid-container">    
     <div class="intro">
-    <h1><a name="opportunities">Opportunities</a></h1>
+    <h1 class="mainHeader"><a name="opportunities">Opportunities</a></h1>
     <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 </div>
         <form method="POST" action="">
