@@ -26,7 +26,6 @@ div::-webkit-scrollbar-thumb {
   background-color: var(--lightGray);
 }
 /******/
-
 html, body {
 	background:#fff;
 	font-family:'Azo Sans','helvetica' !important;
@@ -37,8 +36,6 @@ html, body {
 	height:100%;
 }
 
-
-
 span {
 	color:var(--lightGray);
 }
@@ -48,7 +45,7 @@ input[type='checkbox'] {
 	margin-right:1em !important;
 }
 
-input, select{
+input, select, textarea{
 	outline:0;
 	border:1px solid #BFBFBF;
 	padding:1em;
@@ -1226,4 +1223,27 @@ button {
 	font-size:2.5em !important;
 }
 
+/*CompanyUser*/
+.applicants {
+    width:100%;
+    float:left;
+    clear:both;
+    height:auto;
+    margin-bottom:2em;
+}
 
+.applicants .displayPicture {
+    width:50px;
+    height:50px;
+    margin:0;
+    border-radius: 50%;
+}
+
+.applicants p {
+    margin-top:1em;
+    font-size:1.2em;
+    line-height:1;
+}
+
+.applicants span {
+}

@@ -6,13 +6,11 @@
 		<div class="grid-25">
 			<div class="aboutSideBar">
 			
-				<h3 style="text-align:left">Nazar Abubaker</h3>
+				<h3 style="text-align:left">Limefish</h3>
 				
 				<ul>
-					<li><a href="?page=general">general</a></li>
-					<li><a href="?page=security">security</a></li>
-					<li><a href="?page=notifications">notifications</a></li>
-					<li><a href="#">log out</a></li>
+					<li><a href="?page=addOpportunity">Add New Opportunity</a></li>
+					<li><a href="?page=viewApp">View Applicants & Matches</a></li>
 				</ul>
 				
 				</div>
@@ -26,22 +24,18 @@
 			
 			switch($p) {
 				//About Us
-				case 'general':
+				case 'addOpportunity':
 					echo $header;
-					include('general.php');
+					include('addOpportunity.php');
 					break;
-				case 'security':
+				case 'viewApp':
 					echo $header;
-					include('security.php');
-					break;
-				case 'notifications':
-					echo $header;
-					include('notifications.php');
+					include('viewApp.php');
 					break;
 				// Default
 				default:
 					echo $header;
-					include('general.php');
+					include('addOpportunity.php');
 			}
 			?>
 			</div>

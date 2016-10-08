@@ -6,6 +6,7 @@ function folder() {
 	switch($self) {
 		case '/majra/about/index.php':
 		case '/majra/settings/index.php':
+        case '/majra/companyUser/index.php':
 			echo "../";
 			break;
 		default:

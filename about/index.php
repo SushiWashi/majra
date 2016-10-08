@@ -28,7 +28,8 @@
 			<div class="content">
 			<?php 
 			$p = $_GET['page'];
-			$header = "<h1>" .$p. "</h1>";
+			$header = "<h1 style='margin-top:1em'>" .$p. "</h1>";
+
 			
 			switch($p) {
 				//About Us
