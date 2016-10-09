@@ -1315,3 +1315,8 @@ For Employees Landing Page
 .process div {
     margin-bottom:4em;
 }
+
+.process img {
+    display: block;
+    margin:0 auto 5em auto;
+}
