@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php 
+//Adds "..." to links
 function folder() {
 	$self = $_SERVER['PHP_SELF'];
 	
@@ -15,7 +16,20 @@ function folder() {
 	
 }
 ?>
-<html>
+
+<?php
+    /* Changes the background color
+    when the user goes to "For Employees" page*/
+
+	$self = $_SERVER['PHP_SELF'];
+          
+    if($self == '/majra/forEmployees.php') {
+        echo "<html style='background-color:var(--darkGray)'>";
+    } else {
+        echo "<html>";
+    }
+    
+?>
 <head>
 	<!--Favicons-->
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.svg">
@@ -27,7 +41,7 @@ function folder() {
 
 	<!--META-->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
     
     <!--LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
@@ -37,14 +51,36 @@ function folder() {
     <title>Majra</title> 	 
 
 </head>
-<body>
+
+<?php
+    
+	$self = $_SERVER['PHP_SELF'];
+          
+    if($self == '/majra/forEmployees.php') {
+        echo "<body class='darkBody'>";
+    } else {
+        echo "<body>";
+    }
+    
+    ?>
+    
 <div id="wrapper">
 <div id="content">
 <!--wrapper & content is used to fix footer to bottom of page -->
-
-	<div class="nav">
+<?php
+    
+	$self = $_SERVER['PHP_SELF'];
+          
+    if($self == '/majra/forEmployees.php') {
+        echo "<div class='absoluteNav'>";
+    } else {
+        echo "<div class='nav'>";
+    }
+    
+    ?>
 		<div class="grid-container">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
+            <span style="position:absolute; top:7em; left:10em; letter-spacing:5px;">beta</span>
 				
 
 			<ul class="user">

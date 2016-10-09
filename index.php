@@ -15,7 +15,7 @@
 				</div>
 				
 				<div class="grid-25">
-					<a href="#">hire someone</a>
+					<a href="forEmployees.php">hire someone</a>
 				</div>
 				
 				<div class="grid-25">

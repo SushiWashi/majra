@@ -15,7 +15,7 @@
 		<div class="grid-50">
 			<h4>be part of it</h4>
 			<ul>
-				<li><a href="#">for employers</a></li>
+				<li><a href="<?php folder(); ?>forEmployees.php">for employers</a></li>
 				<li><a href="#">send feedback about majra</a></li>
 			</ul>
 		</div>
