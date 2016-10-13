@@ -3,7 +3,7 @@
 <div class="filter">
 	<div class="darkBackground">
 		<div class="grid-container">
-			<h1 class="grid-35">Get an <span>inside look</span> at the best companies out there</h1>
+			<h1 class="grid-35">Get an inside look at the best companies out there.</h1>
 		</div>
 	</div>
 

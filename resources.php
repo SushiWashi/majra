@@ -23,8 +23,8 @@
 
 <div class="grid-container">
 <h1 style="margin:1em; text-align:center;">Learning Resources</h1>
-<?php for($x=0; $x <=3; $x++) {?>
-<div class="grid-50">
+
+    <div class="grid-50">
 			<div class="card supportCard">
 				<div class="cardImage"></div>
                 <div class="grid-100">
@@ -45,8 +45,31 @@
                     </div>
                 </div>
 			</div>
-		</div>
-<?php } ?>
+    </div>
+    
+    <div class="grid-50">
+			<div class="card supportCard">
+				<div class="cardImage"></div>
+                <div class="grid-100">
+                    <div class="grid-50">
+                        <h3><a href="companyProfile.php">Batelco</a></h3>
+                    </div>
+
+                    <div class="grid-50">
+                        <ul class="tag">
+                            <li>Comedy</li>
+                            <li>Inspiration</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-100">
+                    <h1><a class="dark" href="blogPost.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
+                    <p> In pharetra maximus iaculis. Donec.</p>
+                    </div>
+                </div>
+			</div>
+    </div>
+
 
 </div>
 

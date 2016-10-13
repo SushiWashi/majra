@@ -5,7 +5,7 @@
             <div style="width:100%; margin-top:15em;">
                 
                 <div class="grid-50">
-                    <h1 style="margin-bottom:2em">Hire the right people that match your work and culture expectations</h1>
+                    <h1 style="margin-bottom:2em">Hire the right people that match your work and culture expectations.</h1>
                 </div>
                 
                 <div class="grid-100">

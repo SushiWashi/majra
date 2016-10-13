@@ -5,20 +5,20 @@
 			<h1>Everything you need to build the perfect career is here</h1>
 			<h2>Explore the best workplaces out there, and apply for their jobs and opportunities</h2>
 
-			<div class="grid-100">
-				<div class="grid-25">
+			<div class="grid-100 mobile-grid-100">
+				<div class="grid-25 mobile-grid-50">
 					<a href="workplaces.php">explore workplaces</a>
 				</div>
 				
-				<div class="grid-25">
+				<div class="grid-25 mobile-grid-50">
 					<a href="opportunities.php">find a job</a>
 				</div>
 				
-				<div class="grid-25">
+				<div class="grid-25 mobile-grid-50">
 					<a href="forEmployees.php">hire someone</a>
 				</div>
 				
-				<div class="grid-25">
+				<div class="grid-25 mobile-grid-50">
 					<a href="resources.php">get advice</a>
 				</div>
 			</div>
@@ -63,9 +63,10 @@
 
 <div class="blog">
 	<div class="grid-container">
-		
-		<h1 class="grid-100">learners resources</h1>
-
+		<div class="grid-100">
+		  <h1>learners resources</h1>
+        </div>
+        
 		<?php for($x=0; $x <=5; $x++) {?>
 		<div class="grid-33">
 			<div class="blogPost">

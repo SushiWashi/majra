@@ -26,9 +26,10 @@ div::-webkit-scrollbar-thumb {
   background-color: var(--lightGray);
 }
 /******/
+
 html, body {
 	background:#fff;
-	font-family:'Azo Sans','helvetica' !important;
+	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
 	font-size: 14px !important;
 	color:var(--darkGray);
 	margin:0;
@@ -164,6 +165,14 @@ select {
         margin:0.7em 0;
 	}
 
+.type {
+    font-size:0.8em;
+	color:var(--white);
+	background:transparent;
+	text-transform: uppercase;
+	padding:5px 7px;
+}
+
 .card h1 a {
     color:var(--darkGray) !important;
 }
@@ -184,15 +193,9 @@ select {
 		position:absolute;
 		top:10px;
 		right:0;
-		font-size:0.6em;
-		color:var(--white);
-		background:transparent;
-		text-transform: uppercase;
-		padding:5px 7px;
 	}
 
 
-	
     .cardImage .workingHours {
         top:35px;
     }
@@ -250,22 +253,24 @@ a:hover, a:active {
 .outlineButton{
 	display:inline-block;
 	background:var(--orange);
-	padding:5px 8px;
+	/*padding:5px 8px;*/
+    padding:0.5em 0.8em;
 	color:white !important;
 	border-radius:5px;
-	font-size:0.8em !important;
+	font-size:1em !important;
 	outline:0;
 	border:0;
+}
+
+.followButton .unfollow {
+    background:transparent;
+    color:var(--orange);
 }
 
 .outlineButton {
     background:transparent;
     border:1px solid var(--white);
 }
-
-
-
-
 
 /***************
 	HEADER 
@@ -315,7 +320,7 @@ a:hover, a:active {
 .nav ul li,
 absoluteNav ul li{
 	float:left !important;
-	margin:2em 1em;
+	margin:2em 0.8em;
 }
 
 .logo {
@@ -327,6 +332,8 @@ absoluteNav ul li{
 
 .user {
 	border-left: 1px solid var(--lightGray);
+    padding-left:0.8em;
+    margin-left:0.8em;
 }
 /*Sign in / Log in Pop Up*/
 .button {
@@ -534,6 +541,7 @@ absoluteNav ul li{
 	max-height:auto;
 	margin-bottom:10%;
 	position:relative;
+    box-sizing: border-box !important;
 }
 
 .row h3 {
@@ -699,17 +707,11 @@ footer a:visited {
 }
 
 .filter h1 {
-	font-size:1.2em !important;
-	margin-top:5%;
+	font-size:2em !important;
+	margin-top:1.5em;
 	color:var(--white);
-    line-height: 2;
-}
-
-.filter span {
-	font-weight:600;
-	line-height: 35px;
-	color:var(--orange);
-
+    line-height: 1.6;
+    width:15em;
 }
 
 /***************
@@ -750,13 +752,7 @@ footer a:visited {
 }
 
 .companyHeader .type {
-	font-size:0.6em;
-	color:var(--white);
-	background:transparent;
-	text-transform: uppercase;
-	padding:5px 7px;
 	display:inline-block; 
-
 }
 
 .tab {
@@ -1060,7 +1056,8 @@ LEARNING RESOURCES
 }
 
 .supportCard {
-    height:auto !important;
+    min-height:auto !important;
+    max-height:
 }
 
 .supportCard p {
@@ -1076,6 +1073,11 @@ LEARNING RESOURCES
     margin-right:1em;
     font-size:0.8em;
 }
+
+.supportCard h1 {
+    height:3em;
+}
+
 
 /****************
 SINGLE USER
@@ -1188,19 +1190,6 @@ button {
 		position:absolute;
 		left:0;
 		bottom:0;
-		font-size:0.6em;
-		color:var(--white);
-		background:transparent;
-		text-transform: uppercase;
-		padding:5px 7px;
-}
-
-.nameOfCompany {
-	margin:1em 0;
-}
-
-.moreOpportunities {
-	display:inline-block;
 }
 
 .opportunityCard {
@@ -1208,23 +1197,6 @@ button {
 	padding-bottom:1em;
 }
 
-.moreOpportunities li {
-	width:100%;
-	margin:1em 0;
-	line-height:1.7;
-}
-
-.moreOpportunities li a:link,
-.moreOpportunities li a:visited {
-	color:var(--lightGray);
-}
-
-.moreOpportunities li a:hover,
-.moreOpportunities li a:visited {
-	color:var(--darkGray);
-	text-decoration:underline;
-
-}
 
 .opportunityCard .cardImage {
 	height:300px;
@@ -1235,18 +1207,25 @@ button {
 	margin:1em 0;
 	list-style:square;
 	list-style-position:inside;
+    font-size:1.3em;
+    color:var(--lightGray);
 }
 
 .opportunityCard  h3 {
-	margin:2em 0;
-	font-size:1em !important;
+	margin:1.5em 0;
+	font-size:1.4em !important;
 	font-weight:bold;
+    color:var(--darkGray);
 }
 
 .opportunityCard h1 {
-	font-size:2.5em !important;
+	font-size:2.8em !important;
+    margin:0.5em 0;
 }
 
+.opportunityCard p {
+    font-size:1.3em;
+}
 /*CompanyUser*/
 .applicants {
     width:100%;
