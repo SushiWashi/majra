@@ -40,9 +40,12 @@ function folder() {
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-120.png" sizes="120x120">
 
 	<!--META-->
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    
+    <meta charset="utf-8" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robots" content="" />
+	<meta name="theme-color" content="#323232" />
+
     <!--LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/reset.css">
