@@ -1089,7 +1089,6 @@ SINGLE USER
 ****************/
 .userCard {
 	height:auto;
-	padding-bottom:1em;
 }
 
 .userCard h1 {
@@ -1143,6 +1142,13 @@ SINGLE USER
 .contactButton:hover, 
 .contactButton:active {
 	background:var(--darkGray);
+}
+
+.quote {
+    font-style: italic;
+    padding:1em;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 /****************

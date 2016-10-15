@@ -9,7 +9,7 @@
             <ul>
 					<li>Budaiya, Bahrain</li>
 					<li>March 1, 1991</li>
-					<li>Bahraini</li>
+                    <li><button class="followButton" >CONTACT</button></li>
 				</ul>
 			</div>
 			
@@ -20,16 +20,6 @@
 
             
 		</div>
-	</div>
-</div>
-
-<div class="tab">
-	<div class="grid-container">
-		<ul>
-			<li><a href="#">View CV</a></li>
-			<li><a href="#">View Portfolio</a></li> 
-			<li><button class="followButton">CONTACT NAZAR ABUBAKER</button></li>   
-		</ul>
 	</div>
 </div>
 
@@ -90,6 +80,12 @@ COMMENT: WHAT DO WE DO WITH THIS??
 			<span>2014</span>
 			<h2>Bachelor of Awesomeness</h2>
 			<h4>Universty of McAwesome</h4>
+            <h3>What did I achieve?</h3>
+				<ol>
+                    <li>Blah</li>
+                    <li>Blah</li>
+                    <li>Blah</li>
+                </ol>
 			<?php } ?>
 		
 			</div>
@@ -107,16 +103,19 @@ COMMENT: WHAT DO WE DO WITH THIS??
 				<p>Manama, Bahrain</p>
 				
 				<h3>What did I learn?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, tellus vel viverra tincidunt, sem erat molestie orci, tincidunt dignissim nibh risus id nibh. Morbi dapibus sapien nec est ornare sollicitudin. Sed lobortis, eros ut accumsan lacinia, dui risus lobortis mi, vel finibus orci ante a orci. </p>
-				
-				<h3>What did I achieve?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, tellus vel viverra tincidunt, sem erat molestie orci, tincidunt dignissim nibh risus id nibh. Morbi dapibus sapien nec est ornare sollicitudin. Sed lobortis, eros ut accumsan lacinia, dui risus lobortis mi, vel finibus orci ante a orci. Etiam fermentum urna et ex auctor, quis pharetra leo viverra. Pellentesque non blandit tellus, quis placerat elit. Cras mollis urna nulla, a condimentum justo vulputate et. Maecenas erat sapien, tincidunt quis commodo id, fermentum et risus. Sed sollicitudin sagittis diam, id posuere urna congue fringilla. Sed feugiat imperdiet lobortis. Maecenas consectetur nibh vitae imperdiet dignissim. Vivamus a diam pulvinar, dapibus ante nec, posuere odio. Sed mi ante, iaculis at feugiat suscipit, tincidunt non urna. Proin non ullamcorper arcu.</p>
-				<br>
+				<ol>
+                    <li>Blah</li>
+                    <li>Blah</li>
+                    <li>Blah</li>
+                </ol>
 				<?php } ?>
 
 			</div>
 		</div>
-        <?php $x=true;
+        <?php 
+        
+        //Just change $x to show "contact me" button
+        $x=true;
     
         if($x==true) {?>
 		<div class="card userCard">
@@ -130,10 +129,22 @@ COMMENT: WHAT DO WE DO WITH THIS??
 				
 			</div>
 		</div>
+        
+        <?php } else { ?>
+            <div class="grid-100">
+    		<a href="#" class="contactButton">REQUEST FOR MY INFORMATION</a>
+            </div>
         <?php } ?>
 	</div>
     
     <div class="grid-30">
+		
+        <div class="card userCard">
+			<div class="grid-100 quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta ex ut arcu aliquam finibus. Curabitur aliquam dui ipsum, quis porta justo tincidunt quis.</p>
+			</div>
+		</div>  
+        
 		<div class="card userCard">
 			<div class="grid-100">
 			<h1>What can I add to your company?</h1>
@@ -155,7 +166,6 @@ COMMENT: WHAT DO WE DO WITH THIS??
     </div>
     
     <div class="grid-100">
-		<a href="#" class="contactButton">REQUEST FOR MY INFORMATION</a>	
 	</div>
 
 </div>
