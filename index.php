@@ -35,7 +35,7 @@
 			<div class="freshImg grid-50 mobile-grid-100"></div>
 			<h3><a class="dark" href="opportunities-single.php">MECHANICAL ENGINEERING</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a style="position:absolute; bottom:0;" class="followButton" href="opportunities.php">EXPLORE OPPORTUNITIES</a>
+			<a class="followButton" href="opportunities.php">EXPLORE OPPORTUNITIES</a>
 		</div>
 		<?php } ?>
 	</div>
@@ -47,7 +47,7 @@
 			<div class="freshImg grid-50 mobile-grid-100"></div>
 			<h3><a class="dark" href="companyProfile.php">Limefish</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a style="position:absolute; bottom:0;" class="followButton" href="workplaces.php">EXPLORE WORKPLACE</a>
+			<a class="followButton" href="workplaces.php">EXPLORE WORKPLACE</a>
 		</div>
 		<?php } ?>
 	</div>

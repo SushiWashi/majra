@@ -19,7 +19,7 @@ div::-webkit-scrollbar {
 body::-webkit-scrollbar-track,
 div::-webkit-scrollbar-track {
 	background-color:var(--darkGray);
-    box-shadow: 0px 0px 2px var(--lightGray);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5) inset;
 }
  
 body::-webkit-scrollbar-thumb,
@@ -74,6 +74,11 @@ select {
 	font-weight:bold;
 }
 
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin:1.5em 0;
+}
 
 /***************
  CARD DESIGNS 
@@ -166,7 +171,8 @@ select {
         margin:0.7em 0;
 	}
 
-.type {
+.type,
+.workingHours{
     font-size:0.8em;
 	color:var(--white);
 	background:transparent;
@@ -540,18 +546,21 @@ absoluteNav ul li{
 	float:left;
 	min-height:120px;
 	max-height:auto;
-	margin-bottom:10%;
-	position:relative;
+	margin-bottom:2em;
     box-sizing: border-box !important;
 }
 
 .row h3 {
 	line-height:1.2;
+    height:2.5em;
+    display:block;
 }
 
 .row p {
 	font-size:12px;
 	line-height:1.5;
+    height:4em;
+    display:block;
 }
 
 	.row .freshImg {
@@ -604,14 +613,13 @@ absoluteNav ul li{
 
 .blogPost {
 	float:left;
-	position: relative;
-	height:300px;
 	margin-bottom:20px;
 }
 
 	.blogPost h3 {
 		line-height: 1.5;
 		padding-top:10px;
+        height:4em;
 	}
 
 	.blogPost .blogImg {
@@ -623,10 +631,6 @@ absoluteNav ul li{
 	}
 
 .blogPostBottom {
-	position:absolute;
-  left: 0; 
-  right: 0; 
-  bottom:0;
   margin-left: auto; 
   margin-right: auto; 
   width:100%;
