@@ -28,7 +28,7 @@
 		<ul>
 			<li><a href="#">View CV</a></li>
 			<li><a href="#">View Portfolio</a></li> 
-			<li><button class="followButton">FOLLOW</button></li>   
+			<li><button class="followButton">CONTACT NAZAR ABUBAKER</button></li>   
 		</ul>
 	</div>
 </div>
