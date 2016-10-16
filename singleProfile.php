@@ -9,7 +9,7 @@
             <ul>
 					<li>Budaiya, Bahrain</li>
 					<li>March 1, 1991</li>
-                    <li><button class="followButton" >CONTACT</button></li>
+                    <li><button class="followButton" >REQUEST TO CONTACT</button></li>
 				</ul>
 			</div>
 			
@@ -71,23 +71,25 @@ COMMENT: WHAT DO WE DO WITH THIS??
 	</div>
 	-->
     
-	<div class="grid-70">
+	<div class="grid-60">
 		<div class="card userCard">
 			<div class="grid-100">
 			<h1>Education</h1>
 			
 			<?php for($x=0; $x < 4; $x++) {?>
-			<span>2014</span>
-			<h2>Bachelor of Awesomeness</h2>
-			<h4>Universty of McAwesome</h4>
-            <h3>What did I achieve?</h3>
-				<ol>
-                    <li>Blah</li>
-                    <li>Blah</li>
-                    <li>Blah</li>
-                </ol>
+            <div class="education">
+                <span>2014</span>
+                <h2>Bachelor of Awesomeness</h2>
+                <h4>Universty of McAwesome</h4>
+                <h3>What did I achieve?</h3>
+                    <ol>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                    </ol>
+            		    </div>
 			<?php } ?>
-		
+
 			</div>
 		</div>
         
@@ -137,7 +139,7 @@ COMMENT: WHAT DO WE DO WITH THIS??
         <?php } ?>
 	</div>
     
-    <div class="grid-30">
+    <div class="grid-40">
 		
         <div class="card userCard">
 			<div class="grid-100 quote">

@@ -28,10 +28,10 @@
 
 
 <div class="grid-container listing">
-	<div class="grid-50">
+	<div class="grid-50 mobile-grid-100">
 		<h1>fresh opportunities</h1>
 		<?php for ($x = 0; $x < 3; $x++) { ?>
-		<div class="row grid-100">
+		<div class="row grid-100 mobile-grid-100">
 			<div class="freshImg grid-50 mobile-grid-100"></div>
 			<h3><a class="dark" href="opportunities-single.php">MECHANICAL ENGINEERING</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -40,10 +40,10 @@
 		<?php } ?>
 	</div>
 
-	<div class="grid-50">
+	<div class="grid-50 mobile-grid-100">
 		<h1>fresh workplaces</h1>
 		<?php for ($x = 0; $x < 3; $x++) { ?>
-		<div class="row grid-100">
+		<div class="row grid-100 mobile-grid-100">
 			<div class="freshImg grid-50 mobile-grid-100"></div>
 			<h3><a class="dark" href="companyProfile.php">Limefish</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

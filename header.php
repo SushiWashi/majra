@@ -15,11 +15,11 @@ function folder() {
 	}		
 	
 }
-?>
 
-<?php
-    /* Changes the background color
-    when the user goes to "For Employees" page*/
+/* 
+Changes the background color
+when the user goes to "For Employees" page
+*/
 
 	$self = $_SERVER['PHP_SELF'];
           
@@ -44,7 +44,9 @@ function folder() {
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="robots" content="" />
-	<meta name="theme-color" content="#F37021" />
+    <meta name="description" content="Not another job site.">
+	<meta name="theme-color" content="#F37021" /> <!--Google Chrome on Android-->
+
 
     <!--LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
@@ -70,19 +72,8 @@ function folder() {
 <div id="wrapper">
 <div id="content">
 <!--wrapper & content is used to fix footer to bottom of page -->
-<?php
-    /*
-	$self = $_SERVER['PHP_SELF'];
-          
-    if($self == '/majra/forEmployees.php') {
-        echo "<div class='absoluteNav'>";
-    } else {
-        echo "<div class='nav'>";
-    }
-    */
-    ?>
-    <div class='nav'>
-    
+<div class='nav'>
+
 		<div class="grid-container">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
             <span style="position:absolute; top:7em; left:10em; letter-spacing:5px;">beta</span>

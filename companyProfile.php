@@ -38,16 +38,18 @@
 
 <div class="tab">
 	<div class="grid-container">
-		<ul>
-			<li><a href="#top">Meet Limefish</a></li>
-			<li><a href="#people">People</a></li> 
-			<li><a href="#place">Place</a></li>  		
-			<li><a href="#work">Work</a></li>  		
-			<li><a href="#perks">Perks</a></li>                      
-			<li><a href="#development">Development</a></li>
-			<li><a href="#opportunities">Opportunities (99+)</a></li>
-			<li><button class="followButton">FOLLOW</button></li>   
-		</ul>
+        <div class="grid-100">
+            <ul>
+                <li><a href="#top">Meet Limefish</a></li>
+                <li><a href="#people">People</a></li> 
+                <li><a href="#place">Place</a></li>  		
+                <li><a href="#work">Work</a></li>  		
+                <li><a href="#perks">Perks</a></li>                      
+                <li><a href="#development">Development</a></li>
+                <li><a href="#opportunities">Opportunities (99+)</a></li>
+                <li><button class="followButton">FOLLOW</button></li>   
+            </ul>
+        </div>
 	</div>
 </div>
 

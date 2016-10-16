@@ -1,7 +1,7 @@
 </div><!--CONTENT END-->
 <footer>
 	<div class="grid-container">
-		<div class="grid-25">
+		<div class="grid-25 mobile-grid-100">
 			<h4>about majra</h4>
 			<ul>
 				<li><a href="about/?page=company">company</a></li>
@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-50">
+		<div class="grid-50 mobile-grid-100">
 			<h4>be part of it</h4>
 			<ul>
 				<li><a href="<?php folder(); ?>forEmployees.php">for employers</a></li>
@@ -20,7 +20,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-25">
+		<div class="grid-25 mobile-grid-100">
 			<h4>stay up to date</h4>
 			<ul id = "social">
 				<li><a href="http://www.facebook.com" target="_blank"><img src="<?php echo folder(); ?>img/fb.svg" alt="fb"></a></li>
