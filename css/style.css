@@ -1286,10 +1286,21 @@ For Employees Landing Page
 
 .infoEmployee {
     min-height:300px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
 }
 
 .infoEmployee h2 {
-    margin-top:3em;
+    margin:1em 0;
+    padding-top:3em;
+    color:var(--white);
+    font-weight: bold;
+}
+
+.infoEmployee p {
+    color:rgba(255,255,255,0.8);
 }
 
 .process div {

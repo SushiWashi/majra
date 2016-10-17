@@ -56,29 +56,38 @@
     </div>
 </div>
 
-<div class="infoEmployee">
+<div class="infoEmployee" style="background-image:url('img/working.jpg'); background-position:0 65%">
+	<div class="darkBackground">
     <div class="grid-container">
         <div class="grid-40">
             <h2>We got everything you need</h2>
             <p>Full time, part time jobs, internships, and short term projects, basically every hiring need you  might have or will ever have, it’s all here!</p>
-        </div>
+        </div>    
+        <div class="grid-60"><br></div>
+    </div>
     </div>
 </div>
 
-<div class="infoEmployee">
-    <div class="grid-container">
-        <div class="grid-40">
-            <h2>We Speak Millennial.</h2>
-            <p>Employer branding to us is the language that gets you the best profile of people working at your company, we do this through dedicated social media campaigns and vibrant content.</p>
+<div class="infoEmployee" style="background-image:url('img/sunset.jpg'); background-position:0 35%">
+	<div class="darkBackground">
+        <div class="grid-container">
+            <div class="grid-60"><br></div>
+            <div class="grid-40">
+                <h2>We Speak Millennial.</h2>
+                <p>Employer branding to us is the language that gets you the best profile of people working at your company, we do this through dedicated social media campaigns and vibrant content.</p>
+            </div>
         </div>
     </div>
 </div>
     
-<div class="infoEmployee">
-    <div class="grid-container">
+<div class="infoEmployee" style="background-image:url('http://kaboompics.com/files/upload/o_1akr15pfd6pa1t81a7v17ks12qc7_new.jpg'); background-position:0 70%">
+	<div class="darkBackground">
+        <div class="grid-container">
         <div class="grid-40">
             <h2> We know what you’re tired of seeing</h2>
             <p>Inbox getting spammed by CV’s that aren’t so great? We got you, our job seekers profiles are simplified to answer two questions “Do they have the experience for the job, and do they add value to my team and company?”</p>  
+        </div>
+        <div class="grid-60"><br></div>
         </div>
     </div>
 </div>
