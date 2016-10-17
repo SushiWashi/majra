@@ -1,35 +1,5 @@
 <!DOCTYPE html>
-<?php 
-//Adds "..." to links
-function folder() {
-	$self = $_SERVER['PHP_SELF'];
-	
-	switch($self) {
-		case '/majra/about/index.php':
-		case '/majra/settings/index.php':
-        case '/majra/companyUser/index.php':
-			echo "../";
-			break;
-		default:
-			echo "";
-	}		
-	
-}
-
-/* 
-Changes the background color
-when the user goes to "For Employees" page
-*/
-
-	$self = $_SERVER['PHP_SELF'];
-          
-    if($self == '/majra/forEmployees.php') {
-        echo "<html style='background-color:var(--darkGray)'>";
-    } else {
-        echo "<html>";
-    }
-    
-?>
+<?php include ('function.php');?>
 <head>
 	<!--Favicons-->
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.svg">
@@ -47,34 +17,22 @@ when the user goes to "For Employees" page
     <meta name="description" content="Not another job site.">
 	<meta name="theme-color" content="#F37021" /> <!--Google Chrome on Android-->
 
-
-    <!--LINKS-->
+    <!--STYLE LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/grid.css">
     
-    <title>Majra</title> 	 
+    <title><?php title(); ?></title> 	 
 
 </head>
 
-<?php
-    
-	$self = $_SERVER['PHP_SELF'];
-          
-    if($self == '/majra/forEmployees.php') {
-        echo "<body class='darkBody'>";
-    } else {
-        echo "<body>";
-    }
-    
-    ?>
+<?php bodyClass(); ?>
     
 <div id="wrapper">
 <div id="content">
 <!--wrapper & content is used to fix footer to bottom of page -->
 <div class='nav'>
-
-		<div class="grid-container">
+    <div class="grid-container">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
             <span style="position:absolute; top:7em; left:10em; letter-spacing:5px;">beta</span>
 				
@@ -116,7 +74,6 @@ when the user goes to "For Employees" page
                         </div>
                     </div>
                 </li>
-			</ul>
 			<?php }else{ ?>
 				<li class="dropdown">
                     <a href="#" class="dropbtn">Notifications</a>

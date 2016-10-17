@@ -20,6 +20,11 @@ html, body {
 	height:100%;
 }
 
+h1 {font-size:2em!important; line-height: 1.6;}
+h2 {font-size:1.5em !important;}
+h3 {font-size:1.3em !important;}
+h4 {font-size:1em !important;}
+
 span {
 	color:var(--lightGray);
 }
@@ -149,7 +154,6 @@ ol li {
 
 	.card h1 {
 		font-size:1.2em !important;
-		line-height: 1.5;
         margin:0.7em 0;
 	}
 
@@ -212,11 +216,6 @@ ol li {
 .grid-container {
 	position:relative !important;
 }
-
-h1 {font-size:2em !important;}
-h2 {font-size:1.5em !important;}
-h3 {font-size:1.3em !important;}
-h4 {font-size:1em !important;}
 
 a:link, a:visited {
 	color:rgba(255,255,255,0.7);
@@ -697,7 +696,6 @@ footer a:visited {
 	font-size:2em !important;
 	margin-top:1.5em;
 	color:var(--white);
-    line-height: 1.6;
     width:15em;
 }
 

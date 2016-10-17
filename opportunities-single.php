@@ -28,22 +28,7 @@
 				
                     <div class="grid-33">
                         <h3>Job Type</h3>
-                       <?php 
-
-                        $type = "startup";
-
-                        switch($type) {
-                            case "startup": 
-                                echo "<span class='type' style='background:var(--green)'>startup</span>";
-                                break;
-                            case "sme":
-                                echo "<span class='type' style='background:var(--blue)'>sme</span>";
-                                break;
-                            default:
-                                echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
-                        }
-
-                        ?>   
+                        <?php sizeOfCompany(); ?>   
                     </div>
 
                     <div class="grid-33">
@@ -115,24 +100,9 @@ if($x==true) { ?>
 		<div class="grid-container">
 			<div class="grid-80">
 				<h1 class="mainHeader">limefish </h1>
-					<?php 
-    
-                    $type = "startup";
-	
-					switch($type) {
-						case "startup": 
-							echo "<span class='type' style='background:var(--green)'>startup</span>";
-							break;
-						case "sme":
-							echo "<span class='type' style='background:var(--blue)'>sme</span>";
-							break;
-						default:
-							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
-					}
-
-					?>   <br>
-				
-                <a class="outlineButton" href="companyProfile.php">EXPLORE OUR CULTURE</a>
+                 <?php sizeOfCompany(); ?>   
+                <br>
+				<a class="outlineButton" href="companyProfile.php">EXPLORE OUR CULTURE</a>
 			</div>
 			
 			<div class="grid-20">

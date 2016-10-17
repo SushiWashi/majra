@@ -23,9 +23,9 @@
 		<div class="grid-25 mobile-grid-100">
 			<h4>stay up to date</h4>
 			<ul id = "social">
-				<li><a href="http://www.facebook.com" target="_blank"><img src="<?php echo folder(); ?>img/fb.svg" alt="fb"></a></li>
-				<li><a href="http://www.twitter.com" target="_blank"><img src="<?php echo folder(); ?>img/Twitter.svg" alt="twt"></a></li>
-				<li><a href="http://www.instagram.com" target="_blank"><img src="<?php echo folder(); ?>img/instagram.svg" alt="ig"></a></li>
+				<li><a href="https://www.facebook.com/majrahq/" target="_blank"><img src="<?php echo folder(); ?>img/fb.svg" alt="facebook"></a></li>
+				<li><a href="https://twitter.com/majrahq" target="_blank"><img src="<?php echo folder(); ?>img/Twitter.svg" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com/majrahq/" target="_blank"><img src="<?php echo folder(); ?>img/instagram.svg" alt="instagram"></a></li>
 			</ul>
 		</div>
 

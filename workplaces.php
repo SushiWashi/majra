@@ -56,22 +56,7 @@
 	<div class="grid-33">
 		<div class='card'>
             <div class='cardImage'>
-					<?php 
-    
-                    $type = "startup";
-	
-					switch($type) {
-						case "startup": 
-							echo "<span class='type' style='background:var(--green)'>startup</span>";
-							break;
-						case "sme":
-							echo "<span class='type' style='background:var(--blue)'>sme</span>";
-							break;
-						default:
-							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
-					}
-
-					?>                
+					<?php sizeOfCompany(); ?>
                 <div class="logo"></div>
             </div>
             <div class="grid-100">

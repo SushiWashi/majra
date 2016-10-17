@@ -5,24 +5,9 @@
 		<div class="grid-container">
 			<div class="grid-80">
 				<h1 class="mainHeader">limefish </h1>
-					<?php 
-    
-                    $type = "startup";
-	
-					switch($type) {
-						case "startup": 
-							echo "<span class='type' style='background:var(--green)'>startup</span>";
-							break;
-						case "sme":
-							echo "<span class='type' style='background:var(--blue)'>sme</span>";
-							break;
-						default:
-							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
-					}
-
-					?>   
-				
-            <ul>
+				<?php sizeOfCompany(); ?>   
+                
+                <ul>
 					<li>Creative Agency</li>
 					<li>Budaiya, Bahrain</li>
 				</ul>
@@ -237,34 +222,7 @@
 		<div class="grid-33">
 			<div class="card">
 				<div class="cardImage">
-					<?php 
-    
-                    $type = "startup";
-                    $workingHours = "internship";
-	
-					switch($type) {
-						case "startup": 
-							echo "<span class='type' style='background:var(--green)'>startup</span>";
-							break;
-						case "sme":
-							echo "<span class='type' style='background:var(--blue)'>sme</span>";
-							break;
-						default:
-							echo "<span class='type' style='background:var(--darkGray)'>enterprise</span>";
-					}
-    
-                    switch($workingHours) {
-						case "fixed": 
-							echo "<span class='workingHours' style='background:var(--green)'>full-time</span>";
-							break;
-						case "internship":
-							echo "<span class='workingHours' style='background:var(--blue)'>internship</span>";
-							break;
-						default:
-							echo "<span class='workingHours' style='background:var(--darkGray)'>part-time</span>";
-                    }
-					?>
-                    
+                    <?php sizeOfCompany(); workHours(); ?>                     
 				</div>
                 <div class="grid-100">
                     <h3><a href="companyProfile.php">Limefish</a></h3>
