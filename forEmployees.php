@@ -117,5 +117,64 @@
         </div>
     </div>
 </div>
+
+<div class="companySignUp">
+<div class="grid-container">
+    <div class="grid-100">
+    
+        <h1 style="">What are you waiting for?</h1>
+        
+        <a class="button" href="#popup3">SIGN YOUR COMPANY UP</a>
+                    <div id="popup3" class="overlay">
+                        <div class="popup">
+                            <div style="clear:both; width:100%; height:20px;">
+                            <a class="close" href="#">&times;</a>
+                                </div>
+                            <div class="content">
+                                <div class="grid-100">
+                                    <form method="POST" action="">
+                                        <label>CREATE A NEW ACCOUNT</label><br>
+                                            <input type="text" placeholder="Company">
+                                        <br>
+                                        
+                                        <div class="grid-33">
+                                        <br><label>Size of company</label><br>
+                                        <select>
+                                            <option value="startup">Start Up</option>
+                                            <option value="sme">SME</option>
+                                            <option value="enterprise">Enterprise</option>
+                                        </select>
+                                        </div>
+                                        
+                                        <div class="grid-33">
+                                        <br><label>Industry</label><br>
+
+                                        <select>
+                                            <option value="1">1</option>
+                                        </select>
+                                        </div>
+                                        
+                                        <div class="grid-33">
+                                        <br><label>Number Of Employees</label><br>
+                                        
+                                        <select>
+                                            <option value="1">1-10</option>
+                                            <option value="1">11-20</option>
+                                            <option value="1">21-30</option>
+                                            <option value="1">31+</option>
+                                        </select> <br>
+                                        </div>
+                                        <textarea maxlength="1000" placeholder="Description of your company" rows="4" cols="50" required></textarea>                    
+                                        <p style="color:var(--lightGray)">By signing up, you agree to our <a href="">terms & conditions</a></p>
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
     
 <?php include('footer.php');?>

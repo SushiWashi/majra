@@ -40,6 +40,7 @@ input, select, textarea{
 	padding:1em;
 	margin:1em 0;
     background:var(--white);
+	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
 }
 
 input[type='submit'] {
@@ -335,6 +336,7 @@ absoluteNav ul li{
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  display:block;
 }
 .button:hover {
     background: var(--orange);
@@ -374,6 +376,10 @@ absoluteNav ul li{
 .popup input[type="submit"] {
     width:auto;
     float:right;
+}
+
+.popup select{
+    width:100%;
 }
 
 .popup .close {
@@ -464,8 +470,6 @@ absoluteNav ul li{
     background-size:cover;
     background-position: center;
 }
-
-
 
 /***************
 	HOMEPAGE 
@@ -1316,4 +1320,26 @@ For Employees Landing Page
 .process img {
     display: block;
     margin:0 auto 5em auto;
+}
+
+.companySignUp {
+    background:rgba(0,0,0,0.2);
+    width:100%;
+    height:auto;
+}
+
+.companySignUp h1 {
+    color:white;
+    margin:1em 0;
+    font-size:3em !important;
+}
+
+.companySignUp h1, 
+.companySignUp .button {
+    text-align: center;
+}
+
+.companySignUp .button {
+    margin-bottom:3em;
+    font-size:1.3em;
 }
