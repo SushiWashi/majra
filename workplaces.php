@@ -57,7 +57,7 @@
 		<div class='card'>
             <div class='cardImage'>
 					<?php sizeOfCompany(); ?>
-                <div class="logo"></div>
+                <div class="logo"><a href="companyProfile.php"></a></div>
             </div>
             <div class="grid-100">
                     <h3>CREATIVE AGENCY</h3>

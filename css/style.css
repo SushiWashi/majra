@@ -146,6 +146,12 @@ ol li {
 		left:10px;
 	}
 
+.card .logo a {
+    display:block;
+    width:auto;
+    height:100%;
+}
+
 .card p {
     color:var(--lightGray);
     font-size:1em;
