@@ -131,26 +131,26 @@ ol li {
 }
 
 /* Card */
-.card {
-	height:305px;
+.card .logo {
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+	width:60px;
+	height:60px;
+	position: absolute;
+	background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
+	background-size:cover;
+	background-position: center;
+	top:0;
+	left:10px;
 }
-	
-	.card .logo {
-		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
-		width:60px;
-		height:60px;
-		position: absolute;
-		background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/1496167_195242300847867_9193053891343381776_o.png');
-		background-size:cover;
-		background-position: center;
-		top:-1em;
-		left:10px;
-	}
 
 .card .logo a {
     display:block;
     width:auto;
     height:100%;
+}
+
+.card .followButton {
+    margin-bottom:1em;
 }
 
 .card p {
@@ -318,7 +318,7 @@ absoluteNav ul li{
 	margin:2em 0.8em;
 }
 
-.logo {
+.nav .logo {
 	height:90px;
 	width:auto;
 	float:left;

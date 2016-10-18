@@ -1,7 +1,7 @@
 </div><!--CONTENT END-->
 <footer>
 	<div class="grid-container">
-		<div class="grid-25 mobile-grid-100">
+		<div class="grid-25 mobile-grid-50">
 			<h4>about majra</h4>
 			<ul>
 				<li><a href="about/?page=company">company</a></li>
@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 
-		<div class="grid-50 mobile-grid-100">
+		<div class="grid-50 mobile-grid-50">
 			<h4>be part of it</h4>
 			<ul>
 				<li><a href="<?php folder(); ?>forEmployees.php">for employers</a></li>
@@ -32,7 +32,7 @@
 		<p style="text-align:center; clear:both; padding:30px 0; color:#fff;"><?php echo date('Y')?> © Majra</p>
 	</div>
 </footer>
-</div><!--WRAPPER-->
 
+</div><!--WRAPPER-->
 </body>
 </html>

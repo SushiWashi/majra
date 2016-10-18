@@ -3,14 +3,14 @@
 <div class="filter">
 	<div class="darkBackground">
 		<div class="grid-container">
-			<h1 class="grid-35">Get an inside look at the best companies out there.</h1>
+			<h1 class="grid-35 mobile-grid-100">Get an inside look at the best companies out there.</h1>
 		</div>
 	</div>
 
 	<div class="search">
 		<div class="grid-container">
 			<form method="POST" action="">
-				<div class="grid-20">
+				<div class="grid-20 mobile-grid-100">
 					<select name="industries">
 						<option value="all">All Industries</option>
 						<option value="a">Industry A</option>
@@ -19,7 +19,7 @@
 					</select>
 				</div>
 				
-				<div class="grid-20">
+				<div class="grid-20 mobile-grid-100">
 					<select name="size">
 						<option value="all">All Sizes</option>
 						<option value="a">Size A</option>
@@ -28,7 +28,7 @@
 					</select>
 				</div>
 				
-				<div class="grid-20">
+				<div class="grid-20 mobile-grid-100">
 					<select name="location">
 						<option value="all">All Location</option>
 						<option value="a">Location A</option>
@@ -38,11 +38,11 @@
 				
 				</div>
 
-				<div class="grid-10">
+				<div class="grid-10 mobile-grid-100">
 					<input type="submit" value="GO">
 				</div>
 
-				<div class="grid-20">
+				<div class="grid-20 mobile-grid-100">
 					<input type="text" placeholder="Search..">
 				</div>
 			

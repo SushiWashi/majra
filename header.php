@@ -34,7 +34,7 @@
 <div class='nav'>
     <div class="grid-container">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
-            <span style="position:absolute; top:7em; left:10em; letter-spacing:5px;">beta</span>
+            <span style="position:absolute; top:7em; left:9em; letter-spacing:5px;">beta</span>
 				
 
 			<ul class="user">
