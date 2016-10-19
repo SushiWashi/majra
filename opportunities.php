@@ -50,9 +50,6 @@
 	</div>
 </div>
 
-
-
-
 <div class="grid-container">
 	<?php for($x = 0; $x <= 8; $x++) {?>
 

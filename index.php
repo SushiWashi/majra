@@ -27,31 +27,53 @@
 </div>
 
 
-<div class="grid-container listing">
-	<div class="grid-50 mobile-grid-100">
+<div class="grid-container">
+    <div class="grid-100 listing">
 		<h1>fresh opportunities</h1>
-		<?php for ($x = 0; $x < 3; $x++) { ?>
-		<div class="row grid-100 mobile-grid-100">
-			<div class="freshImg grid-50 mobile-grid-100"></div>
-			<h3><a class="dark" href="opportunities-single.php">MECHANICAL ENGINEERING</a></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a class="followButton" href="opportunities.php">EXPLORE OPPORTUNITIES</a>
-		</div>
-		<?php } ?>
+    </div>
+    
+	<?php for($x=0; $x <= 2; $x++) {?>
+	<div class="grid-33">
+		<div class='card'>
+            <div class='cardImage'>
+					<?php sizeOfCompany(); ?>
+                <div class="logo"><a href="companyProfile.php"></a></div>
+            </div>
+            <div class="grid-100">
+                    <h3>CREATIVE AGENCY</h3>
+                    <h1><a href="companyProfile.php">Limefish</a></h1>
+                    <h3>Saar, Kingdom of Bahrain</h3>
+                    <br>
+                    <a href="" class="button orange">follow +</a>
+            </div>
+        </div>
 	</div>
+	<?php } ?>
 
-	<div class="grid-50 mobile-grid-100">
+    <a href="opportunities.php" class="button orange" style="float:right">Explore Opportunities</a>
+    
+    <div class="grid-100 listing">
 		<h1>fresh workplaces</h1>
-		<?php for ($x = 0; $x < 3; $x++) { ?>
-		<div class="row grid-100 mobile-grid-100">
-			<div class="freshImg grid-50 mobile-grid-100"></div>
-			<h3><a class="dark" href="companyProfile.php">Limefish</a></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a class="followButton" href="workplaces.php">EXPLORE WORKPLACE</a>
+    </div>
+    
+	<?php for($x=0; $x <= 2; $x++) {?>
+		<div class="grid-33">
+			<div class="card">
+				<div class="cardImage">
+					<?php sizeOfCompany(); workHours();?>
+         		</div>
+                <div class="grid-100">
+                    <h3><a href="companyProfile.php">Limefish</a></h3>
+                    <h1><a class="dark" href="opportunities-single.php">This will be 2 lines long..just because I can</a></h1>
+                    <h3>Saar, Kingdom of Bahrain</h3>
+                </div>
+			</div>
 		</div>
-		<?php } ?>
-	</div>
+	<?php } ?>
 
+    <a href="workplaces.php" class="button orange" style="float:right">Explore Workplaces</a>
+
+    
 	<h3 class="workplacesList">we have included awesome workplaces to guarantee you the suitable job that you're looking for</h3>
 
 	<ul class="grid-container newWorkplaces">

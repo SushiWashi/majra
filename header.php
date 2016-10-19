@@ -15,7 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="robots" content="" />
     <meta name="description" content="Not another job site.">
-	<meta name="theme-color" content="#F37021" /> <!--Google Chrome on Android-->
+	<meta name="theme-color" content="#323232" /> <!--Google Chrome on Android-->
 
     <!--STYLE LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
@@ -34,7 +34,7 @@
 <div class='nav'>
     <div class="grid-container">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
-            <span style="position:absolute; top:7em; left:9em; letter-spacing:5px;">beta</span>
+            <span class="beta">beta</span>
 				
 
 			<ul class="user">
@@ -110,14 +110,24 @@
                 </li>
 			<?php } ?>
 			</ul>
-
 			
-			<ul>
+			<ul class="links">
 				<li><a href="workplaces.php">explore places</a></li>
 				<li><a href="opportunities.php">find opportunities</a></li>
 				<li><a href="resources.php">learning resources</a></li>
 			</ul>
 			
-			
+	    <div class="mobileNav">
+        <select onChange="window.location.href=this.value">
+            <option value="/">Home</option>
+            <option value="workplaces.php">Explore Places</option>
+            <option value="opportunities.php">Find Opportunities</option>
+            <option value="resources.php">Learning Resources</option>
+            <option value="login.php">Log in / Sign up</option>
+
+        </select>
+    </div>		
 		</div>
-	</div>
+    
+
+</div>

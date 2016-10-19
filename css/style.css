@@ -1,5 +1,5 @@
 /***************
-	DESIGN ELEMENTS 
+ DESIGN ELEMENTS 
 ***************/
 :root {
 --orange:#F37021; 
@@ -9,6 +9,16 @@
 --blue: #21589F;
 --green: #159E7C;
 }
+
+/* TRANSITIONS */
+.card, input, select, textarea, .button, .nav a, .opener a{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+/*************/
 
 html, body {
 	background:#fff;
@@ -20,10 +30,16 @@ html, body {
 	height:100%;
 }
 
-h1 {font-size:2em!important; line-height: 1.6;}
+h1 {font-size:2em!important;}
 h2 {font-size:1.5em !important;}
 h3 {font-size:1.3em !important;}
 h4 {font-size:1em !important;}
+
+h1, h2, h3, h4, p, span {
+    padding-bottom:1em !important;
+    line-height: 1.5 !important;
+
+}
 
 span {
 	color:var(--lightGray);
@@ -43,6 +59,15 @@ input, select, textarea{
 	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
 }
 
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus{
+    border:1px solid var(--darkGray);
+}
+
 input[type='submit'] {
 	background:var(--orange);
 	color:var(--white);
@@ -50,6 +75,12 @@ input[type='submit'] {
 	padding:1em;
 	border-radius:5px;
 }
+
+input[type="submit"]:hover {
+	background:var(--darkGray) !important;
+    color:var(--white);
+}
+
 
 select {
     display:inline-block;
@@ -67,6 +98,31 @@ ol li {
     list-style-position: inside;
     margin:1.5em 0;
 }
+/******
+BUTTONS
+******/
+
+.button {
+	display:inline-block;
+	background:var(--orange);
+	/*padding:5px 8px;*/
+    padding:0.5em 0.8em;
+	border-radius:5px;
+	font-size:1em !important;
+	outline:0;
+	border:0;
+}
+
+.button .orange {
+    color:var(--white);
+    background:var(--orange);
+}
+
+.button .outline {
+    background:transparent;
+    color:var(--orange);
+    border:1px solid var(--white);
+}
 
 /***************
  CARD DESIGNS 
@@ -78,9 +134,12 @@ ol li {
 	float:left;
 	background:var(--white);
 	border: 1px solid #BFBFBF;
-	box-shadow: 0px 2px 4px 0px rgba(191,191,191,0.30);
 	box-sizing: border-box !important;
-	margin:1em 0;
+    margin:1em 0;
+}
+
+.card:hover {
+    box-shadow: 0px 2px 16px 0px rgba(191,191,191,1);
 }
 
 .bigCard .image {
@@ -161,7 +220,6 @@ ol li {
 
 	.card h1 {
 		font-size:1.2em !important;
-        margin:0.7em 0;
 	}
 
 .type,
@@ -202,7 +260,7 @@ ol li {
 
 	.card .cardImage {
 		width:100%;
-		height:169px;
+        height:169px;
 		position:relative;
 		background-image:url('https://scontent-sin6-1.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');
 		background-size:cover;
@@ -219,10 +277,6 @@ ol li {
 		text-decoration: underline;
 		color:var(--lightGray);
 	}
-
-.grid-container {
-	position:relative !important;
-}
 
 a:link, a:visited {
 	color:rgba(255,255,255,0.7);
@@ -244,32 +298,16 @@ a:hover, a:active {
 		text-decoration:none;
 }
 
-.followButton,
-.outlineButton{
-	display:inline-block;
-	background:var(--orange);
-	/*padding:5px 8px;*/
-    padding:0.5em 0.8em;
-	color:white !important;
-	border-radius:5px;
-	font-size:1em !important;
-	outline:0;
-	border:0;
-}
-
-.followButton .unfollow {
-    background:transparent;
-    color:var(--orange);
-}
-
-.outlineButton {
-    background:transparent;
-    border:1px solid var(--white);
-}
-
 /***************
 	HEADER 
 ***************/
+
+.beta {
+    position:absolute; 
+    top:7em; 
+    left:9em; 
+    letter-spacing:5px;
+}
 
 .nav a:link,
 .nav a:visited,
@@ -313,7 +351,7 @@ a:hover, a:active {
 }
 
 .nav ul li,
-absoluteNav ul li{
+.absoluteNav ul li{
 	float:left !important;
 	margin:2em 0.8em;
 }
@@ -471,6 +509,11 @@ absoluteNav ul li{
     background-position: center;
 }
 
+/*When user is on mobile*/
+.mobileNav, .burgerIcon {
+    display:none;
+}
+
 /***************
 	HOMEPAGE 
 ***************/
@@ -485,7 +528,8 @@ absoluteNav ul li{
 .opener {
 	width:100%;
 	position:relative;
-	height:470px;
+	min-height:470px;
+    max-height:800px;
 	background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -504,6 +548,7 @@ absoluteNav ul li{
 .opener h2 {
 	padding:1em 0;
 }
+
 
 .opener .grid-100 {
 	display:inline-block;
@@ -524,44 +569,16 @@ absoluteNav ul li{
 	background:var(--orange);
 }
 
+.listing {
+    padding:1em 0;
+}
 
 .listing h1 {
-	color:var(--orange);
-	padding:1.5em 0;
+	color:var(--lightGray);
 	text-transform:uppercase;
 	font-size:1.25em !important;
 	font-weight:700;
 }
-
-.row {
-	float:left;
-	min-height:120px;
-	max-height:auto;
-	margin-bottom:2em;
-    box-sizing: border-box !important;
-}
-
-.row h3 {
-	line-height:1.2;
-    height:2.5em;
-    display:block;
-}
-
-.row p {
-	font-size:12px;
-	line-height:1.5;
-    height:4em;
-    display:block;
-}
-
-	.row .freshImg {
-			height:121px;
-			float:left;
-			background:url('http://skitterphoto.com/wp-content/uploads/2015/03/Willemswerf-office-building-free-license-cc0-980x649.jpg');
-			background-size:cover;
-			background-position:center;
-			margin-right:3%;
-	}
 
 .blog {
 	width:100%;
@@ -1208,9 +1225,8 @@ button {
 	padding-bottom:1em;
 }
 
-
 .opportunityCard .cardImage {
-	height:300px;
+    height:300px;
 	position:relative;
 }
 
@@ -1342,4 +1358,60 @@ For Employees Landing Page
 .companySignUp .button {
     margin-bottom:3em;
     font-size:1.3em;
+}
+
+@media screen and (max-width:768px) {
+.nav .logo {
+    height:80px;
+	margin-top:1em;
+}
+    
+.beta {
+    top:6em; 
+    left:8em; 
+}
+    
+.nav {
+    height:auto;
+}
+
+.user, .links {
+    display:none;
+}
+    
+.mobileNav {
+    display:block;
+    float:right;
+}
+    
+.mobileNav select {
+    background:var(--lightGray);
+    color:var(--white);
+    margin-top:2em;
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
