@@ -18,6 +18,7 @@
 
 		<div class="grid-75">
 			<div class="content">
+                <section>
 			<?php 
 			$p = $_GET['page'];
 			$header = "<h1 style='margin-top:1em'>" .$p. "</h1>";
@@ -38,6 +39,7 @@
 					include('addOpportunity.php');
 			}
 			?>
+            </section>
 			</div>
 		</div>
 

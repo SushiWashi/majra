@@ -58,11 +58,11 @@
 				<div class="cardImage">
 					<?php sizeOfCompany(); workHours();?>
          		</div>
-                <div class="grid-100">
+                <section>
                     <h3><a href="companyProfile.php">Limefish</a></h3>
                     <h1><a class="dark" href="opportunities-single.php">This will be 2 lines long..just because I can</a></h1>
                     <h3>Saar, Kingdom of Bahrain</h3>
-                </div>
+                </section>
 			</div>
 		</div>
 

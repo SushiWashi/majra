@@ -3,7 +3,7 @@
 <div class="grid-container">
 	<div class="grid-100 bigCard">
 
-		<div class="grid-25">
+		<div class="grid-15">
 			<div class="aboutSideBar">
 			
 				<h3 style="text-align:left">Nazar Abubaker</h3>
@@ -18,8 +18,9 @@
 				</div>
 		</div>
 
-		<div class="grid-75">
+		<div class="grid-85">
 			<div class="content">
+                <section>
 			<?php 
 			$p = $_GET['page'];
 			$header = "<h1 style='margin-top:1em'>" .$p. "</h1>";
@@ -44,6 +45,7 @@
 					include('general.php');
 			}
 			?>
+                </section>
 			</div>
 		</div>
 

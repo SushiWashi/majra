@@ -11,13 +11,36 @@
 }
 
 /* TRANSITIONS */
-.card, input, select, textarea, .button, .nav a, .opener a{
+.card, input, select, textarea, .button, .opener a{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
+/* HIGHLIGHTS */
+::selection {
+    background: var(--orange) !important; /* WebKit/Blink Browsers */
+    color:var(--white);
+}
+::-moz-selection {
+    background: var(--orange) !important; /* Gecko Browsers */
+    color:var(--white);
+
+}
+
+/*CLEARFIX*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 /*************/
 
 html, body {
@@ -38,7 +61,6 @@ h4 {font-size:1em !important;}
 h1, h2, h3, h4, p, span {
     padding-bottom:1em !important;
     line-height: 1.5 !important;
-
 }
 
 span {
@@ -106,22 +128,22 @@ BUTTONS
 	display:inline-block;
 	background:var(--orange);
 	/*padding:5px 8px;*/
-    padding:0.5em 0.8em;
+    padding:1em;
 	border-radius:5px;
 	font-size:1em !important;
 	outline:0;
 	border:0;
 }
 
-.button .orange {
-    color:var(--white);
-    background:var(--orange);
+.orange {
+    color:var(--white) !important;
+    background:var(--orange) !important;
 }
 
-.button .outline {
-    background:transparent;
-    color:var(--orange);
-    border:1px solid var(--white);
+.outline {
+    background:transparent !important;
+    color:var(--white) !important;
+    border:1px solid var(--white) !important;
 }
 
 /***************
@@ -140,6 +162,10 @@ BUTTONS
 
 .card:hover {
     box-shadow: 0px 2px 16px 0px rgba(191,191,191,1);
+}
+
+.card section {
+    padding:0.5em 1em;    
 }
 
 .bigCard .image {
@@ -208,10 +234,6 @@ BUTTONS
     height:100%;
 }
 
-.card .followButton {
-    margin-bottom:1em;
-}
-
 .card p {
     color:var(--lightGray);
     font-size:1em;
@@ -229,6 +251,7 @@ BUTTONS
 	background:transparent;
 	text-transform: uppercase;
 	padding:5px 7px;
+    
 }
 
 .card h1 a {
@@ -251,6 +274,7 @@ BUTTONS
 		position:absolute;
 		top:10px;
 		right:0;
+        padding:0.5em !important;
 	}
 
 
@@ -304,8 +328,8 @@ a:hover, a:active {
 
 .beta {
     position:absolute; 
-    top:7em; 
-    left:9em; 
+    top:6.5em; 
+    left:8.7em; 
     letter-spacing:5px;
 }
 
@@ -328,7 +352,7 @@ a:hover, a:active {
 .absoluteNav{
 	width:100%;
 	background:var(--darkGray);
-	height:100px;
+	height:100;
 	font-size:11px;
     z-index: 999;
     text-transform: uppercase;
@@ -368,7 +392,13 @@ a:hover, a:active {
     padding-left:0.8em;
     margin-left:0.8em;
 }
+
+.user li {
+    margin-top:1em !important;
+}
 /*Sign in / Log in Pop Up*/
+
+/*
 .button {
   padding: 10px;
   border-radius: 5px;
@@ -376,11 +406,12 @@ a:hover, a:active {
   cursor: pointer;
   display:block;
 }
+
 .button:hover {
     background: var(--orange);
     color: var(--white);
 }
-
+*/
 .overlay {
   position: fixed;
   z-index:999;
@@ -431,7 +462,7 @@ a:hover, a:active {
   color: #333;
 }
 .popup .close:hover {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 .popup .content {
   max-height: 30%;
@@ -528,33 +559,52 @@ a:hover, a:active {
 .opener {
 	width:100%;
 	position:relative;
-	min-height:470px;
-    max-height:800px;
-	background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
+    height: 500px;
+    background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0E0M5W9O3V.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
 }
 
 .opener h1, .opener h2 {
-	text-align: center;
-	color:#fff;
+	color:var(--white);
+    text-align: center;
 }
 
 .opener h1 {
-	padding-top:5em;
+    font-size:3.5em !important;
+    margin-top:2em;
+    font-weight: bold;
 }
 
 .opener h2 {
-	padding:1em 0;
+    font-size:1.5em !important;
+}
+
+/*
+.opener ul {
+    width:960px;
+    display:inline-block;
+    height:auto;
+	box-sizing:border-box;
+}
+
+.opener ul li {
+    float:left;
+    margin:1em;
+    width:20%;
+    text-align: center;
+}
+
+.opener ul li a {
+    width:100%;
 }
 
 
 .opener .grid-100 {
 	display:inline-block;
-	bottom:-16em;
-	position:absolute;
 }
+*/
 
 .opener .grid-25 a {
 	border:1px solid var(--white);
@@ -567,17 +617,6 @@ a:hover, a:active {
 
 .opener .grid-25 a:hover {
 	background:var(--orange);
-}
-
-.listing {
-    padding:1em 0;
-}
-
-.listing h1 {
-	color:var(--lightGray);
-	text-transform:uppercase;
-	font-size:1.25em !important;
-	font-weight:700;
 }
 
 .blog {
@@ -602,7 +641,6 @@ a:hover, a:active {
 	padding:1em 0;
 	text-transform:uppercase;
 	line-height:1.5;
-
 }
 
 .newWorkplaces {
@@ -627,7 +665,7 @@ a:hover, a:active {
 	.blogPost h3 {
 		line-height: 1.5;
 		padding-top:10px;
-        height:4em;
+        height:3em;
 	}
 
 	.blogPost .blogImg {
@@ -644,12 +682,18 @@ a:hover, a:active {
   width:100%;
 }
 
+/*
 .blogPostBottom li:first-child {
 	float:left;
 }
 
 .blogPostBottom li:last-child {
 	float:right;
+    margin-top:1em;
+}
+*/
+.blogPostBottom {
+	float:left;
 }
 
 
@@ -665,16 +709,14 @@ a:hover, a:active {
 }
 
 #content {
-	padding-bottom:288px; /* Height of the footer element */
+	padding-bottom:280px; /* Height of the footer element */
 }
-
 
 footer {
 	background-color:var(--orange);
 	width:100%;
 	height:auto;
 	padding:30px 0 !important;
-	clear:both;
 	font-size:12px !important;
 	position: absolute;
 	right: 0;
@@ -686,6 +728,8 @@ footer h4 {
 	color:#fff;
 	text-transform: uppercase;
 	line-height: 3;
+    font-weight: bold;
+    font-size:1.5em !important;
 }
 
 footer ul li {
@@ -896,10 +940,9 @@ footer a:visited {
 
 .aboutSideBar h3 {
 	text-transform:capitalize;
-	font-size:0.8em !important;
 	color:var(--lightGray);
-	margin-top:10px;
 	clear:both;
+    margin-top:1em;
 }
 
 .aboutSideBar a:link, .aboutSideBar a:visited{
@@ -923,20 +966,22 @@ footer a:visited {
 	padding:10px 0;
 }
 
+.content section {
+    padding:0 3em;
+}
+
 .content p {
 	line-height:1.5;
-	margin-bottom:1.5em;
 	color:var(--lightGray);
 }
 
 .content h1 {
-	text-align:left;
+    text-align: left;
 	text-transform:capitalize;
 }
 
 .content h2 {
 	color:var(--orange);
-	margin-bottom:1em;
 }
 
 .content h3 {
@@ -945,7 +990,6 @@ footer a:visited {
 	line-height: 1.5;
 	font-weight:bold;
 	padding:0;
-	margin-bottom:1em;
 }
 
 .content a:link, .content a:visited {
@@ -1371,10 +1415,6 @@ For Employees Landing Page
     left:8em; 
 }
     
-.nav {
-    height:auto;
-}
-
 .user, .links {
     display:none;
 }
@@ -1390,28 +1430,5 @@ For Employees Landing Page
     margin-top:2em;
 }
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 }

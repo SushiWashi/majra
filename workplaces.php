@@ -52,20 +52,19 @@
 </div>
 
 <div class="grid-container">
-	<?php for($x=0; $x <= 5; $x++) {?>
+    <?php for($x=0; $x <= 2; $x++) {?>
 	<div class="grid-33">
 		<div class='card'>
             <div class='cardImage'>
-					<?php sizeOfCompany(); ?>
+				<?php sizeOfCompany(); ?>
                 <div class="logo"><a href="companyProfile.php"></a></div>
             </div>
-            <div class="grid-100">
-                    <h3>CREATIVE AGENCY</h3>
-                    <h1><a href="companyProfile.php">Limefish</a></h1>
-                    <h3>Saar, Kingdom of Bahrain</h3>
-                    <br>
-                    <a href="" class="followButton">follow +</a>
-            </div>
+            <section>
+                <h3>CREATIVE AGENCY</h3>
+                <h1><a href="companyProfile.php">Limefish</a></h1>
+                <h3>Saar, Kingdom of Bahrain</h3>
+                <a href="#" class="button orange">follow +</a>
+            </section>
         </div>
 	</div>
 	<?php } ?>

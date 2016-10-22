@@ -1,5 +1,5 @@
 </div><!--CONTENT END-->
-<footer>
+<footer class="clearfix">
 	<div class="grid-container">
 		<div class="grid-25 mobile-grid-50">
 			<h4>about majra</h4>

@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 <div class="grid-container">
     <div class="grid-100">
-    <h1>Notifications</h1>
+        <h1>Notifications</h1>
     </div>
     
     <div class="grid-20">

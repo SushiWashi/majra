@@ -33,16 +33,18 @@
 <!--wrapper & content is used to fix footer to bottom of page -->
 <div class='nav'>
     <div class="grid-container">
+        <div class="clearfix">
 			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
             <span class="beta">beta</span>
 				
 
 			<ul class="user">
-			<?php $logged_in = true;
+			<?php $logged_in = false;
 			
 			if(!$logged_in){?>
 				<li>
-	               <a class="button" href="#popup1">Join / Log in</a>
+	               <a class="button" style="margin-right:1em"href="#popup1">Join</a>
+	               <a class="button outline" href="#popup1">Log In</a>
                     <div id="popup1" class="overlay">
                         <div class="popup">
                             <div style="clear:both; width:100%; height:20px;">
@@ -128,6 +130,5 @@
         </select>
     </div>		
 		</div>
-    
-
+    </div>
 </div>
