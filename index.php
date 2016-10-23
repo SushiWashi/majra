@@ -2,51 +2,48 @@
 <div class="opener clearfix">
 	<div class="darkBackground">
 		<div class="grid-container">
-            
             <div class="grid-100 mobile-grid-100">
+
                 <h1>Everything you need to build the perfect career is here!</h1>
                 <h2>Explore the best workplaces out there, and apply for their jobs and opportunities.</h2>
-            </div>
             
-            
-            <!--            
-                <div class="grid-100 mobile-grid-100">
-                    <div class="grid-25 mobile-grid-50">
-                        <a href="workplaces.php">explore workplaces</a>
+                    <div class="grid-25 mobile-grid-100">
+                        <a class="button outline" href="workplaces.php">explore workplaces</a>
                     </div>
 
-                    <div class="grid-25 mobile-grid-50">
-                        <a href="opportunities.php">find a job</a>
+                    <div class="grid-25 mobile-grid-100">
+                        <a class="button outline" href="opportunities.php">find a job</a>
                     </div>
 
-                    <div class="grid-25 mobile-grid-50">
-                        <a href="forEmployees.php">hire someone</a>
+                    <div class="grid-25 mobile-grid-100">
+                        <a class="button outline" href="forEmployees.php">hire someone</a>
                     </div>
 
-                    <div class="grid-25 mobile-grid-50">
-                        <a href="resources.php">get advice</a>
+                    <div class="grid-25 mobile-grid-100">
+                        <a class="button outline" href="resources.php">get advice</a>
                     </div>
                 </div>
 
-            
-
-            <ul>
-				<li><a class="button outline" href="workplaces.php">explore workplaces</a></li>
-				<li><a class="button outline" href="opportunities.php">find a job</a></li>
-				<li><a class="button outline" href="forEmployees.php">hire someone</a></li>
-				<li><a class="button outline" href="resources.php">get advice</a></li>
-            </ul>
-            -->
 		</div>
 	</div>
 </div>
 
 
 <div class="grid-container">
-    <div class="grid-100">
-		<h1 style="display:block; float:left; padding:0.5em 0 !important;">fresh opportunities</h1>
-        <a href="opportunities.php" class="dark" style="float:right; margin-top:2em;">Explore Opportunities »</a>
+    
+    <div class="box">
+
+        <div class="grid-50 mobile-grid-100">
+           <h1 class="bold">Fresh Opportunities</h1>
+        </div>
+
+        <div class="grid-50 mobile-grid-100">
+            <a href="opportunities.php" class="dark">Explore Opportunities »</a>
+        </div>
+    
+    <div class="clearfix"></div>
     </div>
+    
     
 	<?php for($x=0; $x <= 2; $x++) {?>
     <div class="grid-33">
@@ -62,15 +59,23 @@
 			</div>
 		</div>
 	<?php } ?>
+    <div class="clearfix"></div>
 
     
-    <div class="grid-100">
-        <h1 style="display:block; float:left; padding:0.5em 0 !important;">fresh workplaces</h1>
-        <a href="opportunities.php" class="dark" style="float:right; margin-top:2em;">Explore Workplaces »</a>
+    <div class="box">
+        <div class="grid-50 mobile-grid-100">
+            <h1 class="bold">Fresh Workplaces</h1>
+        </div>
+        
+        <div class="grid-50 mobile-grid-100">
+            <a href="opportunities.php" class="dark">Explore Workplaces »</a>
+        </div>
     </div>
+        <div class="clearfix"></div>
+
     
     <?php for($x=0; $x <= 2; $x++) {?>
-	<div class="grid-33">
+	<div class="grid-33 mobile-grid-100">
 		<div class='card'>
             <div class='cardImage'>
 				<?php sizeOfCompany(); ?>
@@ -85,9 +90,12 @@
         </div>
 	</div>
 	<?php } ?>
-    
-	<h3 class="workplacesList">we have included awesome workplaces to guarantee you the suitable job that you're looking for</h3>
+    <div class="clearfix"></div>
 
+    <div class="grid-100 mobile-grid-100">
+	   <h3 class="workplacesList bold">we have included awesome workplaces to guarantee you the suitable job that you're looking for</h3>
+    </div>
+    
 	<ul class="grid-container newWorkplaces">
 	<?php for($x=0; $x <= 3; $x++) { ?>
 		<li class="grid-25"><a href="#"><img src=""></a></li>
@@ -96,10 +104,9 @@
 </div>
 
 <div class="blog">
-    
 	<div class="grid-container">
-		<div class="grid-100 mobile-grid-100">
-		  <h1>learners resources</h1>
+        <div class="grid-100 mobile-grid-100">
+		  <h1 class="bold">learners resources</h1>
         </div>
         
 		<?php for($x=0; $x <=5; $x++) {?>
@@ -108,17 +115,14 @@
 				
 				<div class="blogImg"></div>
 				
-				<h3><a href="#">The title here can take up to 2 lines, isn't that cool?</a></h3>
-
-				<ul class="blogPostBottom">
-					<li><a href="profile.php">Nazar Abubaker</a></li>
-				</ul>
+				<h3><a href="opportunities-single.php">The title here can take up to 2 lines, isn't that cool?</a></h3>
+                
+                <a href="profile.php">Nazar Abubaker</a>
 
 			</div>
 		</div>
 		<?php } ?>
-	</div>
+	   </div>
 
 </div>
-<div style="clear:both"></div>
 <?php include('footer.php');?>

@@ -10,7 +10,6 @@
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon-120.png" sizes="120x120">
 
 	<!--META-->
-    <meta charset="utf-8" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="robots" content="" />
@@ -22,8 +21,23 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/grid.css">
     
+    <script src="https://use.typekit.net/zyb3ses.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'zyb3ses',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    
     <title><?php title(); ?></title> 	 
 
+    
 </head>
 
 <?php bodyClass(); ?>
@@ -43,7 +57,7 @@
 			
 			if(!$logged_in){?>
 				<li>
-	               <a class="button" style="margin-right:1em"href="#popup1">Join</a>
+	               <a class="button orange" style="margin-right:1em"href="#popup1">Join</a>
 	               <a class="button outline" href="#popup1">Log In</a>
                     <div id="popup1" class="overlay">
                         <div class="popup">
@@ -59,7 +73,7 @@
                                         <input type="email" placeholder="Email"><br>
                                         <input type="password" placeholder="Password"><br>
                                         <p>By signing up, you agree to our <a href="">terms & conditions</a></p>
-                                        <input type="submit">
+                                        <input class="button orange" type="submit">
                                     </form>
                                 </div>
                                 
@@ -69,7 +83,7 @@
                                         <input type="email" placeholder="Email"><br>
                                         <input type="password" placeholder="Password"><br>
                                         <a href="#">forgot password?</a>
-                                        <input type="submit">
+                                        <input class="button orange" type="submit">
                                     </form>
                                 </div>
                             </div>

@@ -10,67 +10,47 @@
                 <option value="all">Inpsiration</option>
             </select>
         
-            <input type="submit">
+            <input class="button orange" type="submit">
         </form>
         </div>
         
+        <hr>
+        
         <div class="grid-50">
-            <form method="POST" action="">
-                <input type="input" placeholder="Search.."> 
+            <form method="POST" action="" style="width:100%">
+                <input type="input" placeholder="Search..">
             </form>
         </div>
     </div>
 </div>
 
 <div class="grid-container">
-<h1 style="margin:1em; text-align:center;">Learning Resources</h1>
+    
+<h1 class="bold" style="margin:1em 0 0 0; text-align:center;">Learning Resources</h1>
 
     <div class="grid-50">
 			<div class="card supportCard">
 				<div class="cardImage"></div>
-                <div class="grid-100">
-                    <div class="grid-50">
+                <section>
+                    <div style="float:left">
                         <h3><a href="companyProfile.php">Limefish</a></h3>
                     </div>
 
-                    <div class="grid-50">
+                    <div style="float:right">
                         <ul class="tag">
                             <li>Comedy</li>
                             <li>Inspiration</li>
                         </ul>
                     </div>
 
-                    <div class="grid-100">
+                    <div class="clearfix"></div>
+                    
+                    
                     <h1><a class="dark" href="blogPost.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mollis felis.</a></h1>
                     <p> In pharetra maximus iaculis. Donec.</p>
-                    </div>
-                </div>
-			</div>
+                </section>
+        </div>
     </div>
-    
-    <div class="grid-50">
-			<div class="card supportCard">
-				<div class="cardImage"></div>
-                <div class="grid-100">
-                    <div class="grid-50">
-                        <h3><a href="companyProfile.php">Batelco</a></h3>
-                    </div>
-
-                    <div class="grid-50">
-                        <ul class="tag">
-                            <li>Comedy</li>
-                            <li>Inspiration</li>
-                        </ul>
-                    </div>
-
-                    <div class="grid-100">
-                    <h1><a class="dark" href="blogPost.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-                    <p> In pharetra maximus iaculis. Donec.</p>
-                    </div>
-                </div>
-			</div>
-    </div>
-
 
 </div>
 

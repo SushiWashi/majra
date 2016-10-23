@@ -11,7 +11,7 @@
                 <div class="grid-100">
                     <ul>
                         <li>
-                            <a class="button" href="#popup2">SIGN YOUR COMPANY UP / LOG IN</a>
+                            <a class="button orange" href="#popup2">SIGN YOUR COMPANY UP / LOG IN</a>
                     <div id="popup2" class="overlay">
                         <div class="popup">
                             <div style="clear:both; width:100%; height:20px;">
@@ -30,7 +30,7 @@
                                         <input type="email" placeholder="Email"><br>
                                         <input type="password" placeholder="Password"><br>
                                         <p style="color:var(--lightGray)">By signing up, you agree to our <a href="">terms & conditions</a></p>
-                                        <input type="submit">
+                                        <input class="button orange" type="submit">
                                     </form>
                                 </div>
                                 
@@ -40,7 +40,7 @@
                                         <input type="email" placeholder="Email"><br>
                                         <input type="password" placeholder="Password"><br>
                                         <a href="#">forgot password?</a>
-                                        <input type="submit">
+                                        <input class="button orange" type="submit">
                                     </form>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
     
         <h1 style="">What are you waiting for?</h1>
         
-        <a class="button" href="#popup3">SIGN YOUR COMPANY UP</a>
+        <a class="button orange" href="#popup3">SIGN YOUR COMPANY UP</a>
                     <div id="popup3" class="overlay">
                         <div class="popup">
                             <div style="clear:both; width:100%; height:20px;">

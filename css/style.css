@@ -10,6 +10,25 @@
 --green: #159E7C;
 }
 
+/*Scrollbar*/
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+	background-color:var(--white);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5) inset;
+}
+ 
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 10px;
+}
+
+
 /* TRANSITIONS */
 .card, input, select, textarea, .button, .opener a{
     -webkit-transition: all 0.2s ease-in-out;
@@ -27,7 +46,6 @@
 ::-moz-selection {
     background: var(--orange) !important; /* Gecko Browsers */
     color:var(--white);
-
 }
 
 /*CLEARFIX*/
@@ -45,7 +63,7 @@
 
 html, body {
 	background:#fff;
-	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
+	font-family: "azo-sans-web", arial, helvetica, sans-serif !important;
 	font-size: 14px !important;
 	color:var(--darkGray);
 	margin:0;
@@ -79,6 +97,7 @@ input, select, textarea{
 	margin:1em 0;
     background:var(--white);
 	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
+    resize: vertical;
 }
 
 input:hover,
@@ -90,18 +109,8 @@ textarea:focus{
     border:1px solid var(--darkGray);
 }
 
-input[type='submit'] {
-	background:var(--orange);
-	color:var(--white);
-	border:0;
-	padding:1em;
-	border-radius:5px;
-}
-
-input[type="submit"]:hover {
-	background:var(--darkGray) !important;
-    color:var(--white);
-}
+input[type='submit'] {cursor: pointer;}
+input[type='submit']:hover {border:0px;}
 
 
 select {
@@ -110,24 +119,24 @@ select {
     border-radius: 0 !important;
 }
 
-.bold {
-	color:var(--darkGray);
-	font-weight:bold;
-}
-
 ol li {
     list-style-type: decimal;
     list-style-position: inside;
     margin:1.5em 0;
 }
+
+.bold {
+	font-weight:bold;
+}
+
+
 /******
 BUTTONS
 ******/
 
 .button {
 	display:inline-block;
-	background:var(--orange);
-	/*padding:5px 8px;*/
+    color:var(--white) !important;
     padding:1em;
 	border-radius:5px;
 	font-size:1em !important;
@@ -140,11 +149,20 @@ BUTTONS
     background:var(--orange) !important;
 }
 
+.orange:hover {
+    background:var(--lightGray) !important;
+}
+
 .outline {
     background:transparent !important;
     color:var(--white) !important;
     border:1px solid var(--white) !important;
 }
+
+.outline:hover {
+    border:1px solid var(--lightGray) !important;
+}
+
 
 /***************
  CARD DESIGNS 
@@ -259,7 +277,7 @@ BUTTONS
 }
 
 	.card h3 {
-		font-size:0.8em !important;
+		font-size:1em !important;
 		color:var(--lightGray);
 	}
 
@@ -397,21 +415,6 @@ a:hover, a:active {
     margin-top:1em !important;
 }
 /*Sign in / Log in Pop Up*/
-
-/*
-.button {
-  padding: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  display:block;
-}
-
-.button:hover {
-    background: var(--orange);
-    color: var(--white);
-}
-*/
 .overlay {
   position: fixed;
   z-index:999;
@@ -422,6 +425,8 @@ a:hover, a:active {
   background: rgba(243,112,33,0.7);
   visibility: hidden;
   opacity: 0;
+  transition: all 300ms;  
+
 }
 .overlay:target {
   visibility: visible;
@@ -581,31 +586,6 @@ a:hover, a:active {
     font-size:1.5em !important;
 }
 
-/*
-.opener ul {
-    width:960px;
-    display:inline-block;
-    height:auto;
-	box-sizing:border-box;
-}
-
-.opener ul li {
-    float:left;
-    margin:1em;
-    width:20%;
-    text-align: center;
-}
-
-.opener ul li a {
-    width:100%;
-}
-
-
-.opener .grid-100 {
-	display:inline-block;
-}
-*/
-
 .opener .grid-25 a {
 	border:1px solid var(--white);
 	display:block;
@@ -628,19 +608,16 @@ a:hover, a:active {
 }
 
 .blog h1 {
-	padding:1em 0;
-	font-size:1.25em !important;
 	text-transform:uppercase;
 	font-weight:700;
 }
 
 .workplacesList {
-	width:70%;
-	margin:0 auto;
 	text-align:center;
 	padding:1em 0;
 	text-transform:uppercase;
 	line-height:1.5;
+    font-size:1.5em !important;
 }
 
 .newWorkplaces {
@@ -658,8 +635,8 @@ a:hover, a:active {
 	}
 
 .blogPost {
-	float:left;
-	margin-bottom:20px;
+	margin-bottom:2em;
+    width:100%;
 }
 
 	.blogPost h3 {
@@ -676,27 +653,23 @@ a:hover, a:active {
 		background-position:center;
 	}
 
-.blogPostBottom {
-  margin-left: auto; 
-  margin-right: auto; 
-  width:100%;
-}
-
-/*
-.blogPostBottom li:first-child {
-	float:left;
-}
-
-.blogPostBottom li:last-child {
-	float:right;
-    margin-top:1em;
-}
-*/
-.blogPostBottom {
-	float:left;
-}
 
 
+.box {
+    position:relative;
+    height:40px;
+    line-height: 40px;
+    padding:1em 0;
+}
+
+.box h1 {
+    padding:0 !important;
+}
+
+.box a {
+    display: inline-block;
+    float:right;
+}
 /***************
 	FOOTER 
 ***************/
@@ -709,7 +682,7 @@ a:hover, a:active {
 }
 
 #content {
-	padding-bottom:280px; /* Height of the footer element */
+	padding-bottom:285px; /* Height of the footer element */
 }
 
 footer {
@@ -767,7 +740,6 @@ footer a:visited {
 	font-size:2em !important;
 	margin-top:1.5em;
 	color:var(--white);
-    width:15em;
 }
 
 /***************
@@ -1044,6 +1016,10 @@ SEARCH
 	color:var(--darkGray);
 }
 
+    .search hr {
+        display:none;
+    }
+
 /********
 BLOG POST
 *******/
@@ -1051,6 +1027,10 @@ BLOG POST
     color:var(--lightGray);
     padding:1em;
     line-height: 1.5;
+}
+
+.post section {
+    padding:4em;
 }
 
 .post .author h2 {
@@ -1111,14 +1091,6 @@ LEARNING RESOURCES
     float:right;
 }
 
-.supportCard {
-    min-height:auto !important;
-    max-height:
-}
-
-.supportCard p {
-    margin-bottom:1em;
-}
 
 .supportCard .tag {
     float:right;
@@ -1133,6 +1105,10 @@ LEARNING RESOURCES
 .supportCard h1 {
     height:3em;
 }
+
+    .sort hr {
+        display:none;
+    }
 
 
 /****************
@@ -1405,29 +1381,131 @@ For Employees Landing Page
 }
 
 @media screen and (max-width:768px) {
-.nav .logo {
-    height:80px;
-	margin-top:1em;
+    /************
+        HEADER
+    *************/
+    
+    .nav .logo {
+        height:80px;
+        margin-top:1em;
+    }
+
+    .beta {
+        top:6em; 
+        left:8em; 
+    }
+
+    .user, .links {
+        display:none;
+    }
+
+    .mobileNav {
+        display:block;
+        float:right;
+    }
+
+    .mobileNav select {
+        background:var(--lightGray);
+        color:var(--white);
+        margin-top:2em;
+    }
+    
+    
+    /************
+        FOOTER
+    *************/
+    #content {
+	   padding-bottom:386px; /* Height of the footer element */
+    }
+
+    
+    /**
+    Workplaces
+    **/
+    
+    .filter {
+	height:650px;
 }
     
-.beta {
-    top:6em; 
-    left:8em; 
-}
+    .search {
+	height:375px;
+    }
     
-.user, .links {
-    display:none;
-}
+    .search input[type='submit'] {
+        width:100%;
+    }
     
-.mobileNav {
-    display:block;
-    float:right;
-}
+    .search input[type='text'] {
+        width:auto;
+    }
     
-.mobileNav select {
-    background:var(--lightGray);
-    color:var(--white);
-    margin-top:2em;
+    .search hr {
+        display:block;
+        border:1px solid rgba(255,255,255,0.5);
+    }
+    
+    
+    
+    /************
+        HOMEPAGE
+    *************/
+    .box a {
+    float:left;
+    }
+    
+    .opener {
+    height: 610px;
+    }
+
+    .opener h1 {
+        font-size:2.5em !important;
+        margin-top:0.5em;
+    }
+
+    .opener h2 {
+        font-size:1.5em !important;
+    }
+    
+    .opener .grid-25 a {
+    margin-bottom: 1em;
+    }
+    
+    /******
+    LEARNING RESOURCES
+    ******/
+    .supportCard h1 {
+        height:auto;
+    }
+    
+    .sort form {
+        box-sizing:content-box;
+    }
+    
+    .sort hr {
+        display: block;
+        border:1px solid #BFBFBF;
+        margin: 1em 0;
+        padding: 0; 
+    }
+    
+    .sort input[type='input'] {
+        float:left;
+        width:90%;
+    }
+    
+    /******
+    BLOG POST
+    ******/
+    .post section {
+    padding:1em;
+    }
+    
+.bigCard .blogImage {
+    width:100%;
+    height:200px;
+    background-image:url('http://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg');
+    background-size:cover;
+    background-position:center;
 }
     
   

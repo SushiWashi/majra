@@ -38,9 +38,11 @@
 				</div>
 
 				<div class="grid-10">
-					<input type="submit" value="GO">
+					<input type="submit" class="button orange" value="GO">
 				</div>
 
+                <hr>
+                
 				<div class="grid-20">
 					<input type="text" placeholder="Search..">
 				</div>
@@ -67,6 +69,8 @@
 		</div>
 
 	<?php } ?>
+    <div class="clearfix"></div>
 
+    
 </div>
 <?php include 'footer.php'; ?>

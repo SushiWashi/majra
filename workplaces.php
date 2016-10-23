@@ -3,7 +3,9 @@
 <div class="filter">
 	<div class="darkBackground">
 		<div class="grid-container">
-			<h1 class="grid-35 mobile-grid-100">Get an inside look at the best companies out there.</h1>
+            <div class="grid-35 mobile-grid-100">
+    			<h1>Get an inside look at the best companies out there.</h1>
+            </div>
 		</div>
 	</div>
 
@@ -35,13 +37,14 @@
 						<option value="b">Location B</option>
 						<option value="c">Location C</option>
 					</select>
-				
 				</div>
 
 				<div class="grid-10 mobile-grid-100">
-					<input type="submit" value="GO">
+					<input type="submit" class="button orange" value="GO">
 				</div>
-
+                
+                <hr>
+                
 				<div class="grid-20 mobile-grid-100">
 					<input type="text" placeholder="Search..">
 				</div>
