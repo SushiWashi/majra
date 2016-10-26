@@ -21,5 +21,5 @@
         <span>What do you look for in applicants?<span><br>
 		<textarea rows="4" cols="50"></textarea><br>
 
-		<input type="submit" value="ADD NEW OPPORTUNITY">
+		<input type="submit" class="button orange" value="ADD NEW OPPORTUNITY">
 	</form>

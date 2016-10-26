@@ -41,5 +41,5 @@
 		</select>
 		<br>
 
-		<input type="submit" value="SUBMIT">
+		<input type="submit" class="button orange" value="SUBMIT">
 	</form>

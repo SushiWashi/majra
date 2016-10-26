@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php include ('function.php');?>
 <head>
+    <title><?php title(); ?></title> 	 
+    
 	<!--Favicons-->
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.svg">
 	<link rel="icon" href="<?php echo folder();?>img/favicon/favicon.png" sizes="32x32">
@@ -18,12 +20,13 @@
 
     <!--STYLE LINKS-->
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/mobile-style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo folder()?>css/grid.css">
     
+    <!--GET FONT FROM ADOBE'S SERVER :/ -->
     <script src="https://use.typekit.net/zyb3ses.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
     <script>
       (function(d) {
         var config = {
@@ -34,9 +37,6 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
-    
-    <title><?php title(); ?></title> 	 
-
     
 </head>
 
@@ -132,17 +132,19 @@
 				<li><a href="opportunities.php">find opportunities</a></li>
 				<li><a href="resources.php">learning resources</a></li>
 			</ul>
-			
-	    <div class="mobileNav">
-        <select onChange="window.location.href=this.value">
-            <option value="/">Home</option>
-            <option value="workplaces.php">Explore Places</option>
-            <option value="opportunities.php">Find Opportunities</option>
-            <option value="resources.php">Learning Resources</option>
-            <option value="login.php">Log in / Sign up</option>
+            
+        <div class="showMobile">
+            <a href="#mobileNav" class="showBtn">MENU</a>
+            <div class="mobileContent">
+                <a href="/">Home</a>
+                <a href="workplaces.php">Explore Places</a>
+                <a href="opportunities.php">Find Opportunities</a>
+                <a href="resources.php">Learning Resources</a>
+                <a href="login.php">Log in / Sign up</a>
+            </div>
+        </div>
 
-        </select>
-    </div>		
-		</div>
+            
+        </div>
     </div>
 </div>

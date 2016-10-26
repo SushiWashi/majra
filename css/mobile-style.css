@@ -1,0 +1,169 @@
+@media screen and (max-width:768px) {
+    /************
+        HEADER
+    *************/
+    .nav .logo {
+        height:80px;
+        margin:1em 0 0 0;
+    }
+    
+    .showMobile {
+        position:relative;
+        display: inline-block;
+        float:right;
+    }
+    
+    .showBtn {
+        float:right;
+        margin:3em 1em 0 0;
+        display:inline-block;
+        padding:1em;
+    }
+    
+    .showBtn:hover, .showBtn:active {
+        background:var(--lightGray);
+    }
+    
+    .showBtn:active .mobileNav {
+        display:block;
+    }
+    
+    .beta {
+        top:6em; 
+        left:8em; 
+    }
+    
+    .mobileContent {
+        display:none;
+        position: absolute;
+        top:8em;
+        right:0;
+        min-width:330px;
+        z-index: 999;
+        background:var(--lightGray);
+        padding:1em;
+        box-shadow:0px 2px 4px 0px rgba(0,0,0,0.5);
+        font-size:1em !important;
+    }
+    
+    .showMobile:hover .mobileContent {
+        display: block;
+    }
+
+    .mobileContent a {
+        color:var(--white);
+        padding:1em 1em;
+        display:block;
+        width:auto;
+        clear:both;
+    }
+    
+    .user, .links {
+        display:none;
+    }
+    /************
+        FOOTER
+    *************/
+    #content {
+	   padding-bottom:386px; /* Height of the footer element */
+    }
+
+    
+    /**
+    Workplaces
+    **/
+    
+    .filter {
+	height:650px;
+}
+    
+    .search {
+	height:375px;
+    }
+    
+    .search input[type='submit'] {
+        width:100%;
+    }
+    
+    .search input[type='text'] {
+        width:auto;
+    }
+    
+    .search hr {
+        display:block;
+        border:1px solid rgba(255,255,255,0.5);
+    }
+    
+    
+    
+    /************
+        HOMEPAGE
+    *************/
+    .box a {
+    float:left;
+    }
+    
+    .opener {
+    height: 610px;
+    }
+
+    .opener h1 {
+        font-size:2.5em !important;
+        margin-top:0.5em;
+    }
+
+    .opener h2 {
+        font-size:1.5em !important;
+    }
+    
+    .opener .grid-25 a {
+    margin-bottom: 1em;
+    }
+    
+    /******
+    LEARNING RESOURCES
+    ******/
+    .supportCard h1 {
+        height:auto;
+    }
+    
+    .sort form {
+        box-sizing:content-box;
+    }
+    
+    .sort hr {
+        display: block;
+        border:1px solid #BFBFBF;
+        margin: 1em 0;
+        padding: 0; 
+    }
+    
+    .sort input[type='input'] {
+        float:left;
+        width:90%;
+    }
+    
+    /******
+    BLOG POST
+    ******/
+    .post section {
+    padding:1em;
+    }
+    
+.bigCard .blogImage {
+    width:100%;
+    height:200px;
+    background-image:url('http://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg');
+    background-size:cover;
+    background-position:center;
+}
+    
+    /****
+    ABOUT
+    ***/
+    
+    .content section {
+    padding:0;
+    }
+  
+}

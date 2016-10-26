@@ -1,10 +1,8 @@
 <?php include '../header.php';?>
 
 <div class="grid-container">
-	<div class="grid-100 bigCard">
-
-		<div class="grid-25">
-			<div class="aboutSideBar">
+	<div class="grid-100 mobile-grid-100 bigCard">
+		<div class="grid-25 mobile-grid-100 aboutSideBar">
 			
 				<h3 style="text-align:left">Limefish</h3>
 				
@@ -12,16 +10,13 @@
 					<li><a href="?page=addOpportunity">Add New Opportunity</a></li>
 					<li><a href="?page=viewApp">View Applicants & Matches</a></li>
 				</ul>
-				
-				</div>
-		</div>
+        </div>
 
-		<div class="grid-75">
-			<div class="content">
+		<div class="grid-75 mobile-grid-100 content">
                 <section>
 			<?php 
 			$p = $_GET['page'];
-			$header = "<h1 style='margin-top:1em'>" .$p. "</h1>";
+			$header = "<h1 class='header'>" .$p. "</h1>";
 			
 			switch($p) {
 				//About Us
@@ -40,9 +35,7 @@
 			}
 			?>
             </section>
-			</div>
 		</div>
-
 	</div>
 </div>
 

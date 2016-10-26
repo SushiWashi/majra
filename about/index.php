@@ -1,10 +1,8 @@
 <?php include '../header.php';?>
 
 <div class="grid-container">
-	<div class="grid-100 bigCard">
-
-		<div class="grid-15">
-			<div class="aboutSideBar">
+	<div class="grid-100 mobile-grid-100 bigCard">
+		<div class="grid-15 mobile-grid-100 aboutSideBar">
 			
 				<h3 style="text-align:left">about us</h3>
 				
@@ -21,15 +19,13 @@
 					<a href="?page=terms"><li>terms of use</li></a>
 				</ul>
 				
-				</div>
 		</div>
 
-		<div class="grid-85">
-			<div class="content">
-                <section>
+		<div class="grid-85 mobile-grid-100 content">
+            <section>
 			<?php 
 			$p = $_GET['page'];
-			$header = "<h1 style='margin-top:0.5em; font-size:2em !important;'>" .$p. "</h1>";
+			$header = "<h1 class='header'>" .$p. "</h1>";
 
 			
 			switch($p) {
@@ -61,8 +57,7 @@
 					include('company.php');
 			}
 			?>
-                </section>
-			</div>
+            </section>
 		</div>
 
 	</div>
