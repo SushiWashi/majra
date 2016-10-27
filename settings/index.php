@@ -18,30 +18,7 @@
 
 		<div class="grid-85 mobile-grid-100 content">
             <section>
-                <?php 
-                $p = $_GET['page'];
-                $header = "<h1 class='header'>" .$p. "</h1>";
-
-                switch($p) {
-                    //About Us
-                    case 'general':
-                        echo $header;
-                        include('general.php');
-                        break;
-                    case 'security':
-                        echo $header;
-                        include('security.php');
-                        break;
-                    case 'notifications':
-                        echo $header;
-                        include('notifications.php');
-                        break;
-                    // Default
-                    default:
-                        echo $header;
-                        include('general.php');
-                }
-                ?>
+                <?php getPage(); ?>
             </section>
 		</div>
 	</div>

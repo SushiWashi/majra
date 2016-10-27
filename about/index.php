@@ -23,40 +23,7 @@
 
 		<div class="grid-85 mobile-grid-100 content">
             <section>
-			<?php 
-			$p = $_GET['page'];
-			$header = "<h1 class='header'>" .$p. "</h1>";
-
-			
-			switch($p) {
-				//About Us
-				case 'company':
-					echo $header;
-					include('company.php');
-					break;
-				case 'faq':
-					echo $header;
-					include('faq.php');
-					break;
-				case 'careers':
-					echo $header;
-					include('careers.php');
-					break;
-				case 'contact':
-					echo $header;
-					include('contact.php');
-					break;
-				// Legal
-				case 'terms':
-					echo $header;
-					include('terms.php');
-					break;
-				// Default
-				default:
-					echo $header;
-					include('company.php');
-			}
-			?>
+			<?php getPage(); ?>
             </section>
 		</div>
 

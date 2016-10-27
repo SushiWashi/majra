@@ -13,32 +13,11 @@
         </div>
 
 		<div class="grid-75 mobile-grid-100 content">
-                <section>
-			<?php 
-			$p = $_GET['page'];
-			$header = "<h1 class='header'>" .$p. "</h1>";
-			
-			switch($p) {
-				//About Us
-				case 'addOpportunity':
-					echo $header;
-					include('addOpportunity.php');
-					break;
-				case 'viewApp':
-					echo $header;
-					include('viewApp.php');
-					break;
-				// Default
-				default:
-					echo $header;
-					include('addOpportunity.php');
-			}
-			?>
+            <section>
+			<?php getPage(); ?>
             </section>
 		</div>
 	</div>
 </div>
-
-
 
 <?php include '../footer.php'; ?>

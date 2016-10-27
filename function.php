@@ -1,9 +1,8 @@
 <?php 
 //Active State in Nav Bar
 function activeNav($page) {
-   
     $self = $_SERVER['PHP_SELF'];    
-   
+       
     if($self == '/majra/workplaces.php' and $page=='workplaces') {
         echo "class='active'";
     } else if($self == '/majra/opportunities.php' and $page=='opportunities') {
@@ -22,6 +21,73 @@ function activeNav($page) {
     
 }
 
+// Replaces content if the user is on
+// settings, about or companyUser 
+function getPage() {
+	$self = $_SERVER['PHP_SELF'];
+    $p = $_GET['page'];
+    $header = array("<h1 class='header'>",'</h1>');
+    
+    if($self=='/majra/about/index.php') {
+        switch($p) {
+            case 'company':
+                echo $header[0] . 'company' . $header[1];
+                include('company.php');
+                break;
+            case 'faq':
+                echo $header[0] . 'faq' . $header[1];
+                include('faq.php');
+                break;
+            case 'careers':
+                echo $header[0] . 'careers' . $header[1];
+                include('careers.php');
+                break;
+            case 'contact':
+                echo $header[0] . 'contact' . $header[1];
+                include('contact.php');
+                break;
+            case 'terms':
+                echo $header[0] . 'terms & conditions' . $header[1];
+                include('terms.php');
+                break;
+            default:
+                echo $header[0] . 'company' . $header[1];
+                include('company.php');
+        }
+    } else if ($self == '/majra/companyUser/index.php') {
+        switch($p) {
+            case 'addOpportunity':
+                echo $header[0] . 'add new opportunity' . $header[1];
+                include('addOpportunity.php');
+			    break;
+            case 'viewApp':
+                echo $header[0] . 'view applicants & matches' . $header[1];
+				include('viewApp.php');
+				break;
+			default:
+                echo $header[0] . 'add new opportunity' . $header[1];
+				include('addOpportunity.php');
+			}
+        } else if ($self == '/majra/settings/index.php') {
+            switch($p) {
+                case 'general':
+                    echo $header[0] . 'general' . $header[1];
+                    include('general.php');
+                    break;
+                case 'security':
+                    echo $header[0] . 'security' . $header[1];
+                    include('security.php');
+                    break;
+                case 'notifications':
+                    echo $header[0] . 'notifications' . $header[1];
+                    include('notifications.php');
+                    break;
+                default:
+                    echo $header[0] . 'general' . $header[1];
+                    include('general.php');
+        } 
+    }
+}
 
 //Change the <title>
 function title() {
@@ -130,26 +196,12 @@ Changes the background color
 when the user goes to "For Employees" page
 */
 
-	$self = $_SERVER['PHP_SELF'];
+$self = $_SERVER['PHP_SELF'];
           
-    if($self == '/majra/forEmployees.php') {
-        echo "<html style='background-color:var(--darkGray)'>";
-    } else {
-        echo "<html>";
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if($self == '/majra/forEmployees.php') {
+    echo "<html style='background-color:var(--darkGray)'>";
+} else {
+    echo "<html>";
+}
 
 ?>
