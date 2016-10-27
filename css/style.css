@@ -407,6 +407,12 @@ a:hover, a:active {
 	margin-top:1em;
 }
 
+.active {
+    color:var(--white) !important;
+    border-bottom:1px solid var(--orange);
+    padding-bottom:1em;
+}
+
 .user {
 	border-left: 1px solid var(--lightGray);
     padding-left:0.8em;

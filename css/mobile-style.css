@@ -24,7 +24,7 @@
         background:var(--lightGray);
     }
     
-    .showBtn:active .mobileNav {
+    .showBtn:active .mobileContent {
         display:block;
     }
     
@@ -36,13 +36,11 @@
     .mobileContent {
         display:none;
         position: absolute;
-        top:8em;
+        top:6em;
         right:0;
         min-width:330px;
         z-index: 999;
         background:var(--lightGray);
-        padding:1em;
-        box-shadow:0px 2px 4px 0px rgba(0,0,0,0.5);
         font-size:1em !important;
     }
     
@@ -52,7 +50,7 @@
 
     .mobileContent a {
         color:var(--white);
-        padding:1em 1em;
+        padding:2em;
         display:block;
         width:auto;
         clear:both;
@@ -61,6 +59,40 @@
     .user, .links {
         display:none;
     }
+    
+    .showMobile .displayPicture {
+        width:50px;
+        height:50px;
+        margin:2em;
+        float:left;
+        display: inline-block;
+    }
+    
+    .user_logged_in {
+        background:var(--white);
+        width:100%;
+        height:auto;
+        display: inline-block;
+    }
+    
+    .user_logged_in a{
+        float:left;
+        color:var(--lightGray);
+        width:auto;
+        clear:none;
+        margin-top:2.8em;
+        padding:0;
+        font-size:1.3em;
+        text-transform: none;
+    }
+    
+    .active {
+        color:var(--white) !important;
+        border-bottom:0px solid var(--orange);
+        padding-bottom:1em;
+        background:var(--orange);
+    }
+    
     /************
         FOOTER
     *************/

@@ -1,4 +1,28 @@
 <?php 
+//Active State in Nav Bar
+function activeNav($page) {
+   
+    $self = $_SERVER['PHP_SELF'];    
+   
+    if($self == '/majra/workplaces.php' and $page=='workplaces') {
+        echo "class='active'";
+    } else if($self == '/majra/opportunities.php' and $page=='opportunities') {
+        echo "class='active'";
+    } else if($self == '/majra/resources.php' and $page=='resources') {
+        echo "class='active'";
+    //MOBILE LINKS
+    } else if ($self == '/majra/index.php' and $page=='home') {
+        echo "class='active'";
+    } else if ($self == '/majra/login.php' and $page=='login') {
+        echo "class='active'";
+    //OTHERWISE, SHOW NOTHING
+    } else {
+        echo '';
+    }
+    
+}
+
+
 //Change the <title>
 function title() {
     
