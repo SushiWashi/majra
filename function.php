@@ -1,4 +1,17 @@
 <?php 
+function notification() {
+    
+    $notification_active = false;
+    
+    if($notification_active) {
+        echo "<div class='notification'> </div>";
+        echo "<img src='".folder()."img/notifications.svg'>";
+    } else {
+        echo "<img src='".folder()."img/notifications_none.svg'>";
+    }
+    
+}
+
 //Active State in Nav Bar
 function activeNav($page) {
     $self = $_SERVER['PHP_SELF'];    
@@ -164,44 +177,47 @@ function sizeOfCompany() {
 		}
 }
 
-//Changes the body class
-function bodyClass() {
+
+function darkBg() {
+/* 
+    Changes the background html & body
+    when the user goes to "For Employees" page
+*/    
+    
     $self = $_SERVER['PHP_SELF'];
           
     if($self == '/majra/forEmployees.php') {
-        echo "<body class='darkBody'>";
+        echo "<html style='background-color:var(--darkGray)'> <body class='darkBody'>";
     } else {
-        echo "<body>";
+        echo "<html> <body>";
     }
+    
 }
 
-//Adds "..." to links
 function folder() {
-	$self = $_SERVER['PHP_SELF'];
-	
-	switch($self) {
-		case '/majra/about/index.php':
-		case '/majra/settings/index.php':
-        case '/majra/companyUser/index.php':
-			echo "../";
-			break;
-		default:
-			echo "";
-	}		
-	
-}
-
-/* 
-Changes the background color
-when the user goes to "For Employees" page
+ 
+/*
+    Adds "..." to links
 */
+    
+	$self = $_SERVER['PHP_SELF'];
+    $folderPages = array('/majra/about/index.php',
+                         '/majra/settings/index.php',
+                         '/majra/companyUser/index.php');
+     
+    
+    foreach ($folderPages as $pages) {
 
-$self = $_SERVER['PHP_SELF'];
-          
-if($self == '/majra/forEmployees.php') {
-    echo "<html style='background-color:var(--darkGray)'>";
-} else {
-    echo "<html>";
+        if($self == $pages) {
+            echo '../';
+        }
+        
+    }
+
 }
+
+
+
+
 
 ?>

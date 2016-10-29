@@ -40,7 +40,7 @@
     
 </head>
 
-<?php bodyClass(); ?>
+<?php darkBg(); ?>
     
 <div id="wrapper">
 <div id="content">
@@ -53,7 +53,7 @@
 				
 
 			<ul class="user">
-			<?php $logged_in = false;
+			<?php $logged_in = true;
 			
 			if(!$logged_in){?>
 				<li>
@@ -92,7 +92,7 @@
                 </li>
 			<?php }else{ ?>
 				<li class="dropdown">
-                    <a href="#" class="dropbtn">Notifications</a>
+                    <a href="#" class="button"><?php notification(); ?></a>
                     <div class="dropdown-content">
                         <div class="grid-100">
                         <?php for($x=0; $x <= 5; $x++){?>
@@ -116,7 +116,7 @@
                     </div>
                 </li>
 				<li class="dropdown">
-                    <a href="#" class="dropbtn">Nazar</a>
+                    <a href="#" class="button">Nazar</a>
                     <div class="dropdown-content">
 						<ul>
 							<li><a href="#">Your Profile</a></li>
@@ -134,7 +134,7 @@
 			</ul>
             
         <div class="showMobile">
-            <a href="#mobileNav" class="showBtn">MENU</a>
+            <a href="#mobileNav" class="showBtn"><img class="menuIcon" src="<?php folder();?>img/menu.svg"></a>
             <div class="mobileContent">
                 <a href="index.php" <?php activeNav('home'); ?>>Home</a>
                 <a href="workplaces.php" <?php activeNav('workplaces'); ?>>Explore Places</a>

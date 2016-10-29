@@ -13,6 +13,10 @@
         float:right;
     }
     
+    .showMobile .menuIcon {
+        fill:#000000;
+    }
+    
     .showBtn {
         float:right;
         margin:3em 1em 0 0;
