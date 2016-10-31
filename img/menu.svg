@@ -9,7 +9,7 @@
             <g id="ic_reorder" transform="translate(336.000000, 720.000000)">
                 <g id="Icon-24px">
                     <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-                    <path d="M3,15 L21,15 L21,13 L3,13 L3,15 L3,15 Z M3,19 L21,19 L21,17 L3,17 L3,19 L3,19 Z M3,11 L21,11 L21,9 L3,9 L3,11 L3,11 Z M3,5 L3,7 L21,7 L21,5 L3,5 L3,5 Z" id="Shape" fill="#000000"></path>
+                    <path d="M3,15 L21,15 L21,13 L3,13 L3,15 L3,15 Z M3,19 L21,19 L21,17 L3,17 L3,19 L3,19 Z M3,11 L21,11 L21,9 L3,9 L3,11 L3,11 Z M3,5 L3,7 L21,7 L21,5 L3,5 L3,5 Z" id="menu_icon" fill="#808080"></path>
                 </g>
             </g>
         </g>

@@ -13,19 +13,11 @@
         float:right;
     }
     
-    .showMobile .menuIcon {
-        fill:#000000;
-    }
-    
     .showBtn {
         float:right;
         margin:3em 1em 0 0;
         display:inline-block;
         padding:1em;
-    }
-    
-    .showBtn:hover, .showBtn:active {
-        background:var(--lightGray);
     }
     
     .showBtn:active .mobileContent {
@@ -179,27 +171,64 @@
         width:90%;
     }
     
+    
+    /******
+    Opportunity Single
+    ******/
+    
+    .opportunityCard section {
+    padding:1em !important;
+    }
+    
+    .companyHeader {
+	width:100%;
+	height:400px;
+    }
+
+.companyHeader h1 {
+	color:var(--white);
+    text-align: center !important;
+	display:block; 
+}
+
+.companyHeader .displayPicture {
+	width:100px;
+	height:100px;
+	background-size:cover;
+	background-position:center;
+	margin:0 auto;
+}
+
+.companyHeader .type {
+    display: block;
+    text-align: center;
+    width:auto !important;
+    margin:0 auto !important;
+}
+    
+    .companyHeader .button {
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+    
     /******
     BLOG POST
     ******/
-    .post section {
-    padding:1em;
+    .post section {padding:1em;}
+    
+    .bigCard .blogImage {
+        width:100%;
+        height:200px;
+        background-image:url('http://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg');
+        background-size:cover;
+        background-position:center;
     }
     
-.bigCard .blogImage {
-    width:100%;
-    height:200px;
-    background-image:url('http://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg');
-    background-size:cover;
-    background-position:center;
-}
-    
-    /****
+    /******
     ABOUT
-    ***/
+    ******/
     
-    .content section {
-    padding:0;
-    }
+    .content section {padding:0;}
   
 }

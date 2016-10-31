@@ -3,7 +3,11 @@
 <div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
 	<div class="darkBackground">
 		<div class="grid-container">
-			<div class="grid-80">
+			<div class="grid-80 mobile-grid-100">
+                <br class="hide-on-desktop"><br class="hide-on-desktop"><br class="hide-on-desktop">
+
+
+                	<div class="displayPicture hide-on-desktop" style="background-image:url('https://scontent.xx.fbcdn.net/v/t1.0-9/12234957_195242300847867_9193053891343381776_n.png?oh=b7506a67050bd9037b4b1387cb1f94b0&oe=58785757')"></div>
 				<h1 class="mainHeader">limefish </h1>
 				<?php sizeOfCompany(); ?>   
                 
@@ -13,7 +17,7 @@
 				</ul>
 			</div>
 			
-			<div class="grid-20">
+			<div class="grid-20 hide-on-mobile">
 				<div class="displayPicture" style="background-image:url('https://scontent.xx.fbcdn.net/v/t1.0-9/12234957_195242300847867_9193053891343381776_n.png?oh=b7506a67050bd9037b4b1387cb1f94b0&oe=58785757')"></div>
 			</div>
 		</div>
@@ -32,7 +36,7 @@
                 <li><a href="#perks">Perks</a></li>                      
                 <li><a href="#development">Development</a></li>
                 <li><a href="#opportunities">Opportunities (99+)</a></li>
-                <li><button class="followButton">FOLLOW</button></li>   
+                <li><button class="button orange">FOLLOW</button></li>   
             </ul>
         </div>
 	</div>
