@@ -4,7 +4,7 @@
         <div class="grid-container">
             <div style="width:100%; margin-top:15em;">
                 
-                <div class="grid-50">
+                <div class="grid-50 mobile-grid-100">
                     <h1 style="margin-bottom:2em">Hire the right people that match your work and culture expectations.</h1>
                 </div>
                 
@@ -71,8 +71,8 @@
 <div class="infoEmployee" style="background-image:url('img/sunset.jpg'); background-position:0 35%">
 	<div class="darkBackground">
         <div class="grid-container">
-            <div class="grid-60"><br></div>
-            <div class="grid-40">
+            <div class="grid-60 mobile-grid-100 hide-on-mobile"><br></div>
+            <div class="grid-40 mobile-grid-100">
                 <h2>We Speak Millennial.</h2>
                 <p>Employer branding to us is the language that gets you the best profile of people working at your company, we do this through dedicated social media campaigns and vibrant content.</p>
             </div>
@@ -83,11 +83,11 @@
 <div class="infoEmployee" style="background-image:url('http://kaboompics.com/files/upload/o_1akr15pfd6pa1t81a7v17ks12qc7_new.jpg'); background-position:0 70%">
 	<div class="darkBackground">
         <div class="grid-container">
-        <div class="grid-40">
+        <div class="grid-40 mobile-grid-100">
             <h2> We know what you’re tired of seeing</h2>
             <p>Inbox getting spammed by CV’s that aren’t so great? We got you, our job seekers profiles are simplified to answer two questions “Do they have the experience for the job, and do they add value to my team and company?”</p>  
         </div>
-        <div class="grid-60"><br></div>
+        <div class="grid-60 hide-on-mobile"><br></div>
         </div>
     </div>
 </div>
@@ -120,11 +120,13 @@
 
 <div class="companySignUp">
 <div class="grid-container">
-    <div class="grid-100">
+    <div class="grid-100 mobile-grid-100">
     
         <h1 style="">What are you waiting for?</h1>
         
-        <a class="button orange" href="#popup3">SIGN YOUR COMPANY UP</a>
+        <a class="button orange hide-on-mobile" href="#popup3">SIGN YOUR COMPANY UP</a>
+        <a class="button orange hide-on-desktop"  style="display:block;" href="#popup3">SIGN YOUR COMPANY UP</a>
+
                     <div id="popup3" class="overlay">
                         <div class="popup">
                             <div style="clear:both; width:100%; height:20px;">

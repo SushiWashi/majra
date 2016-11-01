@@ -1,13 +1,14 @@
 <?php 
+//SHow Notification
 function notification() {
     
-    $notification_active = false;
+    $notification_active = true;
     
     if($notification_active) {
-        echo "<div class='notification'> </div>";
-        echo "<img src='".folder()."img/notifications.svg'>";
+        echo "<div class='notification'></div>";
+        echo "<img src='" . folder() . "img/notifications.svg'>";
     } else {
-        echo "<img src='".folder()."img/notifications_none.svg'>";
+        echo "<img src='" . folder() . "img/notifications_none.svg'>";
     }
     
 }

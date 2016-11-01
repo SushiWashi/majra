@@ -65,19 +65,17 @@
     }
     
     .user_logged_in {
-        background:var(--white);
+        background:var(--darkGray);
         width:100%;
         height:auto;
         display: inline-block;
     }
     
     .user_logged_in a{
-        float:left;
+        display:block;
         color:var(--lightGray);
         width:auto;
-        clear:none;
-        margin-top:2.8em;
-        padding:0;
+        clear:right;
         font-size:1.3em;
         text-transform: none;
     }

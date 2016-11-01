@@ -100,7 +100,7 @@
                     <a href="#" class="button"><?php notification(); ?></a>
                     <div class="dropdown-content">
                         <div class="grid-100">
-                        <?php for($x=0; $x <= 5; $x++){?>
+                        <?php for($x=0; $x <= 10; $x++){?>
                             <div class="noticePost">
                                 
                                 <div class="grid-20">
@@ -145,14 +145,17 @@
                 <a href="workplaces.php" <?php activeNav('workplaces'); ?>>Explore Places</a>
                 <a href="opportunities.php" <?php activeNav('opportunities'); ?>>Find Opportunities</a>
                 <a href="resources.php" <?php activeNav('resources'); ?>>Learning Resources</a>
-                <?php $login = true; 
+                <?php 
+                
+                $login = true; 
                 
                 if(!$login) {?>
                     <a href="login.php" <?php activeNav('login'); ?>>Log in / Sign up</a>
                 <?php } else { ?>
                     <div class="user_logged_in clearfix">
-                        <div class="displayPicture"></div>
                         <a href="/majra/companyUser/index.php">Limefish</a>
+                        <a href="<?php folder(); ?>notification.php">Notifications</a>
+                        <a href="/settings/index.php">Settings</a>
                     </div>
                 <?php } ?>
 

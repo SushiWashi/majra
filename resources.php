@@ -2,7 +2,7 @@
 
 <div class="sort">
     <div class="grid-container">
-        <div class="grid-50">
+        <div class="grid-50 mobile-grid-100">
         <form method="POST" action="" style="width:100%">
             <select name="category">
                 <option value="all">All Categories</option>
@@ -16,7 +16,7 @@
         
         <hr>
         
-        <div class="grid-50">
+        <div class="grid-50 mobile-grid-100">
             <form method="POST" action="" style="width:100%">
                 <input type="input" placeholder="Search..">
             </form>
@@ -28,7 +28,7 @@
     
 <h1 class="bold" style="margin:1em 0 0 0; text-align:center;">Learning Resources</h1>
 
-    <div class="grid-50">
+    <div class="grid-50 mobile-grid-100">
 			<div class="card supportCard">
 				<div class="cardImage"></div>
                 <section>
