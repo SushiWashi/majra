@@ -25,17 +25,21 @@
 </div>
 
 <div class="grid-container">
-    <div class="card" style="background:var(--orange)">
-        <div class="grid-70 grid-parent mobile-grid-100">
+    <div class="card" style="background:var(--orange);">
+        
+        <div class="push-70 grid-30 mobile-grid-100">
+            <section>
+                <h1 style="color:var(--white) !important;"><span style="color:rgba(255,255,255,0.7) !important;">Meet</span><br>Limefish Design</h1>
+                <p style="color:var(--white) !important;">We are a creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</p>
+            </section>
+        </div>
+        
+        <div class="pull-30 grid-70 grid-parent mobile-grid-100">
             <iframe src="https://player.vimeo.com/video/187529393" width="640" height="377" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
-        <div class="grid-30 mobile-grid-100">
-            <section style="color:var(--white) !important;">
-                <h1><span>Meet</span><br>Limefish Design</h1>
-                <p>We are a creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</p>
-            </section>
-        </div>
+
+        
     </div>
 </div>
 
@@ -102,11 +106,11 @@
         <div class="grid-50 grid-parent mobile-grid-100">
             <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             
-            <div class="grid-50 mobile-grid-100">
+            <div class="grid-50 mobile-grid-100 grid-parent">
                 <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
             </div>
             
-            <div class="grid-50 mobile-grid-100">
+            <div class="grid-50 mobile-grid-100 grid-parent">
                 <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
             </div>
         </div>
@@ -115,23 +119,11 @@
 
 <div class="grid-container">
     <div class="card">
-        <div class="grid-50 grid-parent mobile-grid-100">
-            <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            
-            <div class="grid-50 mobile-grid-100">
-                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
-            </div>
-            
-            <div class="grid-50 mobile-grid-100">
-                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
-            </div>
-        </div>
-        
-        <div class="grid-50 mobile-grid-100">
+        <div class="push-50 grid-50 mobile-grid-100">
             <section>
             <h1>Our Perks</h1>
             <p>A bit of our Limefish’s experience:</p>
-            <ul>
+            <ul class="perks">
                 <li>Free supply of soft drinks (there’s water too if you’re the healthy type).</li>
                 <li>Joint lunch breaks with incredibly funny TV shows (sometimes not so funny).</li>
                 <li>Ability to work anywhere in the office with an awesome bean bag, blankets, and pillows. </li>
@@ -140,16 +132,27 @@
             </ul>
             </section>
         </div>
+
+        
+        <div class="pull-50 grid-50 grid-parent mobile-grid-100">
+            <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="grid-container">
-    <div class="card">
-        
-        <h1>Development</h1>
-        
+    <div class="card">        
         <div class="grid-50 mobile-grid-100">
             <section>
+            <h1>Development</h1>
             <p>Hear Yusuf’s story of development within Limefish, one of our brightest designers!</p>
             </section>
         </div>
