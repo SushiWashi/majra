@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'header.php'; ?>
 
 <div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
 	<div class="darkBackground">
@@ -8,7 +8,7 @@
 
 
                 	<div class="displayPicture hide-on-desktop" style="background-image:url('https://scontent.xx.fbcdn.net/v/t1.0-9/12234957_195242300847867_9193053891343381776_n.png?oh=b7506a67050bd9037b4b1387cb1f94b0&oe=58785757')"></div>
-				<h1 class="mainHeader">limefish </h1>
+				<h1 class="mainHeader">limefish</h1>
 				<?php sizeOfCompany(); ?>   
                 
                 <ul>
@@ -24,157 +24,145 @@
 	</div>
 </div>
 
+<div class="grid-container">
+    <div class="card" style="background:var(--orange);">
+        
+        <div class="push-70 grid-30 mobile-grid-100">
+            <section>
+                <h1 style="color:var(--white) !important;"><span style="color:rgba(255,255,255,0.7) !important;">Meet</span><br>Limefish Design</h1>
+                <p style="color:var(--white) !important;">We are a creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</p>
+            </section>
+        </div>
+        
+        <div class="pull-30 grid-70 grid-parent mobile-grid-100">
+            <iframe src="https://player.vimeo.com/video/187529393" width="640" height="377" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
 
-<div class="tab">
-	<div class="grid-container">
-        <div class="grid-100">
-            <ul>
-                <li><a href="#top">Meet Limefish</a></li>
-                <li><a href="#people">People</a></li> 
-                <li><a href="#place">Place</a></li>  		
-                <li><a href="#work">Work</a></li>  		
-                <li><a href="#perks">Perks</a></li>                      
-                <li><a href="#development">Development</a></li>
-                <li><a href="#opportunities">Opportunities (99+)</a></li>
-                <li><button class="button orange">FOLLOW</button></li>   
+
+        
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="card">
+        <div class="grid-25 mobile-grid-100">
+            <section>
+                <h1>Our People</h1>
+                <p>We are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find ourselves combining our talents while working to create beautiful and functional projects.</p>
+            </section>
+        </div>
+        
+        <?php for($x=0; $x <= 2; $x++) {?>
+        <div class="grid-25 mobile-grid-100">
+            <div class="person" style="background-image:url('http://www.majra.me/img/company-images/1/people/yonis.jpg')">
+                <div class="gradient darktext">
+                    <h1 style="padding:0 !important;">Yonis Attiya</h1>
+                    <h3 style="color:var(--white)">Creative Director</h3>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="card">
+        <div class="grid-33 mobile-grid-100">
+            <section>
+            <h1>Our Place</h1>
+            <p>Designed to create an atmosphere of creativity,our studio is Disneyland for designers, desks with perfect lighting, a table with all the equipment and tools a designer might need, and a library of learning resources ready to serve creative people of any caliber.</p>
+            </section>
+        </div>
+        
+        <div class="grid-33 mobile-grid-100">
+            <div class="square" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+        </div>
+        
+        <div class="grid-33 mobile-grid-100">
+            <div class="square" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+        </div>
+        
+        <div class="grid-33 mobile-grid-100">
+            <div class="square" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+        </div>
+        
+        <div class="grid-66 mobile-grid-100">
+            <div class="square" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="card">
+        <div class="grid-50 mobile-grid-100">
+            <section>
+            <h1>Our Work</h1>
+            <p>Designers, illustrators, film makers, typographers, and more is the average profile of our team members, it’s through efficient collaberation and proper processes of teamwork that our results get their magic.</p>
+            <p>You can expect a lot of team support and brainstorming sessions to help in the creative process, our feedback and learning curves are the reason why our diverse team delivers great results.</p>
+            </section>
+        </div>
+        
+        <div class="grid-50 grid-parent mobile-grid-100">
+            <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="card">
+        <div class="push-50 grid-50 mobile-grid-100">
+            <section>
+            <h1>Our Perks</h1>
+            <p>A bit of our Limefish’s experience:</p>
+            <ul class="perks">
+                <li>Free supply of soft drinks (there’s water too if you’re the healthy type).</li>
+                <li>Joint lunch breaks with incredibly funny TV shows (sometimes not so funny).</li>
+                <li>Ability to work anywhere in the office with an awesome bean bag, blankets, and pillows. </li>
+                <li>Seasonal office decorations that everyone gives input in.</li>
+                <li>Halloween get together (mostly for the candy and the costumes).</li>
             </ul>
+            </section>
         </div>
-	</div>
-</div>
 
-<div class="grid-container">
-	<div class="bigCard">
-		<h1 class="mainHeader">
-            <a name="overview">Meet Limefish</a><br> 
-        </h1>
-		<div class="grid-30">
-			<h3>A creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</h3>
-		</div>
-		<div class="grid-70">
-			<iframe style="margin-bottom:1em" width="650" height="366" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-</div>
-
-<!-- People -->
-<div class="grid-container thePeople">
-	<div class="bigCard">
-		<h1 class="mainHeader">
-            <a name="people">The People</a><br> 
-            <span>Total of people in team: 8</span>
-        </h1>
-		
-        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-
-		<?php for($x = 0; $x < 3; $x++){?>
-		<div style="margin:3em 0; height:auto; width:100%;">
-			<div class="grid-25">
-				<div class="singlePerson"></div>
-			</div>
-			
-			<div class="grid-75">
-				<h1 style="text-align:left">Marshall Mathers</h1>			               
-				<h2  style="text-align:left">CEO</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta ex at elit dignissim venenatis. Vestibulum nibh arcu, fermentum et sagittis eget, mattis vitae elit. Aliquam non aliquam tortor, eu imperdiet nisl. Curabitur sollicitudin in magna in commodo. Vestibulum sed lacus quis sem feugiat bibendum sit amet at erat. Nulla vitae leo a orci placerat laoreet sed at libero. Phasellus consectetur sem ac velit auctor tincidunt. Sed rhoncus nisi in diam malesuada bibendum. Donec aliquet dignissim facilisis. Nam quis dui mi. Cras eget pretium velit. Aliquam hendrerit justo id tellus porttitor fermentum. Aliquam erat volutpat. Quisque pharetra augue ut tellus sollicitudin laoreet.</p>
-			</div>
-		</div>
-		<div style="clear:both"></div>
-		<?php } ?>
-	</div>
-</div>
-
-
-<!-- The Place -->
-<div class="grid-container">
-	<div class="bigCard">
-		<h1 class="mainHeader"><a name="place">The Place</a></h1>
-        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-
-
-		<ul class="images">
-	<?php for($x=0; $x <3; $x++) {?>
-		<div class="grid-33">
-			<li> 
-				<div class="hovercard">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros sem, scelerisque eu malesuada quis, posuere vel ipsum. Aliquam eu mollis leo. </p>
-				</div>    
-			</li>
-				</div>
-		<?php } ?>
-		</ul>
-
-		
-	</div>
-</div>
-
-<!-- The Work -->
-<div class="grid-container">
-	<div class="bigCard">
-		<h1 class="mainHeader"><a name="work">The Work</a></h1>
-        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <div class="grid-75">
-					<iframe width="698" height="393" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
+        
+        <div class="pull-50 grid-50 grid-parent mobile-grid-100">
+            <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
+            
+            <div class="grid-50 mobile-grid-100 grid-parent">
+                <div class="square smallSquare" style="background-image:url('https://static.pexels.com/photos/28756/pexels-photo.jpg');"></div>
+            </div>
         </div>
-		
-		<div class="grid-25">
-		<ul class="gridImages">
-	<?php for($x=0; $x <3; $x++) {?>
-			<li> 
-				<div class="hovercard">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros sem, scelerisque eu malesuada quis, posuere vel ipsum. Aliquam eu mollis leo. </p>
-				</div>    
-			</li>
-		<?php } ?>
-		</ul>
-		</div>
-	</div>
+    </div>
 </div>
 
-<!-- The Perks -->
 <div class="grid-container">
-	<div class="bigCard">
-		<h1 class="mainHeader"><a name="perks">The Perks</a></h1>
-        <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        		
-		<div class="grid-25">
-		<ul class="gridImages">
-		<?php for($x=0; $x <3; $x++) {?>
-			<li> 
-				<div class="hovercard">
-				<p>This is some description. This is some description. This is some description. This is some description. This is some description.</p>
-				</div>    
-			</li>
-		<?php } ?>
-		</ul>
-		</div>
-		
-		<div class="grid-75">
-			<iframe width="698" height="393" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
+    <div class="card">        
+        <div class="grid-50 mobile-grid-100">
+            <section>
+            <h1>Development</h1>
+            <p>Hear Yusuf’s story of development within Limefish, one of our brightest designers!</p>
+            </section>
         </div>
-		
-	</div>
+        
+        <div class="grid-50 grid-parent mobile-grid-100">
+            <iframe src="https://player.vimeo.com/video/187529394" width="640" height="269" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 
-<!-- The Development -->
-<div class="grid-container">
-	<div class="bigCard">
-		<h1 class="mainHeader"><a name="development">The Development</a></h1>
-		 <h3 class="centre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-
-		 <iframe width="960" height="540" src="https://www.youtube.com/embed/SQruGr1bijY" frameborder="0" allowfullscreen></iframe>
-		 
-		 <?php for($x=0;$x < 3; $x++){?>
-		 <div class="grid-33">
-			 <div class="image">
-			 </div>
-		 </div>	
-		 <?php } ?>
-		
-   
-	</div>
-</div>
-
-<!--Opportunities-->
 <div class="opportunities">
     <div class="grid-container">    
     <div class="intro">
@@ -211,7 +199,7 @@
 				</div>
 
 				<div class="grid-10">
-					<input type="submit" value="GO">
+					<input type="submit" class="button orange" value="GO">
 				</div>
 			
 			</form>
@@ -244,6 +232,7 @@
 
 </div>
     </div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<?php include 'footer.php' ?>
+
+
+<?php include 'footer.php'; ?>

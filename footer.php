@@ -21,6 +21,10 @@
 		</div>
 
 		<div class="grid-25 mobile-grid-100">
+            
+            <br class="hide-on-desktop">
+            <br class="hide-on-desktop">
+
 			<h4>stay up to date</h4>
 			<ul id = "social">
 				<li><a href="https://www.facebook.com/majrahq/" target="_blank"><img src="<?php echo folder(); ?>img/fb.svg" alt="facebook"></a></li>

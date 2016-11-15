@@ -58,7 +58,7 @@
 				
 
 			<ul class="user">
-			<?php $logged_in = true;
+			<?php $logged_in = false;
 			
 			if(!$logged_in){?>
 				<li>
@@ -147,10 +147,11 @@
                 <a href="resources.php" <?php activeNav('resources'); ?>>Learning Resources</a>
                 <?php 
                 
-                $login = true; 
+                $login = false; 
                 
                 if(!$login) {?>
-                    <a href="login.php" <?php activeNav('login'); ?>>Log in / Sign up</a>
+                    <a href="createAccount.php" <?php activeNav('signUp'); ?>>Sign Up</a>
+                    <a href="login.php" <?php activeNav('login'); ?>>Log In</a>
                 <?php } else { ?>
                     <div class="user_logged_in clearfix">
                         <a href="/majra/companyUser/index.php">Limefish</a>

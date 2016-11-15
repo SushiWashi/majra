@@ -26,6 +26,8 @@ function activeNav($page) {
     //MOBILE LINKS
     } else if ($self == '/majra/index.php' and $page=='home') {
         echo "class='active'";
+    } else if ($self == '/majra/createAccount.php' and $page=='signUp') {
+        echo "class='active'";
     } else if ($self == '/majra/login.php' and $page=='login') {
         echo "class='active'";
     //OTHERWISE, SHOW NOTHING
