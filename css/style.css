@@ -52,19 +52,6 @@ div::-webkit-scrollbar-thumb {
     color:var(--white);
 }
 
-/*CLEARFIX*/
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-/*************/
-
 html, body {
 	background:#fff;
 	font-family: "azo-sans-web", arial, helvetica, sans-serif !important;
@@ -102,6 +89,9 @@ input, select, textarea{
     background:var(--white);
 	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
     resize: vertical;
+    
+    /*Removes gloss*/
+    -webkit-appearance:caret;
 }
 
 input:hover,
