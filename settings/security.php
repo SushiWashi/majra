@@ -8,5 +8,5 @@
 	<span>New Password Again<span> <br>
 	<input type="password"><br>
 
-	<input type="submit" value="SUBMIT">
+	<input class="button orange" type="submit" value="SUBMIT">
 </form>

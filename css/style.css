@@ -90,8 +90,14 @@ input, select, textarea{
 	font-family:'Azo Sans', arial, helvetica, sans-serif !important;
     resize: vertical;
     
-    /*Removes gloss*/
+    /*
+    
+    Removes gloss from iOS.. but also removes
+    border in Chrome.
+    
     -webkit-appearance:caret;
+    
+    */
 }
 
 input:hover,
