@@ -97,7 +97,11 @@
         FOOTER
     *************/
     #content {
-	   padding-bottom:386px; /* Height of the footer element */
+	   padding-bottom:420px; /* Height of the footer element */
+    }
+    
+    footer {
+        border-top:10px solid var(--orange) !important;
     }
 
     

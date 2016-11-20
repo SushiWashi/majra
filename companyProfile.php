@@ -29,7 +29,11 @@
         
         <div class="push-70 grid-30 mobile-grid-100">
             <section>
-                <h1 style="color:var(--white) !important;"><span style="color:rgba(255,255,255,0.7) !important;">Meet</span><br>Limefish Design</h1>
+                <h1 style="color:var(--white) !important;">
+                    <span style="color:rgba(255,255,255,0.7) !important;">Meet</span>
+                    <br>
+                    Limefish Design
+                </h1>
                 <p style="color:var(--white) !important;">We are a creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</p>
             </section>
         </div>

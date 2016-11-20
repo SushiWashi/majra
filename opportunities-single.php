@@ -29,18 +29,18 @@
 
                 </div>
                     
-                    <div class="grid-33 mobile-grid-100">
-                        <h3>Job Type</h3>
+                    <div class="grid-33 mobile-grid-50">
+                        <h3 style="margin-bottom:0 !important">Job Type</h3>
                         <?php sizeOfCompany(); ?>   
                     </div>
 
-                    <div class="grid-33 mobile-grid-100">
-                        <h3>Salary Info</h3>
+                    <div class="grid-33 mobile-grid-50">
+                        <h3 style="margin-bottom:0 !important">Salary Info</h3>
                         <p>BD500-1000</p>
                     </div>
 
                     <div class="grid-33 mobile-grid-100">
-                        <h3>Location</h3>
+                        <h3 style="margin-bottom:0 !important">Location</h3>
                         <p>Manama, Bahrain</p>
                     </div>
             </section>

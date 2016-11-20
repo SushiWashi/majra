@@ -83,7 +83,7 @@ input[type='checkbox'] {
 
 input, select, textarea{
 	outline:0;
-	border:1px solid #BFBFBF;
+	border:1px solid #BFBFBF !important;
 	padding:1em;
 	margin:1em 0;
     background:var(--white);
@@ -320,12 +320,12 @@ a:hover, a:active {
 	text-decoration:none;
 }
 
-.dark :link, .dark:visited {
+.dark:link, .dark:visited {
 		color:rgba(0,0,0,0.7);
 		text-decoration:none;
 }
 
-.dark :hover, .dark:active {
+.dark:hover, .dark:active {
 		color:rgba(0,0,0,1);
 		text-decoration:none;
 }
