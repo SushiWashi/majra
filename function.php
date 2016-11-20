@@ -2,13 +2,14 @@
 // Changes depending on if this file is on 
 // the main server or localhost
 function onServer() {
-    $self = $_SERVER['SERVER_NAME'];
+    $self = $_SERVER['SERVER_ADDR'];
     
-    if($self = 'localhost') {
+    if($self == '::1') {
         return '/majra/';
     } else {
         return '/';
     }
+    
 }
 
 //Show Notification
