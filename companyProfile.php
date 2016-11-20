@@ -1,5 +1,7 @@
 <?php include 'header.php'; ?>
 
+<?php echo $_SERVER['PHP_SELF'];?>
+
 <div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
 	<div class="darkBackground">
 		<div class="grid-container">
@@ -29,11 +31,7 @@
         
         <div class="push-70 grid-30 mobile-grid-100">
             <section>
-                <h1 style="color:var(--white) !important;">
-                    <span style="color:rgba(255,255,255,0.7) !important;">Meet</span>
-                    <br>
-                    Limefish Design
-                </h1>
+                <h1 style="color:var(--white) !important;"><span style="color:rgba(255,255,255,0.7) !important;">Meet</span><br>Limefish Design</h1>
                 <p style="color:var(--white) !important;">We are a creative design studio in Bahrain, Doing what we love is the key concept of our story, we are a team of skilled designers, typographers, filmmakers, writers, photographers, and creators who find themselves combining their talents while working to create beautiful and functional designs.</p>
             </section>
         </div>
