@@ -1,5 +1,17 @@
-<?php 
-//SHow Notification
+<?php
+// Changes depending on if this file is on 
+// the main server or localhost
+function onServer() {
+    $self = $_SERVER['SERVER_NAME'];
+    
+    if($self = 'localhost') {
+        return '/majra/';
+    } else {
+        return '/';
+    }
+}
+
+//Show Notification
 function notification() {
     
     $notification_active = true;
@@ -15,20 +27,20 @@ function notification() {
 
 //Active State in Nav Bar
 function activeNav($page) {
-    $self = $_SERVER['PHP_SELF'];    
-       
-    if($self == '/majra/workplaces.php' and $page=='workplaces') {
+    $self = $_SERVER['PHP_SELF']; 
+        
+    if($self == onServer().'workplaces.php' and $page=='workplaces') {
         echo "class='active'";
-    } else if($self == '/majra/opportunities.php' and $page=='opportunities') {
+    } else if($self == onServer().'opportunities.php' and $page=='opportunities') {
         echo "class='active'";
-    } else if($self == '/majra/resources.php' and $page=='resources') {
+    } else if($self == onServer().'resources.php' and $page=='resources') {
         echo "class='active'";
     //MOBILE LINKS
-    } else if ($self == '/majra/index.php' and $page=='home') {
+    } else if ($self == onServer().'index.php' and $page=='home') {
         echo "class='active'";
-    } else if ($self == '/majra/createAccount.php' and $page=='signUp') {
+    } else if ($self == onServer().'createAccount.php' and $page=='signUp') {
         echo "class='active'";
-    } else if ($self == '/majra/login.php' and $page=='login') {
+    } else if ($self == onServer().'login.php' and $page=='login') {
         echo "class='active'";
     //OTHERWISE, SHOW NOTHING
     } else {
@@ -43,8 +55,9 @@ function getPage() {
 	$self = $_SERVER['PHP_SELF'];
     $p = $_GET['page'];
     $header = array("<h1 class='header'>",'</h1>');
+    $server = onServer();
     
-    if($self=='/majra/about/index.php') {
+    if($self== onServer().'about/index.php') {
         switch($p) {
             case 'company':
                 echo $header[0] . 'company' . $header[1];
@@ -70,7 +83,7 @@ function getPage() {
                 echo $header[0] . 'company' . $header[1];
                 include('company.php');
         }
-    } else if ($self == '/majra/companyUser/index.php') {
+    } else if ($self == onServer().'companyUser/index.php') {
         switch($p) {
             case 'addOpportunity':
                 echo $header[0] . 'add new opportunity' . $header[1];
@@ -84,7 +97,7 @@ function getPage() {
                 echo $header[0] . 'add new opportunity' . $header[1];
 				include('addOpportunity.php');
 			}
-        } else if ($self == '/majra/settings/index.php') {
+        } else if ($self == onServer().'settings/index.php') {
             switch($p) {
                 case 'general':
                     echo $header[0] . 'general' . $header[1];
@@ -110,34 +123,34 @@ function title() {
     
     $self = $_SERVER['PHP_SELF']; 
     $majra = " :: Majra";
-    $serverLocation = '/majra/'; //Change to your server
+    $serverLocation = onServer(); //Change to your server
 
     switch($self) {
-        case $serverLocation . 'settings/index.php': 
+        case onServer().'settings/index.php': 
             echo 'Settings' . $majra; 
             break;
-        case $serverLocation . 'about/index.php':
+        case onServer().'about/index.php':
             echo 'About' . $majra;
             break;
-        case $serverLocation . 'companyProfile.php':
+        case onServer().'companyProfile.php':
             echo 'COMPANY NAME' . $majra;
             break;
-        case $serverLocation . 'blogPost.php':
+        case onServer().'blogPost.php':
             echo 'TITLE OF THE POST' . $majra;
             break;
-        case $serverLocation . 'resources.php':
+        case onServer().'resources.php':
             echo 'Learning Resources' . $majra;
             break;
-        case $serverLocation . 'opportunities.php':
+        case onServer().'opportunities.php':
             echo 'Find Opportunities' . $majra;
             break;
-        case $serverLocation . 'opportunities-single.php':
+        case onServer().'opportunities-single.php':
             echo 'TITLE OF OPPORTUNITY' . $majra;
             break;
-        case $serverLocation . 'workplaces.php':
+        case onServer().'workplaces.php':
             echo 'Explore Places' . $majra;
             break;
-        case $serverLocation.'forEmployees.php':
+        case onServer().'forEmployees.php':
             echo 'For Employers' . $majra;
             break;
         default:
@@ -188,8 +201,9 @@ function darkBg() {
 */    
     
     $self = $_SERVER['PHP_SELF'];
+    $server = onServer();
           
-    if($self == '/majra/forEmployees.php') {
+    if($self == onServer().'forEmployees.php') {
         echo "<html style='background-color:var(--darkGray)'> <body class='darkBody'>";
     } else {
         echo "<html> <body>";
@@ -204,6 +218,7 @@ function folder() {
 */
     
 	$self = $_SERVER['PHP_SELF'];
+    $server = onServer();
     $folderPages = array('/majra/about/index.php',
                          '/majra/settings/index.php',
                          '/majra/companyUser/index.php');

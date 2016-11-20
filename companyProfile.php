@@ -1,6 +1,5 @@
-<?php include 'header.php'; ?>
-
-<?php echo $_SERVER['PHP_SELF'];?>
+<?php include 'header.php'; 
+    echo onServer(); ?>
 
 <div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
 	<div class="darkBackground">
