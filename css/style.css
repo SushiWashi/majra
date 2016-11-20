@@ -83,7 +83,7 @@ input[type='checkbox'] {
 
 input, select, textarea{
 	outline:0;
-	border:1px solid #BFBFBF !important;
+	border:1px solid #BFBFBF;
 	padding:1em;
 	margin:1em 0;
     background:var(--white);
@@ -320,12 +320,12 @@ a:hover, a:active {
 	text-decoration:none;
 }
 
-.dark:link, .dark:visited {
+.dark :link, .dark:visited {
 		color:rgba(0,0,0,0.7);
 		text-decoration:none;
 }
 
-.dark:hover, .dark:active {
+.dark :hover, .dark:active {
 		color:rgba(0,0,0,1);
 		text-decoration:none;
 }
@@ -817,6 +817,10 @@ iframe {
     line-height: 1.3;
 }
 
+.bigText h1 {font-size:1.5em !important}
+.bigText p {font-size:1.1em !important}
+
+
 
 /**** OLD BUT STILL NEEDED *****/
 
@@ -908,32 +912,6 @@ iframe {
     background-size:cover;
     background-position: center;
 }
-
-.bigCard .gridImages,
-.bigCard .images {
-    display:inline-block;
-    height:auto;
-    width:auto;
-}
-
-.bigCard .gridImages li,
-.bigCard .images li {
-	position:relative;
-	float:left;
-    height:121px;
-    width:219px;
-    margin-bottom:1em;
-	background-image:url('https://assets.entrepreneur.com/content/16x9/822/20160118164234-interior-modern-office-desks-space-computers.jpeg');
-	background-color:var(--lightGray);
-    background-size:cover;
-    background-position: center;
-}
-
-.bigCard .images li {
-    height:300px;
-    width:300px;
-}
-
 /*HOVER CARD*/
 .hovercard {
     display: none;

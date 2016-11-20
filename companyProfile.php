@@ -1,5 +1,4 @@
-<?php include 'header.php'; 
-    echo onServer(); ?>
+<?php include 'header.php'; ?>
 
 <div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
 	<div class="darkBackground">
@@ -25,7 +24,7 @@
 	</div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card" style="background:var(--orange);">
         
         <div class="push-70 grid-30 mobile-grid-100">
@@ -44,7 +43,7 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card">
         <div class="grid-25 mobile-grid-100">
             <section>
@@ -66,7 +65,7 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card">
         <div class="grid-33 mobile-grid-100">
             <section>
@@ -94,7 +93,7 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card">
         <div class="grid-50 mobile-grid-100">
             <section>
@@ -118,7 +117,7 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card">
         <div class="push-50 grid-50 mobile-grid-100">
             <section>
@@ -149,7 +148,7 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container bigText">
     <div class="card">        
         <div class="grid-50 mobile-grid-100">
             <section>
