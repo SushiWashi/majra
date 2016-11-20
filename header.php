@@ -53,7 +53,7 @@
 <div class='nav'>
     <div class="grid-container">
         <div class="clearfix">
-			<a href="/majra"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
+			<a href="<?php echo onServer(); ?>"><img class="logo" src="<?php echo folder()?>img/majra-orange.svg"></a>
             <span class="beta">beta</span>
 				
 

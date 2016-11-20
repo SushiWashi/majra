@@ -55,7 +55,6 @@ function getPage() {
 	$self = $_SERVER['PHP_SELF'];
     $p = $_GET['page'];
     $header = array("<h1 class='header'>",'</h1>');
-    $server = onServer();
     
     if($self== onServer().'about/index.php') {
         switch($p) {
@@ -123,7 +122,6 @@ function title() {
     
     $self = $_SERVER['PHP_SELF']; 
     $majra = " :: Majra";
-    $serverLocation = onServer(); //Change to your server
 
     switch($self) {
         case onServer().'settings/index.php': 
@@ -201,7 +199,6 @@ function darkBg() {
 */    
     
     $self = $_SERVER['PHP_SELF'];
-    $server = onServer();
           
     if($self == onServer().'forEmployees.php') {
         echo "<html style='background-color:var(--darkGray)'> <body class='darkBody'>";
@@ -218,10 +215,9 @@ function folder() {
 */
     
 	$self = $_SERVER['PHP_SELF'];
-    $server = onServer();
-    $folderPages = array('/majra/about/index.php',
-                         '/majra/settings/index.php',
-                         '/majra/companyUser/index.php');
+    $folderPages = array(onServer()."about/index.php",
+                         onServer(). "settings/index.php",
+                         onServer(). "companyUser/index.php");
      
     
     foreach ($folderPages as $pages) {
