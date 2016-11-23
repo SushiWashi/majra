@@ -35,8 +35,8 @@ if($is_viewing_profile) {?>
 
 <div class="grid-container">
     <div class="grid-30 push-70">
-        <br class="hide-on-desktop">
-        <button class="button orange hide-on-desktop">Request Profile Verification</button>
+        <br>
+        <a class="button orange">Request Profile Verification</a>
         
         <div class="card orangeCard">
             <section>
@@ -70,9 +70,6 @@ if($is_viewing_profile) {?>
                 </ol>
             </section>
         </div>
-        
-        <button class="button orange hide-on-mobile">Request Profile Verification</button>
-        <br><br>
     </div>    
 
     <div class="grid-70 pull-30">
