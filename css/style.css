@@ -119,15 +119,44 @@ select {
     border-radius: 0 !important;
 }
 
+.list {
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
+.list li {
+    margin-bottom:1em;
+    line-height: 1.7em;
+}
+
 ol li {
     list-style-type: decimal;
     list-style-position: inside;
-    margin:1.5em 0;
+    margin-bottom:1.5em;
+    line-height:1.5em;
 }
 
 .bold {
 	font-weight:bold;
 }
+
+dl dt , dl dd {
+    margin-bottom: 1.5em;
+}
+
+dl dt {
+    font-weight:bold;
+}
+
+.orangeCard {
+    background:var(--orange) !important;
+    color:var(--white) !important;
+}
+
+.orangeCard p {
+    color:var(--white) !important;
+}
+
 
 
 /******
@@ -1474,4 +1503,18 @@ For Employees Landing Page
 .companySignUp .button {
     margin-bottom:3em;
     font-size:1.3em;
+}
+
+/*****
+My Profile
+*****/
+
+.is_viewing_profile {
+    background:var(--orange);
+    height:40px;
+    line-height:35px;
+}
+
+.is_viewing_profile span {
+    color:white;
 }
