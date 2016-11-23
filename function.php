@@ -152,6 +152,8 @@ function title() {
         case onServer().'forEmployees.php':
             echo 'For Employers' . $majra;
             break;
+        case onServer(). 'userProfile.php':
+            echo 'USER NAME' . $majra;
         default:
             echo 'Not another job site'.$majra;
     }
