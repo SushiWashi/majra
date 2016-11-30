@@ -14,10 +14,16 @@ button.accordion {
     border-bottom:1px solid var(--lightGray);
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: var(--orange);
-    border-bottom:1px solid var(--orange);
+button.accordion:hover {
+    background-color: var(--lightGray);
+    color:var(--white);
 }
+    
+button.accordion.active {
+    background-color:var(--orange);
+    border-bottom:1px solid transparent;
+}
+    
 
 div.panel {
     padding: 0 18px;
@@ -29,7 +35,11 @@ div.panel.show {
     display: block;
 }
     
-    form input, form select {
+    form {
+        margin-top:1em;
+    }
+    
+    form input, form select, form textarea {
         width:100% !important;
         box-sizing: border-box;
     }
@@ -37,14 +47,57 @@ div.panel.show {
     form label {
         font-weight: bold;
     }
+    
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+    
+    button.accordion:hover:after {
+        color:var(--white) !important;
+    }
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color:var(--white) !important;
+}
 
 </style>
+<div class="companyHeader" style="background-image:url('https://scontent.xx.fbcdn.net/t31.0-8/13938224_279117285793701_5749778601323322627_o.jpg');">
+	<div class="darkBackground">
+		<div class="grid-container">
+			<div class="grid-80 mobile-grid-100">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
+                <br class="hide-on-desktop">
 
+                <br class="hide-on-mobile">
+                <br class="hide-on-mobile">
+                <br class="hide-on-mobile">
+                <br class="hide-on-mobile">
+
+
+				<h1 class="mainHeader">Respresent Yourself well in just a few steps.</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--
 <div class="createProfileHeader">
     <div class="grid-container">
         <h1>Respresent Yourself well in just a few steps.</h1>
     </div>
 </div>
+-->
 
 <div class="grid-container">
     
@@ -334,10 +387,10 @@ div.panel.show {
     </div>
     
     <div class="grid-100">
-          <label>Top 3 things I learnt here</label><br>
-          <textarea></textarea>
-        <textarea></textarea>
-        <textarea></textarea>
+        <label>Top 3 things I learnt here</label><br>
+        <input type="text" placeholder="1">
+        <input type="text" placeholder="2">
+        <input type="text" placeholder="3">
     </div>
     
     <button class="button orange">Add another Education</button>
@@ -356,19 +409,19 @@ div.panel.show {
     
     <div class="grid-50">
         <label>Start Date</label><br>
-        <input type="text" placeholder="Univerity of Awesomeness"><br>
-    </div>
+        <input type="date">
+        </div>
     
     <div class="grid-50">
         <label>End Date</label><br>
-        <input type="text" placeholder="Awesome Company"><br>
+        <input type="date">
     </div>
     
     <div class="grid-100">
           <label>Top 3 things I learnt here</label><br>
-          <textarea></textarea>
-        <textarea></textarea>
-        <textarea></textarea>
+        <input type="text" placeholder="1">
+        <input type="text" placeholder="2">
+        <input type="text" placeholder="3">
     </div>
     
     <button class="button orange">Add another Experience</button>    
@@ -385,7 +438,7 @@ div.panel.show {
         <textarea></textarea><br>
         
         <label>Add a Quote</label><br>
-        <textarea></textarea><br>
+        <input type="textarea" placeholder="To be or not to be, that is the question..."<br>
         
         <label>Profile Picture</label><br>
         <input type="file"><br>
@@ -399,7 +452,23 @@ div.panel.show {
     </form>
 
 </div>
+<br><br>
+    <a class="button grey outline" onclick="skipButton()" style="margin-right:1em;">SKIP</a>
+    <a class="button orange">SAVE MY INFORMATION</a>
 
+</div>
+<br>
+
+<script>
+    function skipButton() {
+        var x = confirm("Are you sure you want to skip this process?");
+        
+        if(x == true) {
+            alert("You can continue by going to settings in your profile."); 
+        }
+    }
+</script>    
+    
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -411,10 +480,4 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-    <a class="button">SKIP</a>
-    <a class="button orange">SAVE MY INFORMATION</a>
-
-</div>
-<br>
-
 <?php include 'footer.php'; ?>
