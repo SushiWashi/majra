@@ -220,7 +220,12 @@ function folder() {
 	$self = $_SERVER['PHP_SELF'];
     $folderPages = array(onServer()."about/index.php",
                          onServer(). "settings/index.php",
-                         onServer(). "companyUser/index.php");
+                         onServer(). "companyUser/index.php",
+                         onServer(). "profileCreation/intro.php",
+                        onServer(). "profileCreation/personalize.php",
+                        onServer(). "profileCreation/experience.php",
+                        onServer(). "profileCreation/education.php",
+                        onServer(). "profileCreation/contact.php");
      
     
     foreach ($folderPages as $pages) {
